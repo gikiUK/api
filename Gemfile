@@ -41,7 +41,7 @@ gem "giki-config", github: "gikiUK/config", branch: "main"
 
 # Email templating with MJML
 gem "mjml-rails"
-gem "mrml"  # Rust-based MJML compiler (faster than Node.js)
+gem "mrml" # Rust-based MJML compiler (faster than Node.js)
 
 # HAML templating for email views
 gem "haml-rails"
