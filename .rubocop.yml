@@ -1,7 +1,5 @@
-plugins:
-  - rubocop-rails
-  - rubocop-minitest
-  - rubocop-performance
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
 
 AllCops:
   NewCops: disable
