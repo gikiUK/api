@@ -10,9 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_02_02_162910) do
+ActiveRecord::Schema[8.1].define(version: 2026_02_02_164215) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "user_data", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "email_bounce_reason"
+    t.datetime "email_bounced_at"
+    t.datetime "email_complaint_at"
+    t.string "email_complaint_type"
+    t.datetime "last_email_opened_at"
+    t.boolean "notifications_enabled", default: true, null: false
+    t.boolean "receive_newsletters", default: true, null: false
+    t.string "timezone"
+    t.string "unsubscribe_token", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["unsubscribe_token"], name: "index_user_data_on_unsubscribe_token", unique: true
+    t.index ["user_id"], name: "index_user_data_on_user_id", unique: true
+  end
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -25,4 +42,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_02_162910) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+
+  add_foreign_key "user_data", "users"
 end
