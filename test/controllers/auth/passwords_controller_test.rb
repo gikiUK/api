@@ -6,16 +6,21 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
   end
 
   test "POST password reset sends reset instructions" do
-    post user_password_path, params: {
-      user: {
-        email: "test@example.com"
-      }
-    }, as: :json
+    assert_emails 1 do
+      post user_password_path, params: {
+        user: {
+          email: "test@example.com"
+        }
+      }, as: :json
+    end
 
     assert_response :ok
 
     json = response.parsed_body
     assert_equal "Reset instructions sent to test@example.com", json["message"]
+
+    email = ActionMailer::Base.deliveries.last
+    assert_equal [ "test@example.com" ], email.to
   end
 
   test "POST password reset with non-existent email still returns success (security)" do
