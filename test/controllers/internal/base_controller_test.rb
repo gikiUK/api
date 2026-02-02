@@ -10,9 +10,9 @@ class Internal::BaseControllerTest < ApplicationControllerTest
   setup do
     Rails.application.routes.draw do
       devise_for :users,
-        controllers: {
-          sessions: "auth/sessions"
-        }
+        path: "auth",
+        path_names: { sign_in: "login", sign_out: "logout", registration: "signup" },
+        controllers: { sessions: "auth/sessions", registrations: "auth/registrations", passwords: "auth/passwords" }
 
       namespace :internal do
         get "test", to: "base_controller_test/test#test_action"
