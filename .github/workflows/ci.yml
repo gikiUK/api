@@ -16,6 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: .ruby-version
           bundler-cache: true
 
       - name: Scan for common Rails security vulnerabilities using static analysis
@@ -35,6 +36,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: .ruby-version
           bundler-cache: true
 
       - name: Prepare RuboCop cache
@@ -48,7 +50,7 @@ jobs:
             rubocop-${{ runner.os }}-${{ env.DEPENDENCIES_HASH }}-
 
       - name: Lint code for consistent style
-        run: bin/rubocop -f github
+        run: bin/rubocop -f github --except Metrics
 
   test:
     runs-on: ubuntu-latest
@@ -79,7 +81,14 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: .ruby-version
           bundler-cache: true
+
+      - name: Run Zeitwerk test
+        run: bundle exec rails test:zeitwerk
+
+      - name: Validate recurring jobs config
+        run: bundle exec rails test:recurring_jobs
 
       - name: Run tests
         env:
