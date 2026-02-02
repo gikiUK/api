@@ -272,6 +272,7 @@ Always read `test/test_helper.rb` to understand available helpers and configurat
 ## How to Operate in this Repo
 
 - When told to rebase on main, use `git pull --rebase origin main`, then force push if appropriate.
+- Always add a "Create Pull Request" step when creating plans.
 
 ## Editing This File
 
