@@ -161,7 +161,63 @@ module JsonAssertions
   end
 end
 
+# Authentication helpers for API testing
+module AuthenticationHelper
+  def setup_user(user = nil)
+    @current_user = user || create(:user)
+    sign_in_user(@current_user)
+  end
+
+  def sign_in_user(user)
+    sign_in(user)
+  end
+end
+
+# Base test case for API controller tests
+class ApplicationControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+  include AuthenticationHelper
+  include JsonAssertions
+
+  # Macro for testing authentication requirements
+  def self.guard_incorrect_token!(path_helper, args: [], method: :get)
+    test "#{method} #{path_helper} returns 401 without authentication" do
+      reset!
+
+      path = send(path_helper, *args)
+      send(method, path, as: :json)
+
+      assert_response :unauthorized
+      assert_equal "unauthorized", response.parsed_body["error"]["type"]
+    end
+  end
+
+  # Macro for testing admin-only endpoints (includes authentication + admin checks)
+  def self.guard_admin!(path_helper, args: [], method: :get)
+    guard_incorrect_token!(path_helper, args:, method:)
+
+    test "#{method} #{path_helper} returns 403 for non-admin users" do
+      reset!
+      user = create(:user, admin: false)
+      sign_in_user(user)
+      path = send(path_helper, *args)
+
+      send(method, path, as: :json)
+
+      assert_response :forbidden
+      assert_json_response({
+        error: {
+          type: "forbidden",
+          message: "Admin access required"
+        }
+      })
+    end
+  end
+end
+
 # Include helpers in integration tests
 class ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+  include AuthenticationHelper
   include JsonAssertions
 end
