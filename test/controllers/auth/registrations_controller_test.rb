@@ -16,9 +16,10 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
 
     json = response.parsed_body
     assert_equal "newuser@example.com", json["user"]["email"]
+    refute json["user"]["email_confirmed"]
   end
 
-  test "POST signup creates a session for the user" do
+  test "POST signup does not create session for unconfirmed user" do
     post user_registration_path, params: {
       user: {
         email: "newuser@example.com",
@@ -29,9 +30,27 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
 
     assert_response :created
 
-    # User should be signed in - accessing authenticated endpoint should succeed
+    # User should not be signed in - accessing authenticated endpoint should fail
     get internal_me_path, as: :json
-    assert_response :ok
+    assert_response :unauthorized
+  end
+
+  test "POST signup sends confirmation email" do
+    assert_difference "ActionMailer::Base.deliveries.size", 1 do
+      post user_registration_path, params: {
+        user: {
+          email: "newuser@example.com",
+          password: "password123",
+          password_confirmation: "password123"
+        }
+      }, as: :json
+    end
+
+    assert_response :created
+
+    email = ActionMailer::Base.deliveries.last
+    assert_equal [ "newuser@example.com" ], email.to
+    assert_includes email.subject.downcase, "confirm"
   end
 
   test "POST signup returns error with invalid email" do

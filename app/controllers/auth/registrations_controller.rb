@@ -4,8 +4,14 @@ class Auth::RegistrationsController < Devise::RegistrationsController
   private
   def respond_with(resource, _opts = {})
     if resource.persisted?
-      sign_in(resource_name, resource)
-      render json: { user: { id: resource.id, email: resource.email } }, status: :created
+      if resource.active_for_authentication?
+        # User is confirmed - sign them in and return full data
+        sign_in(resource_name, resource)
+        render json: { user: { id: resource.id, email: resource.email } }, status: :created
+      else
+        # User needs to confirm email - return minimal data
+        render json: { user: { email: resource.email, email_confirmed: false } }, status: :created
+      end
     else
       render json: {
         error: {

@@ -9,7 +9,8 @@ Rails.application.routes.draw do
     controllers: {
       sessions: "auth/sessions",
       registrations: "auth/registrations",
-      passwords: "auth/passwords"
+      passwords: "auth/passwords",
+      confirmations: "auth/confirmations"
     }
 
   # Internal (authenticated user) endpoints

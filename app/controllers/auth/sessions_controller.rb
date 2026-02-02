@@ -2,18 +2,8 @@ class Auth::SessionsController < Devise::SessionsController
   respond_to :json
 
   def create
-    self.resource = warden.authenticate(auth_options)
+    self.resource = warden.authenticate!(auth_options)
 
-    if resource.blank?
-      return render json: {
-        error: {
-          type: "unauthorized",
-          message: "Invalid email or password"
-        }
-      }, status: :unauthorized
-    end
-
-    sign_in(resource_name, resource)
     render json: { status: "success" }, status: :ok
   end
 

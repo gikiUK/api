@@ -12,7 +12,7 @@ class Admin::BaseControllerTest < ApplicationControllerTest
       devise_for :users,
         path: "auth",
         path_names: { sign_in: "login", sign_out: "logout", registration: "signup" },
-        controllers: { sessions: "auth/sessions", registrations: "auth/registrations", passwords: "auth/passwords" }
+        controllers: { sessions: "auth/sessions", registrations: "auth/registrations", passwords: "auth/passwords", confirmations: "auth/confirmations" }
 
       namespace :admin do
         get "test", to: "base_controller_test/test#test_action"
