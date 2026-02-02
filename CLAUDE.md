@@ -269,6 +269,10 @@ Always read `test/test_helper.rb` to understand available helpers and configurat
 
 ---
 
+## How to Operate in this Repo
+
+- When told to rebase on main, use `git pull --rebase origin main`, then force push if appropriate.
+
 ## Editing This File
 
 When editing this file, keep things concise and only provide information that is not-standard. Give enough information that Claude can determine what's meant - do not give unncessary examples.
