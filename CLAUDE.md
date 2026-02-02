@@ -34,7 +34,6 @@ This information is coming soon.
 
 This information is coming soon.
 
-
 ## Coding Standards
 
 ### Overview
@@ -44,6 +43,10 @@ This is a Rails 8, API-only project. JSON responses only. No views. It uses Soli
 The project is built around a command-pattern. All functionality is encapsulated in commands, including data serialization. The project values a strong separation of concerns.
 
 Testing happens with Rails Test Unit supported by FactoryBot.
+
+### General notes:
+
+- Use bang methods for methods that DO something (even if it is **not** destructive). Use normal methods for things that retrieve data.
 
 ### Commands
 
@@ -259,20 +262,20 @@ Always read `test/test_helper.rb` to understand available helpers and configurat
   ```
 - Use `setup_user` helper in setup block for authenticated endpoints.
 
-## Git Workflow
-
-- Always use a feature branch based off `main` and create a PR.
-- If you're already on a feature branch, check it has a relevant name for the current task. **If unsure, ask the user.**
-- **Never** `git stash drop` or lose stashed content.
-- **Never** `git reset --hard`, `git checkout .`, or any command that loses uncommitted changes.
-- **Never** reset, checkout, or discard content in files you haven't edited yourself.
-
 ---
 
 ## How to Operate in this Repo
 
 - When told to rebase on main, use `git pull --rebase origin main`, then force push if appropriate.
 - Always add a "Create Pull Request" step when creating plans.
+
+### Git Workflow
+
+- Always use a feature branch based off `main` and create a PR.
+- If you're already on a feature branch, check it has a relevant name for the current task. **If unsure, ask the user.**
+- **Never** `git stash drop` or lose stashed content.
+- **Never** `git reset --hard`, `git checkout .`, or any command that loses uncommitted changes.
+- **Never** reset, checkout, or discard content in files you haven't edited yourself.
 
 ## Editing This File
 
