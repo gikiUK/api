@@ -39,6 +39,21 @@ gem "image_processing", "~> 1.2"
 # For local development, run: bundle config set --local local.giki-config ../config
 gem "giki-config", github: "gikiUK/config", branch: "main"
 
+# Email templating with MJML
+gem "mjml-rails"
+gem "mrml" # Rust-based MJML compiler (faster than Node.js)
+
+# HAML templating for email views
+gem "haml-rails"
+
+# AWS SES email delivery for production
+gem "aws-actionmailer-ses", "~> 1"
+
+group :development do
+  # Preview emails in browser during development
+  gem "letter_opener"
+end
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri windows], require: "debug/prelude"
