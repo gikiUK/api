@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Run rubocop on staged files with auto-fix
+bin/rubocop-staged || exit 1
+
+# Run tests
+echo "Running tests..."
+bin/rails test || exit 1
+
+# Run brakeman security scan
+echo "Running Brakeman security scan..."
+bin/brakeman -q || exit 1
+
+echo "All pre-commit checks passed!"

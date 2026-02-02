@@ -1,0 +1,12 @@
+{
+  "name": "giki-api",
+  "version": "1.0.0",
+  "description": "Giki API - Rails backend",
+  "private": true,
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.0.0"
+  }
+}
