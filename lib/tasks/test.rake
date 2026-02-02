@@ -1,15 +1,15 @@
 namespace :test do
-  desc 'Test that Zeitwerk can load all files correctly'
+  desc "Test that Zeitwerk can load all files correctly"
   task zeitwerk: :environment do
     Rails.application.eager_load!
-    puts 'Successfully loaded Rails. Zeitwerk is happy'
+    puts "Successfully loaded Rails. Zeitwerk is happy"
   end
 
-  desc 'Validate Solid Queue recurring jobs configuration'
+  desc "Validate Solid Queue recurring jobs configuration"
   task recurring_jobs: :environment do
-    config_path = Rails.root.join('config', 'recurring.yml')
+    config_path = Rails.root.join("config", "recurring.yml")
     unless File.exist?(config_path)
-      puts 'No recurring.yml found, skipping validation'
+      puts "No recurring.yml found, skipping validation"
       next
     end
 
@@ -21,9 +21,9 @@ namespace :test do
 
       jobs.each do |job_name, job_config|
         next unless job_config.is_a?(Hash)
-        next unless job_config['class']
+        next unless job_config["class"]
 
-        klass_name = job_config['class']
+        klass_name = job_config["class"]
         begin
           klass_name.constantize
         rescue NameError
@@ -38,6 +38,6 @@ namespace :test do
       exit 1
     end
 
-    puts 'Recurring jobs configuration is valid'
+    puts "Recurring jobs configuration is valid"
   end
 end
