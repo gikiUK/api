@@ -8,7 +8,7 @@ require "prosopite"
 # Configure WebMock to disable external connections
 WebMock.disable_net_connect!(
   allow_localhost: true,
-  allow: ["127.0.0.1"]
+  allow: [ "127.0.0.1" ]
 )
 
 # Configure Prosopite for N+1 query detection in tests
