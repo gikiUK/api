@@ -9,7 +9,10 @@ class Admin::BaseControllerTest < ApplicationControllerTest
 
   setup do
     Rails.application.routes.draw do
-      devise_for :users
+      devise_for :users,
+        controllers: {
+          sessions: "auth/sessions"
+        }
 
       namespace :admin do
         get "test", to: "base_controller_test/test#test_action"
