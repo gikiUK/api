@@ -64,9 +64,24 @@ group :development, :test do
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
 
-  # Ruby linting
-  gem "rubocop", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-minitest", require: false
-  gem "rubocop-performance", require: false
+  # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
+  gem "rubocop-rails-omakase", require: false
+
+  # Test factories for creating test data
+  gem "factory_bot_rails"
+
+  # N+1 query detection
+  gem "prosopite"
+  gem "pg_query"
+end
+
+group :test do
+  # Mocking and stubbing framework
+  gem "mocha"
+
+  # HTTP request stubbing for external API testing
+  gem "webmock"
+
+  # Fake data generation for tests
+  gem "faker"
 end
