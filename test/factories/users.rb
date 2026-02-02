@@ -4,6 +4,10 @@ FactoryBot.define do
     password { "password123" }
     password_confirmation { password }
 
+    trait :admin do
+      admin { true }
+    end
+
     trait :with_bounced_email do
       after(:create) do |user|
         user.data.update!(email_bounced_at: Time.current, email_bounce_reason: "permanent")
