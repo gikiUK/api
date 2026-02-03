@@ -1,5 +1,5 @@
 class Internal::MeController < Internal::BaseController
   def show
-    render json: {}
+    render json: SerializeUser.(current_user)
   end
 end
