@@ -5,7 +5,9 @@ class User::Data < ApplicationRecord
   before_create :set_default_timezone!
 
   DEFAULT_TIMEZONE = "UTC".freeze
+  DEFAULT_LOCALE = "en".freeze
 
+  def locale = DEFAULT_LOCALE
   def email_valid? = email_bounced_at.nil?
   def may_receive_emails? = email_complaint_at.nil?
 

@@ -1,0 +1,8 @@
+en:
+  account_mailer:
+    welcome:
+      subject: "Welcome to Giki!"
+      greeting: "Welcome!"
+      intro: "Welcome to Giki - your journey to sustainability starts here!"
+      body: "We're excited to have you join Giki. Our platform helps SMEs measure, manage, and reduce their environmental impact with practical tools and expert guidance."
+      cta: "Get Started"
