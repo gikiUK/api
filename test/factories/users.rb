@@ -30,5 +30,11 @@ FactoryBot.define do
         user.data.update!(notifications_enabled: false)
       end
     end
+
+    trait :hungarian do
+      after(:create) do |user|
+        user.data.update!(locale: "hu")
+      end
+    end
   end
 end

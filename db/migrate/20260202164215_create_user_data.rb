@@ -6,6 +6,9 @@ class CreateUserData < ActiveRecord::Migration[8.1]
       # Timezone
       t.string :timezone
 
+      # Locale preference
+      t.string :locale, default: "en", null: false
+
       # Email unsubscribe token (required, generated on create)
       t.string :unsubscribe_token, null: false
 

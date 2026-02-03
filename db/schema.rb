@@ -21,6 +21,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_02_165146) do
     t.datetime "email_complaint_at"
     t.string "email_complaint_type"
     t.datetime "last_email_opened_at"
+    t.string "locale", default: "en", null: false
     t.boolean "notifications_enabled", default: true, null: false
     t.boolean "receive_newsletters", default: true, null: false
     t.string "timezone"
