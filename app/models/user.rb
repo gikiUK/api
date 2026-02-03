@@ -10,6 +10,11 @@ class User < ApplicationRecord
     build_data if new_record? && !data
   end
 
+  # Two-Factor Authentication
+  def otp_enabled? = otp_secret.present? && otp_enabled_at.present?
+  def requires_otp? = admin?
+  def otp_provisioning_uri = otp_secret ? ROTP::TOTP.new(otp_secret, issuer: "Giki").provisioning_uri(email) : nil
+
   def method_missing(name, *args)
     super
   rescue NameError

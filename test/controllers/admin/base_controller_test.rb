@@ -1,6 +1,7 @@
 require "test_helper"
 
 class Admin::BaseControllerTest < ApplicationControllerTest
+  # Create a test controller to test the base controller functionality
   class TestController < Admin::BaseController
     def test_action
       render json: { success: true }
@@ -8,11 +9,17 @@ class Admin::BaseControllerTest < ApplicationControllerTest
   end
 
   setup do
+    # Add test route temporarily while keeping Devise routes
     Rails.application.routes.draw do
       devise_for :users,
         path: "auth",
         path_names: { sign_in: "login", sign_out: "logout", registration: "signup" },
-        controllers: { sessions: "auth/sessions", registrations: "auth/registrations", passwords: "auth/passwords", confirmations: "auth/confirmations" }
+        controllers: { sessions: "auth/sessions", registrations: "auth/registrations", passwords: "auth/passwords" },
+        skip: [ :omniauth_callbacks ]
+
+      namespace :auth do
+        post "verify-2fa", to: "two_factor#verify"
+      end
 
       namespace :admin do
         get "test", to: "base_controller_test/test#test_action"
@@ -21,6 +28,7 @@ class Admin::BaseControllerTest < ApplicationControllerTest
   end
 
   teardown do
+    # Reload the original routes
     Rails.application.reload_routes!
   end
 

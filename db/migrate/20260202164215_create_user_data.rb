@@ -20,6 +20,10 @@ class CreateUserData < ActiveRecord::Migration[8.1]
       t.string :email_complaint_type
       t.datetime :last_email_opened_at
 
+      # Two-Factor Authentication
+      t.string :otp_secret
+      t.datetime :otp_enabled_at
+
       t.timestamps
     end
 

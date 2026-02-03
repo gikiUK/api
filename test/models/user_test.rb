@@ -61,4 +61,47 @@ class UserTest < ActiveSupport::TestCase
 
     refute User::Data.exists?(data_id)
   end
+
+  # Two-Factor Authentication Tests
+  test "otp_enabled? returns false when no otp_secret" do
+    user = create(:user)
+    refute user.otp_enabled?
+  end
+
+  test "otp_enabled? returns false when otp_secret but no otp_enabled_at" do
+    user = create(:user)
+    user.data.update!(otp_secret: ROTP::Base32.random)
+    refute user.otp_enabled?
+  end
+
+  test "otp_enabled? returns true when both otp_secret and otp_enabled_at present" do
+    user = create(:user)
+    user.data.update!(otp_secret: ROTP::Base32.random, otp_enabled_at: Time.current)
+    assert user.otp_enabled?
+  end
+
+  test "requires_otp? returns true for admin users" do
+    user = create(:user, :admin)
+    assert user.requires_otp?
+  end
+
+  test "requires_otp? returns false for non-admin users" do
+    user = create(:user)
+    refute user.requires_otp?
+  end
+
+  test "otp_provisioning_uri returns nil when no otp_secret" do
+    user = create(:user)
+    assert_nil user.otp_provisioning_uri
+  end
+
+  test "otp_provisioning_uri returns valid URI when otp_secret present" do
+    user = create(:user)
+    User::GenerateOtpSecret.(user)
+
+    uri = user.otp_provisioning_uri
+    assert uri.present?
+    assert uri.start_with?("otpauth://totp/Giki:")
+    assert uri.include?(URI.encode_www_form_component(user.email))
+  end
 end
