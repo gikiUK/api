@@ -4,6 +4,8 @@ class Auth::RegistrationsController < Devise::RegistrationsController
   private
   def respond_with(resource, _opts = {})
     if resource.persisted?
+      User::Bootstrap.(resource)
+
       if resource.active_for_authentication?
         # User is confirmed - sign them in and return full data
         sign_in(resource_name, resource)

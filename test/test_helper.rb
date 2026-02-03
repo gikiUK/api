@@ -172,10 +172,18 @@ module AuthenticationHelper
 
   # Sign in a user by posting to the session endpoint
   # This sets up the session cookie for subsequent requests
+  # For admin users or users with 2FA enabled, completes the 2FA flow automatically
   def sign_in_user(user)
     post user_session_path, params: {
       user: { email: user.email, password: "password123" }
     }, as: :json
+
+    # Admin users require 2FA, and any user with 2FA enabled needs to complete it
+    return unless user.admin? || user.otp_enabled?
+
+    # Complete the 2FA flow
+    User::VerifyOtp.expects(:call).with(user, "123456").returns(true)
+    post "/auth/verify-2fa", params: { otp_code: "123456" }, as: :json
   end
 end
 

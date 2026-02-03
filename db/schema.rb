@@ -23,6 +23,8 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_02_165146) do
     t.datetime "last_email_opened_at"
     t.string "locale", default: "en", null: false
     t.boolean "notifications_enabled", default: true, null: false
+    t.datetime "otp_enabled_at"
+    t.string "otp_secret"
     t.boolean "receive_newsletters", default: true, null: false
     t.string "timezone"
     t.string "unsubscribe_token", null: false

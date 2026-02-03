@@ -19,6 +19,34 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
     refute json["user"]["email_confirmed"]
   end
 
+  test "POST signup calls User::Bootstrap" do
+    User::Bootstrap.expects(:call).with(instance_of(User)).once
+
+    post user_registration_path, params: {
+      user: {
+        email: "newuser@example.com",
+        password: "password123",
+        password_confirmation: "password123"
+      }
+    }, as: :json
+
+    assert_response :created
+  end
+
+  test "POST signup does not call User::Bootstrap on validation failure" do
+    User::Bootstrap.expects(:call).never
+
+    post user_registration_path, params: {
+      user: {
+        email: "invalid-email",
+        password: "password123",
+        password_confirmation: "password123"
+      }
+    }, as: :json
+
+    assert_response :unprocessable_entity
+  end
+
   test "POST signup does not create session for unconfirmed user" do
     post user_registration_path, params: {
       user: {
