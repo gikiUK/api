@@ -215,6 +215,7 @@ If you need to add a new config key, include a PR to the config gem (`../config`
 
 ### Migrations
 
+- **Never** use `RAILS_ENV=test` to run any database commands. If you encounter test database issues, ask the user what to do.
 - **Never** manually reset the test database with `RAILS_ENV=test bin/rails db:reset`. Rails handles test DB automatically.
 
 ### Exceptions

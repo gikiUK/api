@@ -104,4 +104,40 @@ class UserTest < ActiveSupport::TestCase
     assert uri.start_with?("otpauth://totp/Giki:")
     assert uri.include?(URI.encode_www_form_component(user.email))
   end
+
+  # Company Association Tests
+  test "has many company_memberships" do
+    user = create(:user)
+    company1 = create(:company)
+    company2 = create(:company)
+
+    user.company_memberships.create!(company: company1)
+    user.company_memberships.create!(company: company2)
+
+    assert_equal 2, user.company_memberships.count
+  end
+
+  test "has many companies through company_memberships" do
+    user = create(:user)
+    company1 = create(:company)
+    company2 = create(:company)
+
+    user.company_memberships.create!(company: company1)
+    user.company_memberships.create!(company: company2)
+
+    assert_equal 2, user.companies.count
+    assert_includes user.companies, company1
+    assert_includes user.companies, company2
+  end
+
+  test "company_memberships are destroyed when user is destroyed" do
+    user = create(:user)
+    company = create(:company)
+    membership = user.company_memberships.create!(company: company)
+    membership_id = membership.id
+
+    user.destroy!
+
+    refute CompanyMembership.exists?(membership_id)
+  end
 end
