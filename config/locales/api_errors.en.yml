@@ -8,7 +8,5 @@ en:
     invalid_token: "Reset token is invalid or has expired"
     validation_error: "Validation failed"
     locale_update_failed: "Locale update failed"
-    password_reset_sent: "Reset instructions sent to %{email}"
-    password_reset_success: "Password has been reset successfully"
     session_expired: "Session expired. Please log in again."
     invalid_otp: "Invalid verification code"

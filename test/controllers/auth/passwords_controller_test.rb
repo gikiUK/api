@@ -15,7 +15,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
     end
 
     assert_response :ok
-    assert_json_response({ message: api_error_msg(:password_reset_sent, email: "test@example.com") })
+    assert_json_response({ message: api_msg(:password_reset_sent, email: "test@example.com") })
 
     email = ActionMailer::Base.deliveries.last
     assert_equal [ "test@example.com" ], email.to
@@ -29,7 +29,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-    assert_json_response({ message: api_error_msg(:password_reset_sent, email: "nonexistent@example.com") })
+    assert_json_response({ message: api_msg(:password_reset_sent, email: "nonexistent@example.com") })
   end
 
   test "PATCH password reset updates password with valid token" do
@@ -45,7 +45,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-    assert_json_response({ message: api_error_msg(:password_reset_success) })
+    assert_json_response({ message: api_msg(:password_reset_success) })
 
     # Verify the user can login with new password
     post user_session_path, params: {

@@ -5,16 +5,14 @@ class Auth::PasswordsController < Devise::PasswordsController
     self.resource = resource_class.send_reset_password_instructions(resource_params)
 
     # Always return success to prevent email enumeration
-    render json: {
-      message: I18n.t("api_errors.password_reset_sent", email: resource_params[:email])
-    }, status: :ok
+    render_success(:password_reset_sent, email: resource_params[:email])
   end
 
   def update
     self.resource = resource_class.reset_password_by_token(resource_params)
 
     if resource.errors.empty?
-      render json: { message: I18n.t("api_errors.password_reset_success") }, status: :ok
+      render_success(:password_reset_success)
     else
       render_422(:invalid_token, errors: resource.errors.messages)
     end

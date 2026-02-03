@@ -72,6 +72,11 @@ def api_error_msg(key, **options)
   I18n.t("api_errors.#{key}", **options)
 end
 
+# API success message helper
+def api_msg(key, **options)
+  I18n.t("api_messages.#{key}", **options)
+end
+
 # API error assertion helper - combines assert_response and assert_json_response
 # Usage:
 #   assert_json_error(:forbidden) # status 403, type "forbidden"
