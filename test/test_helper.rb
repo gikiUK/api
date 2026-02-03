@@ -163,19 +163,24 @@ end
 
 # Authentication helpers for API testing
 module AuthenticationHelper
+  include Rails.application.routes.url_helpers
+
   def setup_user(user = nil)
     @current_user = user || create(:user)
     sign_in_user(@current_user)
   end
 
+  # Sign in a user by posting to the session endpoint
+  # This sets up the session cookie for subsequent requests
   def sign_in_user(user)
-    sign_in(user)
+    post user_session_path, params: {
+      user: { email: user.email, password: "password123" }
+    }, as: :json
   end
 end
 
 # Base test case for API controller tests
 class ApplicationControllerTest < ActionDispatch::IntegrationTest
-  include Devise::Test::IntegrationHelpers
   include AuthenticationHelper
   include JsonAssertions
 
@@ -217,7 +222,6 @@ end
 
 # Include helpers in integration tests
 class ActionDispatch::IntegrationTest
-  include Devise::Test::IntegrationHelpers
   include AuthenticationHelper
   include JsonAssertions
 end

@@ -1,5 +1,23 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users,
+    path: "auth",
+    path_names: {
+      sign_in: "login",
+      sign_out: "logout",
+      registration: "signup"
+    },
+    controllers: {
+      sessions: "auth/sessions",
+      registrations: "auth/registrations",
+      passwords: "auth/passwords",
+      confirmations: "auth/confirmations"
+    }
+
+  # Internal (authenticated user) endpoints
+  namespace :internal do
+    resource :me, only: [ :show ], controller: "me"
+  end
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

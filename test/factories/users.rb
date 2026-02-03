@@ -3,9 +3,14 @@ FactoryBot.define do
     email { Faker::Internet.unique.email }
     password { "password123" }
     password_confirmation { password }
+    confirmed_at { Time.current }
 
     trait :admin do
       admin { true }
+    end
+
+    trait :unconfirmed do
+      confirmed_at { nil }
     end
 
     trait :with_bounced_email do
