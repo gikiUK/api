@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :validatable, :confirmable
 
   has_one :data, dependent: :destroy, class_name: "User::Data", autosave: true
+  has_many :company_memberships, dependent: :destroy
+  has_many :companies, through: :company_memberships
 
   after_initialize do
     build_data if new_record? && !data
