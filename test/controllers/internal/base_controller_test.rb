@@ -27,8 +27,7 @@ class Internal::BaseControllerTest < ApplicationControllerTest
   test "returns 401 for non-authenticated users" do
     get "/internal/test", as: :json
 
-    assert_response :unauthorized
-    assert_equal "unauthorized", response.parsed_body["error"]["type"]
+    assert_json_error(:unauthorized, error_type: :unauthenticated)
   end
 
   test "allows access for authenticated users" do

@@ -11,9 +11,7 @@ class Auth::ConfirmationsControllerTest < ApplicationControllerTest
 
     user.reload
     assert user.confirmed?
-
-    json = response.parsed_body
-    assert_equal "success", json["status"]
+    assert_json_response({ status: "success" })
 
     # Verify user is now signed in
     get internal_me_path, as: :json
@@ -23,10 +21,7 @@ class Auth::ConfirmationsControllerTest < ApplicationControllerTest
   test "GET confirmation with invalid token returns error" do
     get user_confirmation_path(confirmation_token: "invalid-token"), as: :json
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "invalid_token", json["error"]["type"]
+    assert_json_error(:unprocessable_entity, error_type: :invalid_token)
   end
 
   test "GET confirmation with already used token returns error" do
@@ -39,10 +34,7 @@ class Auth::ConfirmationsControllerTest < ApplicationControllerTest
     # Try to use the same token again
     get user_confirmation_path(confirmation_token: token), as: :json
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "invalid_token", json["error"]["type"]
+    assert_json_error(:unprocessable_entity, error_type: :invalid_token)
   end
 
   test "POST confirmation resends confirmation email for valid email" do
@@ -55,9 +47,7 @@ class Auth::ConfirmationsControllerTest < ApplicationControllerTest
     end
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "unconfirmed@example.com", json["user"]["email"]
+    assert_json_response({ user: { email: "unconfirmed@example.com" } })
 
     email = ActionMailer::Base.deliveries.last
     assert_equal [ "unconfirmed@example.com" ], email.to
@@ -71,9 +61,7 @@ class Auth::ConfirmationsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "nonexistent@example.com", json["user"]["email"]
+    assert_json_response({ user: { email: "nonexistent@example.com" } })
   end
 
   test "POST confirmation returns success for already confirmed user" do
@@ -85,8 +73,6 @@ class Auth::ConfirmationsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "confirmed@example.com", json["user"]["email"]
+    assert_json_response({ user: { email: "confirmed@example.com" } })
   end
 end

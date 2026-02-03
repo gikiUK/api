@@ -5,9 +5,6 @@ class User::Data < ApplicationRecord
   before_create :set_default_timezone!
   before_create :set_default_locale!
 
-  DEFAULT_TIMEZONE = "UTC".freeze
-  DEFAULT_LOCALE = "en".freeze
-
   validates :locale, presence: true, inclusion: { in: I18n::SUPPORTED_LOCALES }
 
   def email_valid? = email_bounced_at.nil?
@@ -19,10 +16,10 @@ class User::Data < ApplicationRecord
   end
 
   def set_default_timezone!
-    self.timezone ||= DEFAULT_TIMEZONE
+    self.timezone ||= "UTC".freeze
   end
 
   def set_default_locale!
-    self.locale ||= DEFAULT_LOCALE
+    self.locale ||= I18n.default_locale.to_s
   end
 end

@@ -10,9 +10,7 @@ class Auth::ConfirmationsController < Devise::ConfirmationsController
       sign_in(resource_name, resource)
       render json: { status: "success" }, status: :ok
     else
-      render json: {
-        error: { type: "invalid_token" }
-      }, status: :unprocessable_entity
+      render_422(:invalid_token)
     end
   end
 
