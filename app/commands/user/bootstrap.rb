@@ -4,6 +4,6 @@ class User::Bootstrap
   initialize_with :user
 
   def call
-    AccountMailer.welcome(user).deliver_later
+    AccountMailer.welcome(user)&.deliver_later
   end
 end
