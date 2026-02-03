@@ -15,9 +15,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
     end
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "Reset instructions sent to test@example.com", json["message"]
+    assert_json_response({ message: api_error_msg(:password_reset_sent, email: "test@example.com") })
 
     email = ActionMailer::Base.deliveries.last
     assert_equal [ "test@example.com" ], email.to
@@ -31,9 +29,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "Reset instructions sent to nonexistent@example.com", json["message"]
+    assert_json_response({ message: api_error_msg(:password_reset_sent, email: "nonexistent@example.com") })
   end
 
   test "PATCH password reset updates password with valid token" do
@@ -49,9 +45,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "Password has been reset successfully", json["message"]
+    assert_json_response({ message: api_error_msg(:password_reset_success) })
 
     # Verify the user can login with new password
     post user_session_path, params: {
@@ -73,11 +67,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
       }
     }, as: :json
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "invalid_token", json["error"]["type"]
-    assert json["error"]["message"].present?
+    assert_json_error(:unprocessable_entity, error_type: :invalid_token, errors: { reset_password_token: [ "is invalid" ] })
   end
 
   test "PATCH password reset fails with password mismatch" do
@@ -91,11 +81,7 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
       }
     }, as: :json
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "invalid_token", json["error"]["type"]
-    assert json["error"]["errors"]["password_confirmation"].present?
+    assert_json_error(:unprocessable_entity, error_type: :invalid_token, errors: { password_confirmation: [ "doesn't match Password" ] })
   end
 
   test "PATCH password reset fails with short password" do
@@ -109,10 +95,6 @@ class Auth::PasswordsControllerTest < ApplicationControllerTest
       }
     }, as: :json
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "invalid_token", json["error"]["type"]
-    assert json["error"]["errors"]["password"].present?
+    assert_json_error(:unprocessable_entity, error_type: :invalid_token, errors: { password: [ "is too short (minimum is 6 characters)" ] })
   end
 end

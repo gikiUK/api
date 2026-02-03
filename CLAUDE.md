@@ -164,7 +164,7 @@ This repository generally uses standard ActiveRecord patterns for models.
 
 #### Specific Models
 
-- **User::Data**: Extended user metadata is stored in `User::Data`, not on `User` directly. The `User` model uses `method_missing` to delegate, so call `user.some_method` not `user.data.some_method`. Only use `user.data.x` when there's a name clash (e.g., `user.data.id`).
+- **User::Data**: Extended user metadata is stored in `User::Data`, not on `User` directly. The `User` model uses `method_missing` to delegate reads, so call `user.some_method` not `user.data.some_method` when reading. For updates, use `user.data.update!(...)` directly. Only access `user.data.x` for reads when there's a name clash (e.g., `user.data.id`).
 
 - **Translation models**: Translatable models (e.g., `Level`, `Lesson`) have separate `*::Translation` models. English content stays on the main model; other locales use the translation table. Include the `Translatable` concern for this pattern.
 
@@ -188,8 +188,9 @@ Controllers are thin - delegate to commands, handle exceptions, render responses
   - `Auth::` - Authentication endpoints (login, signup, etc.)
   - `Webhooks::` - Webhook receivers (e.g., Stripe)
   - Auth is enforced at the namespace base controller level (e.g., `Internal::BaseController`), not globally in ApplicationController.
-- **Use helper methods** from ApplicationController: `render_validation_error(exception)`, `render_not_found(message)`
+- **Error responses**: Use `render_401`, `render_403`, `render_404`, `render_422` helpers. Error types must have matching key in `config/locales/api_errors.en.yml`. Example: `render_422(:validation_error, errors: resource.errors.messages)`.
 - **Class naming**: Use `class Internal::LessonsController` not `module Internal; class LessonsController; end; end`
+- **Instance variables from params/session**: Use a `before_action` with a bang method (e.g., `before_action :use_user!` with `def use_user!; @user = User.find_by(id: session[:otp_user_id]); end`). Don't use memoized getter methods.
 - If you find yourself adding business logic to a controller, stop and move it into a command instead.
 
 ### Mailers
@@ -201,6 +202,7 @@ Mailers use MJML (via MRML Rust compiler) for responsive HTML emails. Developmen
 - **Database templates**: Use `mail_template_to_user(user, template_type, template_key, ...)` for templates stored in DB with Liquid rendering.
 - **File extension**: MJML templates use `.mjml` extension (not `.html.mjml`) due to MRML compatibility.
 - **Always both formats**: Include HTML (`.mjml`) and text (`.text.erb`) versions.
+- **Use safe navigation for delivery**: Always use `&.deliver_later` (not `.deliver_later`) as mailers may return `nil` if the user shouldn't receive emails.
 
 ### Configuration
 
@@ -252,6 +254,16 @@ Always read `test/test_helper.rb` to understand available helpers and configurat
 
 - **Don't manually test authentication**: Use `guard_incorrect_token!` macro (auto-generates 2 tests) or `guard_admin!` macro for admin endpoints (auto-generates 3 tests). Never write manual auth tests.
 - **Test all code paths**: If a controller has multiple rescue blocks or conditionals, test each one.
+- **Use assert_json_response**: Do not test individual attributes. You do **NOT** need to do partial verification of assertions. Just check the whole response:
+  ```ruby
+  # CORRECT
+  assert_json_response({ error: { errors: { password: 'foo'} } })
+
+  # WRONG - never do this
+  json = response.parsed_body
+  assert response.parsed_body["error"]["errors"]["password"].present?
+  ```
+- **Error assertions**: Use `assert_json_error(:status, error_type: :type, **extra)` for error responses. Uses `api_error_msg(:type)` for i18n message lookup. Example: `assert_json_error(:unprocessable_entity, error_type: :validation_error, errors: { email: ["is invalid"] })`.
 - **Use serializers in assertions**: Always reference the serializer, never manually write out JSON:
   ```ruby
   # CORRECT

@@ -3,9 +3,9 @@ require "test_helper"
 class User::EnableOtpTest < ActiveSupport::TestCase
   test "enables OTP for user with secret" do
     user = create(:user)
-    User::GenerateOtpSecret.(user)
+    user.data.update!(otp_secret: ROTP::Base32.random)
 
-    assert_nil user.reload.otp_enabled_at
+    assert_nil user.otp_enabled_at # Sanity
 
     User::EnableOtp.(user)
 
@@ -16,7 +16,7 @@ class User::EnableOtpTest < ActiveSupport::TestCase
 
   test "sets otp_enabled_at to current time" do
     user = create(:user)
-    User::GenerateOtpSecret.(user)
+    user.data.update!(otp_secret: ROTP::Base32.random)
 
     freeze_time do
       User::EnableOtp.(user)

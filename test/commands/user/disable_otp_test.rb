@@ -2,11 +2,8 @@ require "test_helper"
 
 class User::DisableOtpTest < ActiveSupport::TestCase
   test "disables OTP for user" do
-    user = create(:user)
-    User::GenerateOtpSecret.(user)
-    User::EnableOtp.(user)
-
-    assert user.reload.otp_enabled?
+    user = create(:user, :with_2fa)
+    assert user.otp_enabled? # Sanity
 
     User::DisableOtp.(user)
 
@@ -18,7 +15,7 @@ class User::DisableOtpTest < ActiveSupport::TestCase
 
   test "is idempotent for user without OTP" do
     user = create(:user)
-    refute user.otp_enabled?
+    refute user.otp_enabled? # Sanity
 
     User::DisableOtp.(user)
 

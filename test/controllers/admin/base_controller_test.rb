@@ -35,8 +35,7 @@ class Admin::BaseControllerTest < ApplicationControllerTest
   test "returns 401 for non-authenticated users" do
     get "/admin/test", as: :json
 
-    assert_response :unauthorized
-    assert_equal "unauthorized", response.parsed_body["error"]["type"]
+    assert_json_error(:unauthorized, error_type: :unauthenticated)
   end
 
   test "returns 403 for authenticated non-admin users" do
@@ -45,13 +44,7 @@ class Admin::BaseControllerTest < ApplicationControllerTest
 
     get "/admin/test", as: :json
 
-    assert_response :forbidden
-    assert_json_response({
-      error: {
-        type: "forbidden",
-        message: "Admin access required"
-      }
-    })
+    assert_json_error(:forbidden)
   end
 
   test "allows access for authenticated admin users" do

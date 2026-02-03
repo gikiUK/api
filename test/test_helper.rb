@@ -67,6 +67,24 @@ module ActiveSupport
   end
 end
 
+# API error message helper
+def api_error_msg(key, **options)
+  I18n.t("api_errors.#{key}", **options)
+end
+
+# API error assertion helper - combines assert_response and assert_json_response
+# Usage:
+#   assert_json_error(:forbidden) # status 403, type "forbidden"
+#   assert_json_error(:unauthorized, error_type: :invalid_credentials) # status 401, type "invalid_credentials"
+#   assert_json_error(:unprocessable_entity, error_type: :validation_error, errors: {...})
+def assert_json_error(status, error_type: nil, **extra)
+  error_type ||= status
+  assert_response status
+  assert_json_response({
+    error: { type: error_type.to_s, message: api_error_msg(error_type) }.merge(extra)
+  })
+end
+
 # JSON response assertions
 module JsonAssertions
   # Helper to compare JSON structures with normalized string keys
@@ -200,8 +218,7 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
       path = send(path_helper, *args)
       send(method, path, as: :json)
 
-      assert_response :unauthorized
-      assert_equal "unauthorized", response.parsed_body["error"]["type"]
+      assert_json_error(:unauthorized, error_type: :unauthenticated)
     end
   end
 
@@ -217,13 +234,7 @@ class ApplicationControllerTest < ActionDispatch::IntegrationTest
 
       send(method, path, as: :json)
 
-      assert_response :forbidden
-      assert_json_response({
-        error: {
-          type: "forbidden",
-          message: "Admin access required"
-        }
-      })
+      assert_json_error(:forbidden)
     end
   end
 end

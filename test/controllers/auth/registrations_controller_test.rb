@@ -13,10 +13,7 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
     end
 
     assert_response :created
-
-    json = response.parsed_body
-    assert_equal "newuser@example.com", json["user"]["email"]
-    refute json["user"]["email_confirmed"]
+    assert_json_response({ user: { email: "newuser@example.com", email_confirmed: false } })
   end
 
   test "POST signup calls User::Bootstrap" do
@@ -92,12 +89,7 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
       }, as: :json
     end
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "validation_error", json["error"]["type"]
-    assert_equal "Validation failed", json["error"]["message"]
-    assert json["error"]["errors"]["email"].present?
+    assert_json_error(:unprocessable_entity, error_type: :validation_error, errors: { email: [ "is invalid" ] })
   end
 
   test "POST signup returns error with password mismatch" do
@@ -111,11 +103,7 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
       }, as: :json
     end
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "validation_error", json["error"]["type"]
-    assert json["error"]["errors"]["password_confirmation"].present?
+    assert_json_error(:unprocessable_entity, error_type: :validation_error, errors: { password_confirmation: [ "doesn't match Password" ] })
   end
 
   test "POST signup returns error with duplicate email" do
@@ -131,11 +119,7 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
       }, as: :json
     end
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "validation_error", json["error"]["type"]
-    assert json["error"]["errors"]["email"].present?
+    assert_json_error(:unprocessable_entity, error_type: :validation_error, errors: { email: [ "has already been taken" ] })
   end
 
   test "POST signup returns error with short password" do
@@ -149,10 +133,6 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
       }, as: :json
     end
 
-    assert_response :unprocessable_entity
-
-    json = response.parsed_body
-    assert_equal "validation_error", json["error"]["type"]
-    assert json["error"]["errors"]["password"].present?
+    assert_json_error(:unprocessable_entity, error_type: :validation_error, errors: { password: [ "is too short (minimum is 6 characters)" ] })
   end
 end

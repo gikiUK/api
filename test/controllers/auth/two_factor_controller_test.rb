@@ -30,10 +30,7 @@ class Auth::TwoFactorControllerTest < ApplicationControllerTest
 
     post auth_verify_2fa_path, params: { otp_code: "000000" }, as: :json
 
-    assert_response :unauthorized
-    assert_json_response({
-      error: { type: "invalid_otp", message: "Invalid verification code" }
-    })
+    assert_json_error(:unauthorized, error_type: :invalid_otp)
 
     # Verify user is NOT signed in
     get internal_me_path, as: :json
@@ -48,10 +45,7 @@ class Auth::TwoFactorControllerTest < ApplicationControllerTest
 
     post auth_verify_2fa_path, params: { otp_code: otp_code }, as: :json
 
-    assert_response :unauthorized
-    assert_json_response({
-      error: { type: "session_expired", message: "Session expired. Please log in again." }
-    })
+    assert_json_error(:unauthorized, error_type: :session_expired)
   end
 
   test "POST verify-2fa with expired session returns session_expired" do
@@ -63,10 +57,7 @@ class Auth::TwoFactorControllerTest < ApplicationControllerTest
 
     post auth_verify_2fa_path, params: { otp_code: otp_code }, as: :json
 
-    assert_response :unauthorized
-    assert_json_response({
-      error: { type: "session_expired", message: "Session expired. Please log in again." }
-    })
+    assert_json_error(:unauthorized, error_type: :session_expired)
   end
 
   # Setup endpoint tests
@@ -102,10 +93,7 @@ class Auth::TwoFactorControllerTest < ApplicationControllerTest
 
     post auth_setup_2fa_path, params: { otp_code: "000000" }, as: :json
 
-    assert_response :unauthorized
-    assert_json_response({
-      error: { type: "invalid_otp", message: "Invalid verification code" }
-    })
+    assert_json_error(:unauthorized, error_type: :invalid_otp)
 
     # Verify 2FA is NOT enabled
     @admin.reload
@@ -119,10 +107,7 @@ class Auth::TwoFactorControllerTest < ApplicationControllerTest
 
     post auth_setup_2fa_path, params: { otp_code: otp_code }, as: :json
 
-    assert_response :unauthorized
-    assert_json_response({
-      error: { type: "session_expired", message: "Session expired. Please log in again." }
-    })
+    assert_json_error(:unauthorized, error_type: :session_expired)
   end
 
   private

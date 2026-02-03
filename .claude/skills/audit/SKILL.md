@@ -23,10 +23,11 @@ First, read the CLAUDE.md file to understand all the coding standards and patter
 In addition to CLAUDE.md violations, specifically check for these frequent issues:
 
 - **Hardcoded Locales**: Search for hardcoded locale strings like `"en"`, `"de"`, `"es"`, `:en`, `:de`, etc. in application code. These should typically use `I18n.locale` or be configurable.
-- **User Data Access Pattern**: Search for `user.data.` patterns. Per CLAUDE.md, you should use `user.some_method` not `user.data.some_method` because User delegates via `method_missing`. The only exception is when there's a name clash (e.g., `user.data.id`).
+- **User Data Access Pattern**: Search for `user.data.` read patterns (not updates). Per CLAUDE.md, you should use `user.some_method` not `user.data.some_method` for reading because User delegates via `method_missing`. Updates via `user.data.update!(...)` are acceptable. The only exception for reads is when there's a name clash (e.g., `user.data.id`).
 - **Duplicate Tests**: Look for test methods that test the same functionality or have very similar assertions. Also check for copy-pasted test code that should be extracted into helpers.
 - **Command Test Scope**: Command tests should only test functionality within that command. Sub-commands should be mocked rather than having their internals tested. Look for command tests that assert on behavior belonging to other commands.
 - **Controller Test Assertions**: Controller tests should use `assert_json_response` with serializers, not manually check individual hash keys. Look for patterns like `json_response[:key]` or `response.parsed_body["key"]` assertions instead of full response comparisons.
+- **Repeated duplicate setup in tests**: Could we use factory traits instead or creating then updating records?
 
 ## Output Format
 

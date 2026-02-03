@@ -1,0 +1,14 @@
+en:
+  api_errors:
+    unauthenticated: "You need to sign in or sign up before continuing."
+    invalid_credentials: "Invalid email or password"
+    forbidden: "Admin access required"
+    not_found: "Resource not found"
+    unconfirmed: "Please confirm your email address"
+    invalid_token: "Reset token is invalid or has expired"
+    validation_error: "Validation failed"
+    locale_update_failed: "Locale update failed"
+    password_reset_sent: "Reset instructions sent to %{email}"
+    password_reset_success: "Password has been reset successfully"
+    session_expired: "Session expired. Please log in again."
+    invalid_otp: "Invalid verification code"

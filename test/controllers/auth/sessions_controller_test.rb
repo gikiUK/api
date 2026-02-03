@@ -14,9 +14,7 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "success", json["status"]
+    assert_json_response({ status: "success" })
   end
 
   test "POST login establishes session" do
@@ -42,11 +40,7 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
       }
     }, as: :json
 
-    assert_response :unauthorized
-
-    json = response.parsed_body
-    assert_equal "unauthorized", json["error"]["type"]
-    assert json["error"]["message"].present?
+    assert_json_error(:unauthorized, error_type: :invalid_credentials)
   end
 
   test "POST login returns error with non-existent email" do
@@ -57,11 +51,7 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
       }
     }, as: :json
 
-    assert_response :unauthorized
-
-    json = response.parsed_body
-    assert_equal "unauthorized", json["error"]["type"]
-    assert json["error"]["message"].present?
+    assert_json_error(:unauthorized, error_type: :invalid_credentials)
   end
 
   test "POST login returns unconfirmed error for unconfirmed user" do
@@ -75,10 +65,7 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :unauthorized
-
-    json = response.parsed_body
-    assert_equal "unconfirmed", json["error"]["type"]
-    assert_equal "unconfirmed@example.com", json["error"]["email"]
+    assert_json_response({ error: { type: "unconfirmed", message: api_error_msg(:unconfirmed), email: "unconfirmed@example.com" } })
   end
 
   test "POST login does not create session for unconfirmed user" do
@@ -119,10 +106,8 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
     }, as: :json
 
     assert_response :ok
-
-    json = response.parsed_body
-    assert_equal "2fa_setup_required", json["status"]
-    assert json["provisioning_uri"].start_with?("otpauth://totp/Giki:")
+    assert_equal "2fa_setup_required", response.parsed_body["status"]
+    assert response.parsed_body["provisioning_uri"].start_with?("otpauth://totp/Giki:")
 
     # Verify admin was NOT signed in
     get internal_me_path, as: :json
@@ -134,9 +119,7 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
   end
 
   test "POST login for admin with 2FA enabled returns 2fa_required" do
-    admin = create(:user, :admin, email: "admin@example.com", password: "password123")
-    User::GenerateOtpSecret.(admin)
-    User::EnableOtp.(admin)
+    admin = create(:user, :admin, :with_2fa, email: "admin@example.com", password: "password123")
 
     post user_session_path, params: {
       user: { email: "admin@example.com", password: "password123" }
@@ -151,9 +134,7 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
   end
 
   test "POST login for admin cannot access internal pages before completing 2FA" do
-    admin = create(:user, :admin, email: "admin@example.com", password: "password123")
-    User::GenerateOtpSecret.(admin)
-    User::EnableOtp.(admin)
+    admin = create(:user, :admin, :with_2fa, email: "admin@example.com", password: "password123")
 
     post user_session_path, params: {
       user: { email: "admin@example.com", password: "password123" }
@@ -181,9 +162,7 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
   end
 
   test "POST login for non-admin with 2FA enabled returns 2fa_required" do
-    user = create(:user, email: "otp-user@example.com", password: "password123")
-    User::GenerateOtpSecret.(user)
-    User::EnableOtp.(user)
+    user = create(:user, :with_2fa, email: "otp-user@example.com", password: "password123")
 
     post user_session_path, params: {
       user: { email: "otp-user@example.com", password: "password123" }
