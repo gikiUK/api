@@ -13,6 +13,12 @@ Rails.application.routes.draw do
       confirmations: "auth/confirmations"
     }
 
+  # Two-factor authentication
+  namespace :auth do
+    post "verify-2fa", to: "two_factor#verify"
+    post "setup-2fa", to: "two_factor#setup"
+  end
+
   # Internal (authenticated user) endpoints
   namespace :internal do
     resource :me, only: [ :show ], controller: "me"

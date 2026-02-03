@@ -109,4 +109,91 @@ class Auth::SessionsControllerTest < ApplicationControllerTest
     get internal_me_path, as: :json
     assert_response :unauthorized
   end
+
+  # 2FA Tests
+  test "POST login for admin without 2FA setup returns 2fa_setup_required" do
+    admin = create(:user, :admin, email: "admin@example.com", password: "password123")
+
+    post user_session_path, params: {
+      user: { email: "admin@example.com", password: "password123" }
+    }, as: :json
+
+    assert_response :ok
+
+    json = response.parsed_body
+    assert_equal "2fa_setup_required", json["status"]
+    assert json["provisioning_uri"].start_with?("otpauth://totp/Giki:")
+
+    # Verify admin was NOT signed in
+    get internal_me_path, as: :json
+    assert_response :unauthorized
+
+    # Verify OTP secret was generated
+    admin.reload
+    assert admin.otp_secret.present?
+  end
+
+  test "POST login for admin with 2FA enabled returns 2fa_required" do
+    admin = create(:user, :admin, email: "admin@example.com", password: "password123")
+    User::GenerateOtpSecret.(admin)
+    User::EnableOtp.(admin)
+
+    post user_session_path, params: {
+      user: { email: "admin@example.com", password: "password123" }
+    }, as: :json
+
+    assert_response :ok
+    assert_json_response({ status: "2fa_required" })
+
+    # Verify admin was NOT signed in
+    get internal_me_path, as: :json
+    assert_response :unauthorized
+  end
+
+  test "POST login for admin cannot access internal pages before completing 2FA" do
+    admin = create(:user, :admin, email: "admin@example.com", password: "password123")
+    User::GenerateOtpSecret.(admin)
+    User::EnableOtp.(admin)
+
+    post user_session_path, params: {
+      user: { email: "admin@example.com", password: "password123" }
+    }, as: :json
+
+    assert_response :ok
+    assert_json_response({ status: "2fa_required" })
+
+    # Try to access internal page - should be unauthorized
+    get internal_me_path, as: :json
+    assert_response :unauthorized
+  end
+
+  test "POST login for non-admin signs in normally" do
+    post user_session_path, params: {
+      user: { email: "test@example.com", password: "password123" }
+    }, as: :json
+
+    assert_response :ok
+    assert_json_response({ status: "success" })
+
+    # Verify user IS signed in
+    get internal_me_path, as: :json
+    assert_response :ok
+  end
+
+  test "POST login for non-admin with 2FA enabled returns 2fa_required" do
+    user = create(:user, email: "otp-user@example.com", password: "password123")
+    User::GenerateOtpSecret.(user)
+    User::EnableOtp.(user)
+
+    post user_session_path, params: {
+      user: { email: "otp-user@example.com", password: "password123" }
+    }, as: :json
+
+    assert_response :ok
+    assert_json_response({ status: "2fa_required" })
+
+    # Verify user was NOT signed in
+    get internal_me_path, as: :json
+    assert_response :unauthorized
+  end
 end
