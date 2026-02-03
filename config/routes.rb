@@ -22,6 +22,9 @@ Rails.application.routes.draw do
   # Internal (authenticated user) endpoints
   namespace :internal do
     resource :me, only: [ :show ], controller: "me"
+    resource :settings, only: [ :show ] do
+      patch :locale
+    end
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

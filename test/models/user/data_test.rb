@@ -66,4 +66,34 @@ class User::DataTest < ActiveSupport::TestCase
 
     refute user.data.may_receive_emails?
   end
+
+  test "locale defaults to en on create" do
+    user = create(:user)
+
+    assert_equal "en", user.data.locale
+  end
+
+  test "locale is not overridden when provided" do
+    user = build(:user)
+    user.data.locale = "hu"
+    user.save!
+
+    assert_equal "hu", user.data.locale
+  end
+
+  test "validates locale is supported" do
+    user = create(:user)
+
+    user.data.locale = "invalid"
+    refute user.data.valid?
+    assert_includes user.data.errors[:locale], "is not included in the list"
+  end
+
+  test "validates locale presence" do
+    user = create(:user)
+
+    user.data.locale = nil
+    refute user.data.valid?
+    assert_includes user.data.errors[:locale], "can't be blank"
+  end
 end
