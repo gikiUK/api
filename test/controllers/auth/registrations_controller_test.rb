@@ -20,7 +20,7 @@ class Auth::RegistrationsControllerTest < ApplicationControllerTest
   end
 
   test "POST signup calls User::Bootstrap" do
-    User::Bootstrap.expects(:call).once
+    User::Bootstrap. expects(:call).with(instance_of(User)).once
 
     post user_registration_path, params: {
       user: {
