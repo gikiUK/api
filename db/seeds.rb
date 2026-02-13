@@ -20,6 +20,7 @@ aron_user.confirm
 puts "Created admin user: #{aron_user.email}"
 
 # Seed the initial live facts dataset
+# Note: uses where().exists? instead of FactsDataset.live because .live raises if not found
 unless FactsDataset.where(status: "live").exists?
   seed_dir = Rails.root.join("db/seeds")
 

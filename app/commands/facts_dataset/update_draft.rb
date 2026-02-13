@@ -6,7 +6,7 @@ class FactsDataset::UpdateDraft
   def call
     draft = FactsDataset.draft
     draft.with_lock do
-      FactsDataset::Validate.(draft)
+      FactsDataset::Validate.(data, test_cases)
       draft.update!(data:, test_cases:)
     end
   end

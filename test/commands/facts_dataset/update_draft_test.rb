@@ -18,7 +18,7 @@ class FactsDataset::UpdateDraftTest < ActiveSupport::TestCase
     create(:facts_dataset, :live)
     draft = create(:facts_dataset, :draft)
 
-    FactsDataset::Validate.expects(:call).with(draft).returns(true)
+    FactsDataset::Validate.expects(:call).with(draft.data, draft.test_cases).returns(true)
 
     FactsDataset::UpdateDraft.(draft.data, draft.test_cases)
   end

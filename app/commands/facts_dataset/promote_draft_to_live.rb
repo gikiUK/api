@@ -3,7 +3,7 @@ class FactsDataset::PromoteDraftToLive
 
   def call
     draft = FactsDataset.draft
-    FactsDataset::Validate.(draft)
+    FactsDataset::Validate.(draft.data, draft.test_cases)
 
     FactsDataset.transaction do
       FactsDataset.live.update!(status: "archived")
