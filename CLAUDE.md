@@ -250,6 +250,7 @@ Always read `test/test_helper.rb` to understand available helpers and configurat
 - Cover the default/happy path with a full JSON comparison.
 - For variants that change individual keys, only assert on those specific keys.
 - If there are multiple large forks in logic, use full JSON comparisons for each fork.
+- For multi-line expected values, assign to a local variable called `expected` before asserting.
 
 ### Testing Controllers
 
