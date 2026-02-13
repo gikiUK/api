@@ -112,10 +112,10 @@ The admin React app loads the full blob into client-side state, makes edits loca
 
 Concurrent write safety: `SELECT ... FOR UPDATE` locks the dataset row during save.
 
-### Dataset Model
+### FactsDataset Model (`facts_datasets` table)
 
 ```
-datasets
+facts_datasets
 ├── id          (integer PK)
 ├── status      (string: "draft", "live", "archived")
 ├── owner_id    (FK to users, nullable — only drafts have owners)
@@ -271,9 +271,9 @@ The live dataset's JSONB blob is cached in memory at the Rails level. Reference 
 
 ### Cache Invalidation
 
-The `datasets` table itself serves as the cache signal. Each Rails process tracks the `updated_at` of the current live dataset. On each request, a single query checks if the live dataset's `updated_at` has changed. If so, reload.
+Each Rails process tracks the `id` of the live facts dataset it last loaded. On each request, a single query checks the current live id: `SELECT id FROM facts_datasets WHERE status = 'live'`. If it differs, reload.
 
-When a dataset is published (draft becomes live), `updated_at` changes and all processes pick up the new data on their next request.
+When a dataset is published, a new row becomes live (different `id`), so all processes pick up the new data on their next request.
 
 Reference values use the same pattern — track `MAX(updated_at)` on the reference_values table.
 
@@ -281,16 +281,14 @@ This avoids pub/sub, DB triggers, or cross-process signalling. Each process inde
 
 ## Admin API Endpoints
 
-### Datasets
+### Facts Datasets
 ```
-GET    /admin/datasets              — list all datasets (id, status, owner, timestamps)
-GET    /admin/datasets/:id          — full dataset blob + test cases
-POST   /admin/datasets              — create new draft (copies live)
-PATCH  /admin/datasets/:id          — save draft blob (locked write, validated)
-DELETE /admin/datasets/:id          — delete a draft
-POST   /admin/datasets/:id/publish  — go live (atomic status swap, must pass validation)
-POST   /admin/datasets/:id/test     — run test cases, return results
-POST   /admin/datasets/:id/diff     — compare with another dataset
+GET    /admin/facts_datasets/live         — the live blob + test cases
+GET    /admin/facts_datasets/draft        — the current draft blob + test cases
+POST   /admin/facts_datasets/draft        — create new draft (copies live)
+PATCH  /admin/facts_datasets/draft        — save draft blob (locked write, validated)
+DELETE /admin/facts_datasets/draft        — delete the draft
+POST   /admin/facts_datasets/draft/publish — validate, run test cases, go live if all pass
 ```
 
 No individual CRUD endpoints for facts/questions/rules. The FE manages all editing as client-side state against the blob.
@@ -338,8 +336,8 @@ Leaning toward recompute. But storing makes "which companies have X" queries eas
 - [ ] Add admin serializer
 - [ ] Add controller tests
 
-### Dataset model + API
-- [ ] Add Dataset model and migration
+### FactsDataset model + API
+- [ ] Add FactsDataset model and migration
 - [ ] Add factory
 - [ ] Add seed task (import from `../facts/data/*.json` into initial live dataset, converting industry/size strings to reference value IDs)
 - [ ] Add admin controller (list, show, create, update, delete, publish)

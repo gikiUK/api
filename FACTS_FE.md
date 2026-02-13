@@ -57,16 +57,14 @@ Validation errors are returned to the FE. A blob that fails validation can be sa
 
 ## API endpoints
 
-### Datasets
+### Facts Datasets
 ```
-GET    /admin/datasets              — list datasets (id, status, owner, timestamps)
-GET    /admin/datasets/:id          — full dataset blob + test cases
-POST   /admin/datasets              — create new draft (copies live)
-PATCH  /admin/datasets/:id          — save draft blob (validated)
-DELETE /admin/datasets/:id          — delete a draft
-POST   /admin/datasets/:id/publish  — promote draft to live (must pass validation)
-POST   /admin/datasets/:id/test     — run test cases, return results
-POST   /admin/datasets/:id/diff     — compare with another dataset
+GET    /admin/facts_datasets/live         — the live blob + test cases
+GET    /admin/facts_datasets/draft        — the current draft blob + test cases
+POST   /admin/facts_datasets/draft        — create new draft (copies live)
+PATCH  /admin/facts_datasets/draft        — save draft blob (validated)
+DELETE /admin/facts_datasets/draft        — delete the draft
+POST   /admin/facts_datasets/draft/publish — validate, run test cases, go live if all pass
 ```
 
 ### Reference Values
@@ -79,7 +77,7 @@ DELETE /admin/reference_values/:id  — soft delete a value
 
 ## Dataset blob structure
 
-The blob returned by `GET /admin/datasets/:id` has this shape:
+The blob returned by `GET /admin/facts_datasets/:id` has this shape:
 
 ```json
 {
