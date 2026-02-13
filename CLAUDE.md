@@ -286,6 +286,7 @@ Always read `test/test_helper.rb` to understand available helpers and configurat
 
 - Always use a feature branch based off `main` and create a PR.
 - If you're already on a feature branch, check it has a relevant name for the current task. **If unsure, ask the user.**
+- **Do not use `git -C <path>`**. Instead, `cd` to the correct directory before running git commands. This avoids issues with worktrees and ensures hooks run in the right context.
 - **Never** `git stash drop` or lose stashed content.
 - **Never** `git reset --hard`, `git checkout .`, or any command that loses uncommitted changes.
 - **Never** reset, checkout, or discard content in files you haven't edited yourself.

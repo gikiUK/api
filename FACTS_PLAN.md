@@ -85,11 +85,13 @@ Each action has `include_when` and `exclude_when` conditions that determine whet
 
 Action metadata (title, description, GHG categories, tags, etc.) lives in normal tables, linked to conditions in the blob by action key. The actions table has no `enabled` column — the blob is the single source of truth for what's active.
 
-### Reference Values
+### Constants
 
-Option lists (industries, business sizes, building types, etc.) stored in a normal DB table. Referenced by numeric ID in the blob and in action conditions. ~7 groups, ~130 values total.
+Option lists (industries, business sizes, building types, etc.) stored in the blob alongside facts, questions, and rules. ~7 groups, ~130 values total. Each value has a numeric ID (scoped per group), name, optional description, and enabled flag.
 
-Replaces the old `constants.json`. Each value has a name, optional description, position, and soft delete. Stable data that doesn't need draft/publish versioning.
+IDs are stable across dataset versions — they carry over when a draft is created. IDs are never reused within a group (monotonically increasing). The FE manages ID assignment during blob editing.
+
+Referenced by numeric ID in rule conditions, action conditions, and company facts. The in-memory cache can build compact lookup structures from the blob on load.
 
 ### Hotspots (not yet in scope)
 
@@ -97,7 +99,7 @@ Per-industry GHG materiality ratings. Used to generate hotspot suppression rules
 
 ## Storage: Single JSONB Blob per Dataset
 
-The facts engine (facts, questions, rules, action conditions) is stored as a **single JSONB blob** in one row per dataset.
+The facts engine (facts, questions, rules, action conditions, constants) is stored as a **single JSONB blob** in one row per dataset.
 
 This is the simplest approach because:
 - The data is tiny — reading/writing the whole blob is negligible
@@ -118,33 +120,14 @@ Concurrent write safety: `SELECT ... FOR UPDATE` locks the dataset row during sa
 facts_datasets
 ├── id          (integer PK)
 ├── status      (string: "draft", "live", "archived")
-├── owner_id    (FK to users, nullable — only drafts have owners)
-├── data        (jsonb — facts, questions, rules, action conditions)
+├── data        (jsonb — facts, questions, rules, action conditions, constants)
 ├── test_cases  (jsonb — regression test cases)
 ├── timestamps
 ```
 
 - One `live` dataset at any time — this is what the evaluation engine uses
 - **One draft at a time** — enforced at creation. Prevents merge conflicts and test case inconsistencies. Future: auto-rebase (apply clean diffs only, reject on conflict).
-- Drafts belong to an owner (admin user)
 - Archived datasets are kept for history/rollback
-
-### Reference Values Model
-
-```
-reference_values
-├── id            (integer PK)
-├── group_key     (string — "industry", "business_size", "building_type", etc.)
-├── name          (string — "Advertising", "Small")
-├── description   (string, nullable — "10-50 employees")
-├── position      (integer — ordering within group)
-├── enabled     (boolean, default true)
-├── timestamps
-```
-
-- ~7 groups, ~130 rows total
-- Referenced by ID in dataset blob (rule conditions, action conditions) and by `group_key` in fact `values_ref` and question `options_ref`
-- Disabled values (`enabled: false`) hidden from new selections but still resolvable by ID
 
 ### Actions Model
 
@@ -196,6 +179,16 @@ The `data` JSONB column contains the facts engine:
     { "sets": "uses_buildings", "value": true, "source": "general", "when": { "any": [{ "owns_buildings": true }, { "leases_buildings": true }] } },
     { "sets": "scope_1_mobile_relevant", "value": "not_applicable", "source": "hotspot", "when": { "industries": [1, 3, 7] } }
   ],
+  "constants": {
+    "industry": [
+      { "id": 1, "name": "Advertising", "description": null, "enabled": true },
+      { "id": 2, "name": "Broadcasting", "description": null, "enabled": true }
+    ],
+    "business_size": [
+      { "id": 1, "name": "Self Employed", "description": "Sole traders", "enabled": true },
+      { "id": 2, "name": "Small", "description": "10-50 employees", "enabled": true }
+    ]
+  },
   "action_conditions": {
     "action_key_1": {
       "enabled": true,
@@ -226,7 +219,7 @@ Validation errors are returned to the FE. A blob that fails validation cannot be
 
 ### Admin Workflow: Draft/Publish
 
-1. **Start new version** — copies live dataset's blob into a new draft row, assigned to the admin
+1. **Start new version** — copies live dataset's blob into a new draft row
 2. **Edit locally** — FE loads the blob, admin edits in the React UI, work-in-progress saved to localStorage
 3. **Save draft** — FE writes the full blob back to the API (locked with SELECT FOR UPDATE, validated)
 4. **Preview** — pick a company, run evaluation engine against draft data, compare results with live
@@ -263,9 +256,9 @@ Two levels of diff between any two datasets:
 
 ## Architecture: In-Memory Caching
 
-The live dataset's JSONB blob is cached in memory at the Rails level. Reference values are also cached (tiny, rarely change).
+The live dataset's JSONB blob is cached in memory at the Rails level. Everything is in the blob — no separate caches needed.
 
-- On boot: load the live dataset blob + reference values into Ruby objects
+- On boot: load the live dataset blob into Ruby objects
 - Evaluation engine: operates purely on cached Ruby objects, never queries DB for reference data
 - DB queries in the hot path: only reading/writing CompanyFact data
 
@@ -274,8 +267,6 @@ The live dataset's JSONB blob is cached in memory at the Rails level. Reference 
 Each Rails process tracks the `id` of the live facts dataset it last loaded. On each request, a single query checks the current live id: `SELECT id FROM facts_datasets WHERE status = 'live'`. If it differs, reload.
 
 When a dataset is published, a new row becomes live (different `id`), so all processes pick up the new data on their next request.
-
-Reference values use the same pattern — track `MAX(updated_at)` on the reference_values table.
 
 This avoids pub/sub, DB triggers, or cross-process signalling. Each process independently detects staleness. Works cleanly with multi-process deployments (multiple ECS tasks, Puma workers, etc.).
 
@@ -293,13 +284,7 @@ POST   /admin/facts_datasets/draft/publish — validate, run test cases, go live
 
 No individual CRUD endpoints for facts/questions/rules. The FE manages all editing as client-side state against the blob.
 
-### Reference Values
-```
-GET    /admin/reference_values      — all values, grouped by group_key
-POST   /admin/reference_values      — create a value
-PATCH  /admin/reference_values/:id  — update a value
-DELETE /admin/reference_values/:id  — soft delete (blocked if in use)
-```
+No separate reference values API — constants are managed as part of the blob.
 
 ## Design Principles
 
@@ -310,9 +295,9 @@ DELETE /admin/reference_values/:id  — soft delete (blocked if in use)
 5. **Schema is evolving** — the JSONB blob structure can evolve without migrations.
 6. **Admin-only API** — `Admin::` controller namespace.
 7. **Fact keys are meaningful strings** — used throughout conditions in the blob.
-8. **Reference values use numeric IDs** — industries, sizes, etc. Referenced by ID everywhere, resolved to names client-side.
+8. **Constants use numeric IDs** — industries, sizes, etc. in the blob with stable IDs per group. Referenced by ID in conditions and company facts, resolved to names client-side.
 9. **FE owns editing UX** — API just stores and retrieves the blob. All editing logic is client-side.
-10. **Enabled/disabled everywhere** — reference values use `enabled` boolean column, blob items use `"enabled": false`. Keys stay reserved, data untouched. No hard deletes.
+10. **Enabled/disabled everywhere** — blob items use `"enabled": false`. Keys stay reserved, data untouched. No hard deletes.
 11. **Validate on save** — structural + semantic validation of the blob. Smoke test with rules engine. Must pass validation to publish.
 
 ## Open Questions
@@ -328,14 +313,6 @@ Leaning toward recompute. But storing makes "which companies have X" queries eas
 
 ## TODO
 
-### Reference values
-- [ ] Add ReferenceValue model and migration
-- [ ] Add factory
-- [ ] Add seed task (import from `../facts/data/constants.json`)
-- [ ] Add admin controller (CRUD with soft delete)
-- [ ] Add admin serializer
-- [ ] Add controller tests
-
 ### FactsDataset model + API
 - [ ] Add FactsDataset model and migration
 - [ ] Add factory
@@ -346,8 +323,8 @@ Leaning toward recompute. But storing makes "which companies have X" queries eas
 - [ ] Add controller tests
 
 ### Evaluation engine
-- [ ] In-memory cache loader (parse live dataset blob + reference values into Ruby objects)
-- [ ] Cache invalidation (check live dataset + reference values staleness per request)
+- [ ] In-memory cache loader (parse live dataset blob into Ruby objects)
+- [ ] Cache invalidation (check live dataset id per request)
 - [ ] Rule evaluation engine (apply rules to a set of input facts)
 - [ ] Action filtering engine (apply action conditions to determine relevant actions)
 
@@ -382,7 +359,7 @@ The initial live dataset must be built from the JSON files in `../facts/data/`. 
    - In all conditions, convert industry name strings to reference value IDs (e.g. `"Advertising"` → `1`)
    - In all conditions, convert size strings to reference value IDs
 
-3. **Create initial dataset** — one row with `status: "live"`, `owner_id: nil`, the built blob as `data`, empty `test_cases: []`.
+3. **Create initial dataset** — one row with `status: "live"`, the built blob as `data`, empty `test_cases: []`.
 
 ### Source file sizes (for reference)
 - `facts.json` — 4.3KB (~60 facts)
