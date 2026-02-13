@@ -314,13 +314,13 @@ Leaning toward recompute. But storing makes "which companies have X" queries eas
 ## TODO
 
 ### FactsDataset model + API
-- [ ] Add FactsDataset model and migration
-- [ ] Add factory
-- [ ] Add seed task (import from `../facts/data/*.json` into initial live dataset, converting industry/size strings to reference value IDs)
-- [ ] Add admin controller (list, show, create, update, delete, publish)
+- [x] Add FactsDataset model and migration
+- [x] Add factory
+- [x] Add seed task (import from `../facts/data/*.json` into initial live dataset, converting industry/size strings to IDs)
+- [x] Add admin controller (GET live/draft, POST/PATCH/DELETE draft, POST publish)
 - [ ] Add blob validation (structural + semantic + smoke test)
-- [ ] Add admin serializer
-- [ ] Add controller tests
+- [x] Add admin serializer
+- [x] Add controller tests
 
 ### Evaluation engine
 - [ ] In-memory cache loader (parse live dataset blob into Ruby objects)
