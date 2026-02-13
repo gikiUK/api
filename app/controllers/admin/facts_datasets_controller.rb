@@ -21,8 +21,8 @@ class Admin::FactsDatasetsController < Admin::BaseController
   end
 
   def update_draft
-    dataset = FactsDataset::UpdateDraft.(params[:data], params[:test_cases])
-    render json: { facts_dataset: SerializeAdminFactsDataset.(dataset) }
+    FactsDataset::UpdateDraft.(params[:data], params[:test_cases])
+    render json: { facts_dataset: SerializeAdminFactsDataset.(FactsDataset.draft) }
   rescue ActiveRecord::RecordNotFound
     render_404(:facts_dataset_not_found)
   end

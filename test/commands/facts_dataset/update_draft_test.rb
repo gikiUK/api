@@ -8,10 +8,8 @@ class FactsDataset::UpdateDraftTest < ActiveSupport::TestCase
     new_data = { "facts" => { "has_vehicles" => { "type" => "boolean_state" } } }
     new_test_cases = [ { "name" => "Test case 1" } ]
 
-    result = FactsDataset::UpdateDraft.(new_data, new_test_cases)
+    FactsDataset::UpdateDraft.(new_data, new_test_cases)
 
-    assert_equal new_data, result.data
-    assert_equal new_test_cases, result.test_cases
     assert_equal new_data, draft.reload.data
     assert_equal new_test_cases, draft.reload.test_cases
   end
@@ -27,9 +25,10 @@ class FactsDataset::UpdateDraftTest < ActiveSupport::TestCase
 
   test "locks the draft row for update" do
     create(:facts_dataset, :live)
-    create(:facts_dataset, :draft)
+    draft = create(:facts_dataset, :draft)
 
-    FactsDataset.expects(:lock).returns(FactsDataset)
+    draft.expects(:with_lock).yields
+    FactsDataset.expects(:draft).returns(draft)
 
     FactsDataset::UpdateDraft.({}, [])
   end

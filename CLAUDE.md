@@ -276,6 +276,11 @@ Always read `test/test_helper.rb` to understand available helpers and configurat
   ```
 - Use `setup_user` helper in setup block for authenticated endpoints.
 
+### Facts Engine
+
+- **FactsDataset**: Always use `FactsDataset.live` and `FactsDataset.draft` class methods to retrieve datasets. Never query by status directly (e.g. `where(status: "draft")`).
+- **Locking**: Use `record.with_lock { ... }` for row-level locks. Don't use `.lock` on relations.
+
 ---
 
 ## How to Operate in this Repo
