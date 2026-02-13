@@ -1,0 +1,93 @@
+{
+  "rules": [
+    {
+      "sets": "remote_only",
+      "value": false,
+      "when": {
+        "any": [
+          { "owns_buildings": true },
+          { "leases_buildings": true }
+        ]
+      }
+    },
+    {
+      "sets": "owns_buildings",
+      "value": false,
+      "when": { "remote_only": true }
+    },
+    {
+      "sets": "leases_buildings",
+      "value": false,
+      "when": { "remote_only": true }
+    },
+    {
+      "sets": "landlord_controlled_only",
+      "value": false,
+      "when": {
+        "any": [
+          { "can_choose_utility_suppliers": true },
+          { "has_operational_control": true }
+        ]
+      }
+    },
+    {
+      "sets": "can_choose_utility_suppliers",
+      "value": false,
+      "when": { "landlord_controlled_only": true }
+    },
+    {
+      "sets": "has_operational_control",
+      "value": false,
+      "when": { "landlord_controlled_only": true }
+    },
+    {
+      "sets": "travel_includes_flying",
+      "value": false,
+      "when": { "employees_travel_for_work": false }
+    },
+    {
+      "sets": "uses_buildings",
+      "value": true,
+      "when": {
+        "any": [
+          { "owns_buildings": true },
+          { "leases_buildings": true }
+        ]
+      }
+    },
+    {
+      "sets": "has_offsite_workers",
+      "value": true,
+      "when": {
+        "any": [
+          { "has_commuting_employees": true },
+          { "has_remote_workers": true }
+        ]
+      }
+    },
+
+    { "sets": "scope_1_mobile_relevant", "value": true, "when": { "has_company_vehicles": true } },
+    { "sets": "cat_1_relevant", "value": true, "when": { "interested_in_supplier_actions": true } },
+    { "sets": "cat_2_relevant", "value": true, "when": { "purchases_capital_goods": true } },
+    { "sets": "cat_4_relevant", "value": true, "when": { "receives_supplier_deliveries": true } },
+    { "sets": "cat_5_relevant", "value": true, "when": { "produces_waste": true } },
+    { "sets": "cat_6_relevant", "value": true, "when": { "employees_travel_for_work": true } },
+    {
+      "sets": "cat_7_relevant",
+      "value": true,
+      "when": {
+        "any": [
+          { "has_commuting_employees": true },
+          { "has_remote_workers": true }
+        ]
+      }
+    },
+    { "sets": "cat_7_commute_relevant", "value": true, "when": { "has_commuting_employees": true } },
+    { "sets": "cat_7_wfh_relevant", "value": true, "when": { "has_remote_workers": true } },
+    { "sets": "cat_8_relevant", "value": true, "when": { "leases_buildings": true } },
+    { "sets": "cat_9_relevant", "value": true, "when": { "ships_products_to_customers": true } },
+    { "sets": "cat_11_relevant", "value": true, "when": { "products_consume_energy_in_use": true } },
+    { "sets": "cat_12_relevant", "value": true, "when": { "products_require_disposal": true } },
+    { "sets": "cat_15_relevant", "value": true, "when": { "has_significant_investments": true } }
+  ]
+}

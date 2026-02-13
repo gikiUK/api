@@ -1,0 +1,64 @@
+{
+  "rules": [
+    {
+      "sets": "scope_1_mobile_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Advertising", "Interactive Home Entertainment", "Interactive Media & Services"] }
+    },
+    {
+      "sets": "cat_4_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Advertising", "Interactive Home Entertainment", "Interactive Media & Services"] }
+    },
+    {
+      "sets": "cat_5_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Cable & Satellite", "Automobile Manufacturers", "Motorcycle Manufacturers", "Consumer Electronics Manufacturing", "Household Appliances Manufacturing"] }
+    },
+    {
+      "sets": "cat_6_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Automotive Parts & Equipment", "Tires & Rubber", "Automobile Manufacturers", "Motorcycle Manufacturers", "Household Appliances Manufacturing"] }
+    },
+    {
+      "sets": "cat_7_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Automotive Parts & Equipment", "Tires & Rubber", "Automobile Manufacturers", "Motorcycle Manufacturers", "Household Appliances Manufacturing"] }
+    },
+    {
+      "sets": "cat_7_commute_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Automotive Parts & Equipment", "Tires & Rubber", "Automobile Manufacturers", "Motorcycle Manufacturers", "Household Appliances Manufacturing"] }
+    },
+    {
+      "sets": "cat_7_wfh_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Automotive Parts & Equipment", "Tires & Rubber", "Automobile Manufacturers", "Motorcycle Manufacturers", "Household Appliances Manufacturing"] }
+    },
+    {
+      "sets": "cat_8_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Cable & Satellite", "Movies & Entertainment", "Interactive Media & Services", "Automotive Parts & Equipment", "Tires & Rubber", "Automobile Manufacturers", "Motorcycle Manufacturers", "Consumer Electronics Manufacturing", "Home Furnishings", "Homebuilding", "Household Appliances Manufacturing"] }
+    },
+    {
+      "sets": "cat_9_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Advertising", "Broadcasting", "Interactive Home Entertainment", "Movies & Entertainment", "Interactive Media & Services", "Homebuilding"] }
+    },
+    {
+      "sets": "cat_11_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Advertising", "Broadcasting", "Publishing", "Interactive Home Entertainment", "Movies & Entertainment", "Automotive Parts & Equipment", "Home Furnishings"] }
+    },
+    {
+      "sets": "cat_12_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Advertising", "Broadcasting", "Cable & Satellite", "Interactive Home Entertainment", "Movies & Entertainment", "Interactive Media & Services", "Automotive Parts & Equipment", "Consumer Electronics Manufacturing", "Homebuilding", "Household Appliances Manufacturing"] }
+    },
+    {
+      "sets": "cat_15_relevant",
+      "value": "not_applicable",
+      "when": { "industries": ["Advertising", "Broadcasting", "Cable & Satellite", "Publishing", "Interactive Home Entertainment", "Movies & Entertainment", "Interactive Media & Services", "Automotive Parts & Equipment", "Tires & Rubber", "Automobile Manufacturers", "Motorcycle Manufacturers", "Consumer Electronics Manufacturing", "Home Furnishings", "Homebuilding", "Household Appliances Manufacturing"] }
+    }
+  ]
+}

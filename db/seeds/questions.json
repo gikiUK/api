@@ -1,0 +1,276 @@
+{
+  "questions": [
+    {
+      "type": "multi-select",
+      "label": "What is your primary sector?",
+      "description": "Your industry sector helps us tailor recommendations to your specific context and challenges. Try to find the sector that's closest or select Other if you cannot find one.",
+      "options_ref": "INDUSTRY_OPTIONS",
+      "fact": "industries"
+    },
+    {
+      "type": "single-select",
+      "label": "What is the size of your organization?",
+      "description": "Company size helps determine the scale and scope of recommended actions. Self employed includes sole traders and sole proprietors.",
+      "options_ref": "BUSINESS_SIZE_OPTIONS",
+      "fact": "size"
+    },
+    {
+      "type": "single-select",
+      "label": "Do you currently measure your emissions?",
+      "options_ref": "MEASURES_EMISSIONS_OPTIONS",
+      "unknowable": true,
+      "fact": "measures_emissions"
+    },
+    {
+      "type": "single-select",
+      "label": "Do you already have targets in place to reduce emissions?",
+      "description": "Targets should be set in line with science to limit global warming to 1.5C. This means halving emissions by 2030 and reaching net zero no later than 2050.",
+      "options_ref": "REDUCTION_TARGETS_OPTIONS",
+      "unknowable": true,
+      "fact": "has_reduction_targets"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Are you interested in actions around measurement and target setting?",
+      "fact": "interested_in_measurement_targets"
+    },
+    {
+      "type": "checkbox-radio-hybrid",
+      "label": "Which of these apply to your company? Select all that apply.",
+      "description": "This helps us provide more relevant actions.",
+      "options": [
+        { "label": "We own our buildings", "value": "own_buildings" },
+        { "label": "We rent or lease our buildings", "value": "lease_buildings" },
+        { "label": "Not sure", "value": "not_sure", "exclusive": true },
+        { "label": "Only work from home / co-working space", "value": "remote_only", "exclusive": true }
+      ],
+      "facts": {
+        "defaults": {
+          "owns_buildings": false,
+          "leases_buildings": false,
+          "remote_only": false
+        },
+        "own_buildings": { "owns_buildings": true },
+        "lease_buildings": { "leases_buildings": true },
+        "not_sure": {
+          "owns_buildings": "unknown",
+          "leases_buildings": "unknown",
+          "remote_only": "unknown"
+        },
+        "remote_only": { "remote_only": true }
+      }
+    },
+    {
+      "type": "checkbox-radio-hybrid",
+      "label": "For your leased / rented buildings, which of these apply?",
+      "description": "Understanding your level of control helps us recommend the right actions for your situation.",
+      "show_when": { "leases_buildings": true },
+      "options": [
+        { "label": "We can choose our own electricity/gas suppliers", "value": "utility_control" },
+        { "label": "We control when heating/cooling runs and temperature settings", "value": "operational_control" },
+        { "label": "Neither of the above", "value": "landlord_control", "exclusive": true },
+        { "label": "Not sure", "value": "not_sure", "exclusive": true }
+      ],
+      "facts": {
+        "defaults": {
+          "can_choose_utility_suppliers": false,
+          "has_operational_control": false,
+          "landlord_controlled_only": false
+        },
+        "utility_control": { "can_choose_utility_suppliers": true },
+        "operational_control": { "has_operational_control": true },
+        "landlord_control": { "landlord_controlled_only": true },
+        "not_sure": {
+          "can_choose_utility_suppliers": "unknown",
+          "has_operational_control": "unknown",
+          "landlord_controlled_only": "unknown"
+        }
+      }
+    },
+    {
+      "type": "multi-select",
+      "label": "Which of these building types do you own or operate?",
+      "description": "This helps us provide more relevant actions.",
+      "show_when": { "any": [{ "owns_buildings": true }, { "leases_buildings": true }] },
+      "options_ref": "BUILDING_TYPE_OPTIONS",
+      "fact": "building_types"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Is your electricity already renewable or do you have a plan in place to achieve that?",
+      "description": "Renewables can be from onsite generation, PPAs or green tariffs.",
+      "show_when": { "any": [{ "owns_buildings": true }, { "leases_buildings": true }] },
+      "fact": "has_renewable_electricity"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Does your company own or lease any vehicles?",
+      "description": "Company cars, vans, trucks, or other vehicles used for business purposes. Vehicles for commuting owned by employees comes later.",
+      "hide_when": { "scope_1_mobile_relevant": "not_applicable" },
+      "fact": "has_company_vehicles"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Would you like to include actions to reduce emissions from your suppliers?",
+      "description": "This includes emissions from the production of goods and services you purchase.",
+      "unknowable": false,
+      "hide_when": { "cat_1_relevant": "not_applicable" },
+      "fact": "interested_in_supplier_actions"
+    },
+    {
+      "type": "multi-select",
+      "label": "Which of the following supply chain areas are of interest?",
+      "show_when": { "interested_in_supplier_actions": true },
+      "hide_when": { "cat_1_relevant": "not_applicable" },
+      "options_ref": "SUPPLY_CHAIN_CHALLENGE_OPTIONS",
+      "fact": "supply_chain_challenges"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do you buy big-ticket items like equipment, machinery, or buildings?",
+      "hide_when": { "cat_2_relevant": "not_applicable" },
+      "fact": "purchases_capital_goods"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do suppliers deliver materials or products to your business?",
+      "hide_when": { "cat_4_relevant": "not_applicable" },
+      "fact": "receives_supplier_deliveries"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do you use delivery companies to ship your products to customers?",
+      "hide_when": { "cat_9_relevant": "not_applicable" },
+      "fact": "ships_products_to_customers"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Does your business produce any waste that gets disposed of or recycled?",
+      "hide_when": { "cat_5_relevant": "not_applicable" },
+      "fact": "produces_waste"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do your employees travel for work-related purposes?",
+      "hide_when": { "cat_6_relevant": "not_applicable" },
+      "fact": "employees_travel_for_work"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Does this include flying for work?",
+      "show_when": { "employees_travel_for_work": true },
+      "hide_when": { "cat_6_relevant": "not_applicable" },
+      "fact": "travel_includes_flying"
+    },
+    {
+      "type": "checkbox-radio-hybrid",
+      "label": "Do you have employees who commute to a workplace or who work from home?",
+      "hide_when": { "cat_7_relevant": "not_applicable" },
+      "options": [
+        { "label": "Commute", "value": "commute" },
+        { "label": "Work from home", "value": "wfh" }
+      ],
+      "facts": {
+        "defaults": {
+          "has_commuting_employees": false,
+          "has_remote_workers": false
+        },
+        "commute": { "has_commuting_employees": true },
+        "wfh": { "has_remote_workers": true }
+      }
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do any of your products use energy or fuel when customers use them?",
+      "hide_when": { "cat_11_relevant": "not_applicable" },
+      "fact": "products_consume_energy_in_use"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do any of your products, or their packaging, need to be disposed of or recycled?",
+      "hide_when": { "cat_12_relevant": "not_applicable" },
+      "fact": "products_require_disposal"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Does your company have any significant investments, provide financing, or manage money for others?",
+      "hide_when": { "cat_15_relevant": "not_applicable" },
+      "fact": "has_significant_investments"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do you want to include ideas for engagement with other stakeholders (e.g. industry and regulators)?",
+      "fact": "interested_in_stakeholder_engagement"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do you want to include ideas for engaging customers and clients on sustainability?",
+      "fact": "interested_in_customer_engagement"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do you want to include actions that help create a culture of sustainability?",
+      "fact": "interested_in_sustainability_culture"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do you want to include sustainability learning and development actions for employees?",
+      "fact": "interested_in_employee_learning"
+    },
+    {
+      "type": "boolean_state",
+      "label": "Do you want actions for senior leadership and the board?",
+      "fact": "interested_in_leadership_actions"
+    },
+    {
+      "type": "checkbox-radio-hybrid",
+      "label": "Which of these are your key priorities?",
+      "options": [
+        { "label": "Actions that save money", "value": "save_money" },
+        { "label": "Finding new growth opportunities", "value": "growth" },
+        { "label": "Focusing on actions that have a large impact", "value": "large_impact" },
+        { "label": "Finding options that are quick to implement", "value": "quick_wins" }
+      ],
+      "facts": {
+        "defaults": {
+          "priority_save_money": false,
+          "priority_growth": false,
+          "priority_large_impact": false,
+          "priority_quick_wins": false
+        },
+        "save_money": { "priority_save_money": true },
+        "growth": { "priority_growth": true },
+        "large_impact": { "priority_large_impact": true },
+        "quick_wins": { "priority_quick_wins": true }
+      }
+    },
+    {
+      "type": "checkbox-radio-hybrid",
+      "label": "Are you particularly interested in any of these areas?",
+      "options": [
+        { "label": "Biodiversity and nature", "value": "nature" },
+        { "label": "Carbon removal and offsets", "value": "carbon_removals" },
+        { "label": "Sustainability reporting", "value": "disclosure" },
+        { "label": "Water conservation", "value": "water" },
+        { "label": "Climate risk management", "value": "risk_management" },
+        { "label": "Corporate social responsibility", "value": "csr" }
+      ],
+      "facts": {
+        "defaults": {
+          "interested_in_nature": false,
+          "interested_in_carbon_removals": false,
+          "interested_in_disclosure": false,
+          "interested_in_water": false,
+          "interested_in_risk_management": false,
+          "interested_in_csr": false
+        },
+        "nature": { "interested_in_nature": true },
+        "carbon_removals": { "interested_in_carbon_removals": true },
+        "disclosure": { "interested_in_disclosure": true },
+        "water": { "interested_in_water": true },
+        "risk_management": { "interested_in_risk_management": true },
+        "csr": { "interested_in_csr": true }
+      }
+    }
+  ]
+}
