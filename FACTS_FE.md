@@ -59,113 +59,123 @@ Validation errors are returned to the FE. A blob that fails validation can be sa
 
 ### Facts Datasets
 ```
-GET    /admin/facts_datasets/live          — the live blob + test cases
-GET    /admin/facts_datasets/draft         — the current draft blob + test cases
-POST   /admin/facts_datasets/draft         — create new draft (copies live)
-PATCH  /admin/facts_datasets/draft         — save draft blob (validated)
-DELETE /admin/facts_datasets/draft         — delete the draft
-POST   /admin/facts_datasets/draft/publish — validate, run test cases, go live if all pass
+GET    /admin/facts_datasets/live          — the live dataset (404 if none)
+GET    /admin/facts_datasets/draft         — the current draft (404 if none)
+POST   /admin/facts_datasets/draft         — create draft from live (returns existing draft if one exists)
+PATCH  /admin/facts_datasets/draft         — update draft data + test_cases (locked write, validated)
+DELETE /admin/facts_datasets/draft         — delete the draft (404 if none)
+POST   /admin/facts_datasets/draft/publish — promote draft to live, archive old live (404 if no draft/live)
 ```
+
+PATCH expects `{ data: {...}, test_cases: [...] }` in the request body.
 
 No separate API for constants, facts, questions, or rules — everything is managed through the blob.
 
-## Dataset blob structure
+## API response shape
 
-The blob returned by `GET /admin/facts_datasets/live` (or `/draft`) has this shape:
+All endpoints return a `facts_dataset` wrapper:
 
 ```json
 {
-  "data": {
-    "facts": {
-      "has_company_vehicles": {
-        "type": "boolean_state",
-        "core": true,
-        "category": "transport-travel",
-        "enabled": true
-      },
-      "size": {
-        "type": "enum",
-        "core": true,
-        "values_ref": "business_size"
-      },
-      "industries": {
-        "type": "array",
-        "core": true,
-        "values_ref": "industry"
-      }
+  "facts_dataset": {
+    "id": 1,
+    "status": "live",
+    "data": { ... },
+    "test_cases": [ ... ]
+  }
+}
+```
+
+POST draft returns `201 Created`, all others return `200 OK`. Errors return `404` (not found) with `{ "error": { "type": "facts_dataset_not_found", ... } }`.
+
+## Dataset blob structure
+
+The `data` field contains the facts engine blob:
+
+```json
+{
+  "facts": {
+    "has_company_vehicles": {
+      "type": "boolean_state",
+      "core": true,
+      "category": "transport-travel",
+      "enabled": true
     },
-    "questions": [
-      {
-        "type": "boolean_state",
-        "label": "Does your company own or lease any vehicles?",
-        "description": "Company cars, vans, trucks...",
-        "fact": "has_company_vehicles",
-        "hide_when": { "scope_1_mobile_relevant": "not_applicable" }
-      },
-      {
-        "type": "checkbox-radio-hybrid",
-        "label": "Which of these apply to your company?",
-        "options": [
-          { "label": "We own our buildings", "value": "own_buildings" },
-          { "label": "We rent or lease", "value": "lease_buildings" },
-          { "label": "Not sure", "value": "not_sure", "exclusive": true }
-        ],
-        "facts": {
-          "defaults": { "owns_buildings": false, "leases_buildings": false },
-          "own_buildings": { "owns_buildings": true },
-          "lease_buildings": { "leases_buildings": true },
-          "not_sure": { "owns_buildings": "unknown", "leases_buildings": "unknown" }
-        }
-      }
-    ],
-    "rules": [
-      {
-        "sets": "uses_buildings",
-        "value": true,
-        "source": "general",
-        "when": { "any": [{ "owns_buildings": true }, { "leases_buildings": true }] }
-      },
-      {
-        "sets": "scope_1_mobile_relevant",
-        "value": "not_applicable",
-        "source": "hotspot",
-        "when": { "industries": [1, 3, 7] }
-      }
-    ],
-    "constants": {
-      "industry": [
-        { "id": 1, "name": "Advertising", "description": null, "enabled": true },
-        { "id": 2, "name": "Broadcasting", "description": null, "enabled": true }
-      ],
-      "business_size": [
-        { "id": 1, "name": "Self Employed", "description": "Sole traders", "enabled": true },
-        { "id": 2, "name": "Small", "description": "10-50 employees", "enabled": true }
-      ]
+    "size": {
+      "type": "enum",
+      "core": true,
+      "values_ref": "business_size"
     },
-    "action_conditions": {
-      "action_key_1": {
-        "enabled": true,
-        "include_when": { "cat_6_relevant": true, "travel_includes_flying": true },
-        "exclude_when": {},
-        "dismiss_options": [
-          { "label": "We don't fly for work", "sets": { "travel_includes_flying": false } },
-          { "label": "Not relevant right now", "sets": null }
-        ]
-      },
-      "action_key_2": {
-        "enabled": true,
-        "include_when": { "uses_buildings": true, "size": [3, 4, 5] },
-        "exclude_when": { "remote_only": true }
-      }
+    "industries": {
+      "type": "array",
+      "core": true,
+      "values_ref": "industry"
     }
   },
-  "test_cases": [
+  "questions": [
     {
-      "name": "Small advertising agency",
-      "input_facts": { "size": 2, "industries": [1], "owns_buildings": true },
-      "expected_actions": ["action_key_1", "action_key_2"]
+      "type": "boolean_state",
+      "label": "Does your company own or lease any vehicles?",
+      "description": "Company cars, vans, trucks...",
+      "fact": "has_company_vehicles",
+      "hide_when": { "scope_1_mobile_relevant": "not_applicable" }
+    },
+    {
+      "type": "checkbox-radio-hybrid",
+      "label": "Which of these apply to your company?",
+      "options": [
+        { "label": "We own our buildings", "value": "own_buildings" },
+        { "label": "We rent or lease", "value": "lease_buildings" },
+        { "label": "Not sure", "value": "not_sure", "exclusive": true }
+      ],
+      "facts": {
+        "defaults": { "owns_buildings": false, "leases_buildings": false },
+        "own_buildings": { "owns_buildings": true },
+        "lease_buildings": { "leases_buildings": true },
+        "not_sure": { "owns_buildings": "unknown", "leases_buildings": "unknown" }
+      }
     }
-  ]
+  ],
+  "rules": [
+    {
+      "sets": "uses_buildings",
+      "value": true,
+      "source": "general",
+      "when": { "any": [{ "owns_buildings": true }, { "leases_buildings": true }] }
+    },
+    {
+      "sets": "scope_1_mobile_relevant",
+      "value": "not_applicable",
+      "source": "hotspot",
+      "when": { "industries": [1, 3, 7] }
+    }
+  ],
+  "constants": {
+    "industry": [
+      { "id": 1, "name": "Advertising", "description": null, "enabled": true },
+      { "id": 2, "name": "Broadcasting", "description": null, "enabled": true }
+    ],
+    "business_size": [
+      { "id": 1, "name": "Self Employed", "description": "Sole traders", "enabled": true },
+      { "id": 2, "name": "Small", "description": "10-50 employees", "enabled": true }
+    ]
+  },
+  "action_conditions": {
+    "action_key_1": {
+      "enabled": true,
+      "include_when": { "cat_6_relevant": true, "travel_includes_flying": true },
+      "exclude_when": {},
+      "dismiss_options": [
+        { "label": "We don't fly for work", "sets": { "travel_includes_flying": false } },
+        { "label": "Not relevant right now", "sets": null }
+      ]
+    },
+    "action_key_2": {
+      "enabled": true,
+      "include_when": { "uses_buildings": true, "size": [3, 4, 5] },
+      "exclude_when": { "remote_only": true }
+    }
+  }
 }
 ```
 
@@ -203,6 +213,22 @@ Each action key maps to `enabled`, `include_when` (conditions that must be met),
 
 ### show_when / hide_when
 Questions can have `show_when` (only display when condition met) and `hide_when` (suppress when condition met). Same condition shapes as rules. `hide_when` takes priority over `show_when`.
+
+### Test cases
+
+The `test_cases` field is a JSON array of regression tests, stored alongside the blob:
+
+```json
+[
+  {
+    "name": "Small advertising agency",
+    "input_facts": { "size": 2, "industries": [1], "owns_buildings": true },
+    "expected_actions": ["action_key_1", "action_key_2"]
+  }
+]
+```
+
+Test cases travel with the dataset — they're copied when a draft is created.
 
 ## Admin workflow
 
