@@ -328,10 +328,8 @@ Leaning toward recompute. But storing makes "which companies have X" queries eas
 - [ ] Rule evaluation engine (apply rules to a set of input facts)
 - [ ] Action filtering engine (apply action conditions to determine relevant actions)
 
-### Test cases + diffing
+### Test cases
 - [ ] Test runner command (evaluate test cases against a dataset)
-- [ ] Dataset diff command (compare two datasets)
-- [ ] Admin endpoints for test + diff
 
 ### Actions
 - [x] Add Action model and migration
