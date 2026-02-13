@@ -55,7 +55,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2AlpNmU8pUnbfD"
   },
   {
     "title": "Create role specific sustainability training programmes",
@@ -69,7 +70,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1LnW8zmaUOjXQ6"
   },
   {
     "title": "Implement the TNFD Framework",
@@ -80,7 +82,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLYhvxWdIkUxAZ2"
   },
   {
     "title": "Support the UN SDGs",
@@ -92,7 +95,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWJUsgOzPrszWsv"
   },
   {
     "title": "Educate customers about key industry climate issues",
@@ -114,7 +118,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec55Kg2PJRtmvCV9"
   },
   {
     "title": "Design for durability and longevity",
@@ -137,7 +142,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUnKhsVAAsXjMqs"
   },
   {
     "title": "Sell locally produced products",
@@ -152,7 +158,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recM8nsnbKXEEOjBb"
   },
   {
     "title": "Ground efficiency programme for aircraft taxiing",
@@ -170,7 +177,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recR7MEyfz2n5HYyi"
   },
   {
     "title": "Plug-in electric power and pre-conditioned air at aircraft stands",
@@ -188,7 +196,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwFmu2PlEzk3PCb"
   },
   {
     "title": "Air traffic control efficiency",
@@ -205,7 +214,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recogxhgyqpbqvGyo"
   },
   {
     "title": "Electrify homes with renewable powered efficient products",
@@ -224,7 +234,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczo6jTO7ivoOci7"
   },
   {
     "title": "Choose the most sustainable options for clients",
@@ -242,7 +253,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recnImSbGOaFn2kmu"
   },
   {
     "title": "Decarbonise swimming pools",
@@ -260,7 +272,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciQBGGNXtvZ2o05"
   },
   {
     "title": "Water-efficient shower head replacement programme",
@@ -278,7 +291,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recgXrhANueqtIuW6"
   },
   {
     "title": "Recycle or redeploy old equipment",
@@ -292,7 +306,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsSPYXkbArEGUHm"
   },
   {
     "title": "Metered Dose Inhaler (MDI) evaluation and reduction",
@@ -311,7 +326,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recHt0Z1Y2PaqDz06"
   },
   {
     "title": "Install telematics and engine management systems",
@@ -325,7 +341,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recA4oiBLO2BACkQv"
   },
   {
     "title": "Anaesthetic gas reduction programme in healthcare",
@@ -344,7 +361,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciwF0UsViIx2RDH"
   },
   {
     "title": "Water conservation and efficiency design",
@@ -367,7 +385,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recG6umLyo2KsjU21"
   },
   {
     "title": "Strategic selection of low-carbon materials to minimize embodied emissions in building construction",
@@ -394,7 +413,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recqANBR3ZzcosdNA"
   },
   {
     "title": "Prioritise adaptive reuse and refurbishment over demolition and new construction to reduce embodied carbon",
@@ -420,7 +440,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recf7ZaoSR2nAd37Y"
   },
   {
     "title": "Use mass timber as a low-carbon alternative to concrete and steel in building structures",
@@ -444,7 +465,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recnxkEc9wUZnBFRF"
   },
   {
     "title": "Design and construct all-electric buildings to eliminate onsite fossil fuel combustion",
@@ -467,7 +489,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdDaKJajBY2LaUK"
   },
   {
     "title": "Integrate energy and carbon reduction into projects through efficiency and material optimization",
@@ -493,7 +516,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrjUz0DHtyWzU91"
   },
   {
     "title": "Start an office composting program",
@@ -508,7 +532,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBnfk9J34v0BWn7"
   },
   {
     "title": "Follow circular designs for office spaces",
@@ -534,7 +559,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciLGnvze3x6V3By"
   },
   {
     "title": "Customer training on efficient equipment operation",
@@ -551,7 +577,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOQGZyXiqsSlHWn"
   },
   {
     "title": "Maximise equipment utilisation",
@@ -568,7 +595,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "receDv1qkAMsbUTNt"
   },
   {
     "title": "Implement rigorous equipment maintenance programme",
@@ -584,7 +612,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdYyVnBTusHRuig"
   },
   {
     "title": "Identify and audit high risk suppliers",
@@ -595,7 +624,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMoXUowwSKfIxZh"
   },
   {
     "title": "Source critical minerals responsibly",
@@ -611,7 +641,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOw3H5cPC8Zvrhn"
   },
   {
     "title": "Carbon capture for industrial processes",
@@ -632,7 +663,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2ajBAO1Uhd7xWj"
   },
   {
     "title": "Move to electric arc furnace for steel",
@@ -646,7 +678,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1vSqC52F0DgHn1"
   },
   {
     "title": "Reduce plastic waste in healthcare",
@@ -670,7 +703,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTTvm0mk4Wpf5JV"
   },
   {
     "title": "Increase sales of EVs",
@@ -690,7 +724,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxbbWWwNOnRYq1I"
   },
   {
     "title": "Support the build out of EV charging networks",
@@ -704,7 +739,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recJ874d2JH9WmEox"
   },
   {
     "title": "Recondition vehicles for reuse",
@@ -727,7 +763,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recerqvZyIkCHR02g"
   },
   {
     "title": "Replace school transport with electric alternatives",
@@ -748,7 +785,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rect9BxAEAMOM72wi"
   },
   {
     "title": "Upgrade window blinds",
@@ -756,7 +794,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFQs9dTgc1XpyOJ"
   },
   {
     "title": "Integrate eco themes into clubs and activities",
@@ -768,7 +807,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec43Z8bthZaQkY7a"
   },
   {
     "title": "Conduct student voice sessions on climate change",
@@ -787,7 +827,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec74apsEfOi6SKXN"
   },
   {
     "title": "Create a Sustainability Lead role",
@@ -802,7 +843,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckcIGoWGFPmqJrQ"
   },
   {
     "title": "Promote second hand including uniforms",
@@ -821,7 +863,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjHoiaH95lA0cJO"
   },
   {
     "title": "Conduct nature and wildlife walks",
@@ -835,7 +878,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec4RqO4HrtRhR32p"
   },
   {
     "title": "Collaborate with other schools",
@@ -854,7 +898,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDLk2GhJDU5jyUA"
   },
   {
     "title": "Provide students with green careers advice",
@@ -869,7 +914,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0a8W09dhQxciUd"
   },
   {
     "title": "Add environmental education to the curriculum",
@@ -883,7 +929,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZmWnooxO77HxYN"
   },
   {
     "title": "Create a student led sustainability club",
@@ -897,7 +944,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSinA03gA32crDv"
   },
   {
     "title": "Include sustainability criteria in procurement tenders",
@@ -910,7 +958,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recri1lLqH0byRqKK"
   },
   {
     "title": "Train employees on energy monitoring",
@@ -924,7 +973,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectehsYmrBLE6LIY"
   },
   {
     "title": "Add nuclear power to the renewable mix",
@@ -940,7 +990,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recmwhqBsX6H0NVCC"
   },
   {
     "title": "Put bison on the land",
@@ -953,7 +1004,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczTx7pn1mSeAKxA"
   },
   {
     "title": "Reduce guest emissions at holiday rentals and campsites",
@@ -968,7 +1020,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTz5zCp33sbAd3J"
   },
   {
     "title": "Manage refrigerants in air conditioning and heat pumps",
@@ -979,7 +1032,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYoaWDyyui3GCds"
   },
   {
     "title": "Make space for nature",
@@ -1010,7 +1064,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpVtbPtLuhDqtmZ"
   },
   {
     "title": "Follow sustainable pasture management practices",
@@ -1026,7 +1081,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjN1ejW04EoJt7U"
   },
   {
     "title": "Ensure manure is managed sustainably on a small holding",
@@ -1042,7 +1098,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMugbYnzUhTmhqY"
   },
   {
     "title": "Reduce carbon emissions in equestrian facilities",
@@ -1062,7 +1119,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recqnZGTEiX58na51"
   },
   {
     "title": "Create a programme to educate members on sustainability",
@@ -1084,7 +1142,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec3TvkEYYnkhNtnE"
   },
   {
     "title": "Make it easier for consumers to make more sustainable decision",
@@ -1108,7 +1167,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec48osI0O9HHWIK5"
   },
   {
     "title": "Promote replacement over repair",
@@ -1125,7 +1185,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZQDeKVXbWVFzq3"
   },
   {
     "title": "Add ESG risk assessment to underwriting",
@@ -1145,7 +1206,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdOwa99MiDGcmzv"
   },
   {
     "title": "Encourage individual sites to create their climate plans",
@@ -1159,7 +1221,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsP88vgx4oRIgMH"
   },
   {
     "title": "Find closed loop packaging solutions",
@@ -1195,7 +1258,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recf2wuP19QDpZt4M"
   },
   {
     "title": "Increase use of recycled content in packaging",
@@ -1253,7 +1317,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recB7pXXrAipJERcK"
   },
   {
     "title": "Create a climate change adaptation and resilience programme",
@@ -1267,7 +1332,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2PWw0yOSQcrtPo"
   },
   {
     "title": "Implement a business support programme for energy efficiency and low carbon investments",
@@ -1283,7 +1349,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpWNIdc3Ot0yD7m"
   },
   {
     "title": "Run green festivals and events to raise awareness",
@@ -1301,7 +1368,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2RLz3Y4MxaUO46"
   },
   {
     "title": "Shift refuse fleet to electric",
@@ -1317,7 +1385,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recutH5Llsh2swpig"
   },
   {
     "title": "Sign PPAs and VPPAs to secure long term renewable energy",
@@ -1330,7 +1399,8 @@
       "has_renewable_electricity": false
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFwMFuIV6Wzt9q1"
   },
   {
     "title": "Launch a customer education programme to reduce emissions",
@@ -1374,7 +1444,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recH6Yp5XvE520OX2"
   },
   {
     "title": "Minimise the environmental impacts of anaesthetic gases in veterinary practices",
@@ -1385,7 +1456,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recL5YYH9uQOkSah8"
   },
   {
     "title": "Reduce single use plastic - Veterinary Services",
@@ -1396,7 +1468,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rece65EMqzhjrlhLc"
   },
   {
     "title": "Install heat pumps for industrial process heat",
@@ -1446,7 +1519,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfxAe080I9o3FV4"
   },
   {
     "title": "Find lower emissions feed for livestock",
@@ -1457,7 +1531,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recn1l23Pi6AV5pJz"
   },
   {
     "title": "Add to the carbon stock with trees and hedgerows",
@@ -1475,7 +1550,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6l8y9mvfAgUKez"
   },
   {
     "title": "Improve tractor and machinery fuel efficiency",
@@ -1494,7 +1570,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciQJa5jNv0DSUxY"
   },
   {
     "title": "Energy efficiency ideas for arable farmers",
@@ -1511,7 +1588,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvclp19keOWHHK4"
   },
   {
     "title": "Energy efficiency ideas for dairy farmers",
@@ -1527,7 +1605,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recPNCOiu4Or3Hpzl"
   },
   {
     "title": "Improve farm building energy efficiency",
@@ -1546,7 +1625,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBMxD31VsuZznhB"
   },
   {
     "title": "Improve energy efficiency in farm processing buildings",
@@ -1565,7 +1645,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recc9Xe33p7M3gI0M"
   },
   {
     "title": "Reduce fuel consumption from farm vehicles and machinery",
@@ -1584,7 +1665,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechDV8SU5snKjQvN"
   },
   {
     "title": "Research government support that's available",
@@ -1592,7 +1674,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5NoBHRunm6xsyt"
   },
   {
     "title": "Set up a Sustainability Taskforce",
@@ -1606,7 +1689,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1MNQJGpcTf14ad"
   },
   {
     "title": "Engage landlords on energy efficiency",
@@ -1620,7 +1704,8 @@
       "landlord_controlled_only": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUTqqmnKEzI9YWW"
   },
   {
     "title": "Optimise floor occupancy",
@@ -1634,7 +1719,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recoSe13WekPuiyuu"
   },
   {
     "title": "Support environment disaster recovery and relief",
@@ -1649,7 +1735,8 @@
       "interested_in_csr": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6IrMT5OcI2iXUM"
   },
   {
     "title": "Transition heavy goods vehicles to electric",
@@ -1741,7 +1828,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvlPj6FztkLsvGU"
   },
   {
     "title": "Convert material handling equipment to electric power",
@@ -1814,7 +1902,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYfRuoV9u0a52Pa"
   },
   {
     "title": "Phase out petrol powered outdoor equipment",
@@ -1839,7 +1928,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recR0Qi15NmKnCv01"
   },
   {
     "title": "Create an end of life programme for products (B2B)",
@@ -1876,7 +1966,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5PwN9LpQvVSDYX"
   },
   {
     "title": "Add carbon footprint or environmental labels to B2B products",
@@ -1919,7 +2010,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recijR6ks3eArfsn9"
   },
   {
     "title": "Source lower carbon components",
@@ -1954,7 +2046,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbByWoY7TPkqWBH"
   },
   {
     "title": "Set science based targets and achieve verification (SBTi)",
@@ -1966,7 +2059,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWWdBgytqhbdv5E"
   },
   {
     "title": "Input into government consultations",
@@ -1981,7 +2075,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recq49DTPIMKhlLJ4"
   },
   {
     "title": "Install home charging for electric fleet",
@@ -2005,7 +2100,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSd3OvTMMMic7NF"
   },
   {
     "title": "Add CO2 capture to industrial facilities",
@@ -2038,7 +2134,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSwuxSYtgMxJVSH"
   },
   {
     "title": "Water treatment energy efficiency improvements",
@@ -2053,7 +2150,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec7gfxEKLPbQGWH7"
   },
   {
     "title": "Improve plastic sorting and recycling at industrial recycling facilities",
@@ -2067,7 +2165,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recmGb85QoEBABHGv"
   },
   {
     "title": "Methane capture at landfill sites",
@@ -2081,7 +2180,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recHIE47FNATCCfKH"
   },
   {
     "title": "Provide options for more greener funerals",
@@ -2092,7 +2192,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFVWG3lPQzUypLa"
   },
   {
     "title": "Provide tenants with carbon reports",
@@ -2110,7 +2211,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recIDYE2LYXEPkYgw"
   },
   {
     "title": "Review the new supplier process",
@@ -2122,7 +2224,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recK8eUTcTnv2QcjY"
   },
   {
     "title": "Ensure efficient heating and hot water",
@@ -2138,7 +2241,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCx6t06ypudO9BX"
   },
   {
     "title": "Implement a Green Purchasing Policy",
@@ -2150,7 +2254,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recoRQbtHnZy7lboQ"
   },
   {
     "title": "10 ways for outdoor events and festivals to go green",
@@ -2170,7 +2275,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGBinriUmcZ4r8D"
   },
   {
     "title": "Switch to eco-friendly cleaning products",
@@ -2210,7 +2316,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbA29rjRfA0Cehg"
   },
   {
     "title": "Reduce food waste in hospitality",
@@ -2229,7 +2336,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxxOt0x33HGiN5i"
   },
   {
     "title": "Get started with a waste recycling and reduction plan",
@@ -2241,7 +2349,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5WBLq6OpzZYaPn"
   },
   {
     "title": "Switch to energy efficient appliances",
@@ -2263,7 +2372,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWHIPcB3tJ2Zr1O"
   },
   {
     "title": "Provide locally sourced food and drink",
@@ -2295,7 +2405,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectuBlma6xLNH6mm"
   },
   {
     "title": "Regularly share sustainability plans with colleagues",
@@ -2310,7 +2421,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec96QWHxLircNPBL"
   },
   {
     "title": "Review top suppliers",
@@ -2318,7 +2430,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9F6llY3v6GsFXh"
   },
   {
     "title": "Install passive solution to reduce HVAC needs",
@@ -2329,7 +2442,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recg58rt3KqhluyJH"
   },
   {
     "title": "Switch to renewables for all purchased electricity",
@@ -2341,7 +2455,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckXf6AytRQkXSBF"
   },
   {
     "title": "10 ways for independent bookshops to go green",
@@ -2361,7 +2476,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recx6n5vayfgPsIXK"
   },
   {
     "title": "Support deposit return scheme for plastic bottles",
@@ -2379,7 +2495,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectN8zantUjkyl1o"
   },
   {
     "title": "No new conversion of peatlands",
@@ -2396,7 +2513,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWt6oeo2XFxZp53"
   },
   {
     "title": "Implement environmental policies",
@@ -2408,7 +2526,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYnGySQ4Ph8AadQ"
   },
   {
     "title": "Reformulate products to use lower GHG ingredients",
@@ -2423,7 +2542,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec7RHdCH93844YAS"
   },
   {
     "title": "End installation of gas boilers",
@@ -2438,7 +2558,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrudWKm2Qe97ya5"
   },
   {
     "title": "Install solar panels on residential properties",
@@ -2453,7 +2574,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recikmhKoWNs8Hdls"
   },
   {
     "title": "Create tailored plans to help homeowners cut energy bills",
@@ -2476,7 +2598,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczGLwlJ5uGoCJy2"
   },
   {
     "title": "Big steps for churches",
@@ -2494,7 +2617,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reculhUSvDpvWXYNM"
   },
   {
     "title": "Intermediate steps for churches",
@@ -2512,7 +2636,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXV91KFW5UjVDqh"
   },
   {
     "title": "Small steps for churches",
@@ -2530,7 +2655,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recd44B1wT0vcTXyr"
   },
   {
     "title": "Support local suppliers in the food supply chain",
@@ -2554,7 +2680,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfNBMpzOEegcWOF"
   },
   {
     "title": "Develop alternatives to soy for animal feed",
@@ -2573,7 +2700,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZ7VRZnFePY4ZvJ"
   },
   {
     "title": "Support second hand to extend product lifecycles",
@@ -2597,7 +2725,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recyqVvj8IQ99e7CT"
   },
   {
     "title": "Improve energy efficiency across food retail stores",
@@ -2617,7 +2746,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNODfqr3DL9VIf4"
   },
   {
     "title": "Implement route optimisation software",
@@ -2728,7 +2858,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recnCSh1fb4flBYH0"
   },
   {
     "title": "Deploy smart charging fleet software",
@@ -2834,7 +2965,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwoWTfgwP8AIdAa"
   },
   {
     "title": "Provide driver efficiency technologies",
@@ -2941,7 +3073,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSvHOXU1FIR2yHE"
   },
   {
     "title": "Convert bus fleet to electric",
@@ -2958,7 +3091,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0LfTSyDFfQct8p"
   },
   {
     "title": "As a transportation company drive the modal shift to public transport",
@@ -2976,7 +3110,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5mBYJYbDW6ieyX"
   },
   {
     "title": "Expand offerings of energy efficient products",
@@ -2999,7 +3134,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1mGXEo3Nw1w4gF"
   },
   {
     "title": "Research the strategic opportunities that sustainability offers",
@@ -3011,7 +3147,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recR6OCVMWoAG5mV1"
   },
   {
     "title": "Engage with external investment managers",
@@ -3024,7 +3161,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechfSevYEDLqld7d"
   },
   {
     "title": "Create a framework that allows clear communication of the climate transition plan",
@@ -3039,7 +3177,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recuqcQj1fwbF8hY7"
   },
   {
     "title": "Collect information on product usage",
@@ -3074,7 +3213,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvHNogWjcGisvn9"
   },
   {
     "title": "Convene a working group to find 3 ways AI can help cut carbon emissions",
@@ -3087,7 +3227,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechdS6qcONlacM1d"
   },
   {
     "title": "Implement waste management software",
@@ -3098,7 +3239,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFbEPmxRU8QLCTD"
   },
   {
     "title": "Get teams to take the 10 tonne challenge",
@@ -3111,7 +3253,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6HPhVtYfL0ugoC"
   },
   {
     "title": "Improve appliance and electronics repair options",
@@ -3132,7 +3275,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjcTVznieo7AlOa"
   },
   {
     "title": "Reduce plastic use in household durables",
@@ -3152,7 +3296,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxolQpyuMUIkkoU"
   },
   {
     "title": "Increase use of recycled content in household durables",
@@ -3170,7 +3315,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAlHm3oaaQeJUQl"
   },
   {
     "title": "Adopt specialised software for emissions reporting",
@@ -3181,7 +3327,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec70ZGZ4P5vebcFF"
   },
   {
     "title": "Mandatory climate change risk assessment for business banking clients",
@@ -3197,7 +3344,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0dFuvF3aErkXOp"
   },
   {
     "title": "Conduct an employee engagement survey on sustainability",
@@ -3212,7 +3360,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLJ1WVPiJqjIGXO"
   },
   {
     "title": "Set company wide carbon budgets",
@@ -3224,7 +3373,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec36iCNX8SjtmJFZ"
   },
   {
     "title": "Implement systems to reduce CO2, N2O, CH4 leakage",
@@ -3241,7 +3391,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGjk22FGmXhL0SS"
   },
   {
     "title": "Deploy nitrous oxide capture technology",
@@ -3258,7 +3409,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2FQd2SXlhZfWee"
   },
   {
     "title": "Quantify avoided emissions from products and services",
@@ -3272,7 +3424,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recIY3siwqorB8Agv"
   },
   {
     "title": "Upgrade mobile and fixed line network equipment",
@@ -3291,7 +3444,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZpIT0HXMLufAKc"
   },
   {
     "title": "Develop plans for extreme weather events",
@@ -3299,7 +3453,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAIsrDUzEqS0s4s"
   },
   {
     "title": "Mitigate flood damage",
@@ -3315,7 +3470,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCJRZ5RaXbqgLOt"
   },
   {
     "title": "Improve drainage systems to reduce flooding",
@@ -3338,7 +3494,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recyUSj2IRpEbdSZh"
   },
   {
     "title": "Measure and track emissions intensity of investments",
@@ -3350,7 +3507,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0Q9mCbZFSHG9CX"
   },
   {
     "title": "Implement a voting policy that supports net zero",
@@ -3371,7 +3529,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCOF0o7Ugk5iaQj"
   },
   {
     "title": "Development of sector-specific engagement strategies for high-emission industries",
@@ -3392,7 +3551,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recVvj4uhNziPhEZK"
   },
   {
     "title": "Build climate change scorecards to prioritise portfolio company engagement",
@@ -3413,7 +3573,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recC5BKmcbQvuCQO5"
   },
   {
     "title": "Integrate climate risk into all investment decisions",
@@ -3425,7 +3586,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec779qUbAlSVfRnT"
   },
   {
     "title": "Develop targeted engagement approach for sovereign issuers",
@@ -3446,7 +3608,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZmAELR6Ru2Sglm"
   },
   {
     "title": "Participate in the Climate Action 100+",
@@ -3467,7 +3630,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recmMTbyxpsGGoR0F"
   },
   {
     "title": "Engage customers to raise awareness about investment impacts",
@@ -3488,7 +3652,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0seQVKB090xrwS"
   },
   {
     "title": "Implement exclusions for high carbon sectors across investment portfolios",
@@ -3501,7 +3666,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBYFhnhGHUDFMAr"
   },
   {
     "title": "Engage with portfolio companies",
@@ -3513,7 +3679,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recu8tpgPatCGOPwc"
   },
   {
     "title": "Use drop shipping to cut transportation emissions",
@@ -3534,7 +3701,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfrWYmUNbgYuJNB"
   },
   {
     "title": "Eliminate foam from packaging",
@@ -3560,7 +3728,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recKQLFOWfbmxa0KB"
   },
   {
     "title": "Source animal by products sustainably for consumer products",
@@ -3583,7 +3752,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recj5d39lWLhBI0nQ"
   },
   {
     "title": "Source cotton sustainably",
@@ -3599,7 +3769,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpPY4z9emnBUdLU"
   },
   {
     "title": "Issue green finance",
@@ -3609,7 +3780,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0JjhIiWnjvzrcn"
   },
   {
     "title": "Reduce waste to landfill from production",
@@ -3683,7 +3855,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rech0fgeboQLfqFAs"
   },
   {
     "title": "Build fossil fuel free production facilities",
@@ -3753,7 +3926,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recV035JSsbupTaPX"
   },
   {
     "title": "Innovation in forestry management",
@@ -3767,7 +3941,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec8nyPlqIM0jueN5"
   },
   {
     "title": "Ensure forestry operations follow best practice for sustainability",
@@ -3781,7 +3956,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCzHKpdfyHXnQrg"
   },
   {
     "title": "Using nature based solutions to mitigate extreme weather risks",
@@ -3792,7 +3968,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMAtWQFcjXiU0Yz"
   },
   {
     "title": "Increase availability of spare parts for repair (B2C)",
@@ -3828,7 +4005,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbJJIJnW6NhH5al"
   },
   {
     "title": "Accelerate electrification at suppliers",
@@ -3839,7 +4017,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rece8SKcyV0fepcZe"
   },
   {
     "title": "Sustainable materials - increase use of renewable and recycled feedstock for paper",
@@ -3854,7 +4033,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec41OYguzkPvdFQk"
   },
   {
     "title": "Reduce polyurethane use in B2C products",
@@ -3872,7 +4052,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjaUFJY6sQlhXWM"
   },
   {
     "title": "Move to low carbon wood bonding for furniture",
@@ -3890,7 +4071,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recmDV073KO0ilI61"
   },
   {
     "title": "Provide green energy services to customers (B2C)",
@@ -3909,7 +4091,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recq0CogVWLQZNAC3"
   },
   {
     "title": "Make sustainable material choices in construction",
@@ -3931,7 +4114,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGFWDqhPJks2xnj"
   },
   {
     "title": "Invest in renewable energy generation",
@@ -3942,7 +4126,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRPC4kirM05dGJt"
   },
   {
     "title": "Build a supply chain resilience program",
@@ -3954,7 +4139,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recVOKNMl6uvlUoLv"
   },
   {
     "title": "Get emissions assured",
@@ -3967,7 +4153,8 @@
       "interested_in_disclosure": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recn0Gxzs7d2UrAue"
   },
   {
     "title": "Encourage business customers to procure renewable energy",
@@ -3979,7 +4166,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recqPTawiLh2hAfoa"
   },
   {
     "title": "Adopt alternative fuels for process gases",
@@ -3993,7 +4181,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxfOQB9bdAAGZHe"
   },
   {
     "title": "Electrification of industrial equipment",
@@ -4037,7 +4226,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdwhit6KXwyryGD"
   },
   {
     "title": "10 ways for a small construction or building company to go green",
@@ -4060,7 +4250,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZ3UJyMzxlyyR2Z"
   },
   {
     "title": "10 ways for a convenience store or corner shop to go green",
@@ -4082,7 +4273,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGqn9QTnVV3qQDF"
   },
   {
     "title": "10 ways for a hair salon or barbers to go green",
@@ -4104,7 +4296,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recP6aGAaSIqVFTHG"
   },
   {
     "title": "10 ways for estate agents and realtors to go green",
@@ -4125,7 +4318,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recqabhleZlLU2qot"
   },
   {
     "title": "Implement a sustainable benefits programme for employees",
@@ -4139,7 +4333,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccytJVIhmHxpWOb"
   },
   {
     "title": "Promote PPA market expansion",
@@ -4156,7 +4351,8 @@
       "has_renewable_electricity": false
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNY43Py8uzyhL5M"
   },
   {
     "title": "Accelerate heat pump rollout",
@@ -4172,7 +4368,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recF1myEsCMCISGfY"
   },
   {
     "title": "Build new homes with reduced energy demand",
@@ -4195,7 +4392,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbfGg87Sljq9VeC"
   },
   {
     "title": "Implement comprehensive governance framework for sustainability",
@@ -4206,7 +4404,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccCum6us6Xc8Rsp"
   },
   {
     "title": "Provide home operation guides",
@@ -4226,7 +4425,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclqujsUDFGz0rDj"
   },
   {
     "title": "Implement Passive House Building Standards",
@@ -4247,7 +4447,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDwZ5qByVSDeOB1"
   },
   {
     "title": "Implementation of reusable transport materials for B2B",
@@ -4323,7 +4524,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recE9Wkkrln4KcruA"
   },
   {
     "title": "Reduce tillage or shift to no tillage",
@@ -4337,7 +4539,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recw9etghbDpjdrHU"
   },
   {
     "title": "Improve on farm energy efficiency",
@@ -4352,7 +4555,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWzwmVreDkTGFm6"
   },
   {
     "title": "Develop a livestock building management program",
@@ -4372,7 +4576,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recJuaKZRt1p0UfYs"
   },
   {
     "title": "Establish a soil contamination prevention and monitoring system",
@@ -4392,7 +4597,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recK4aQyAOfQVXwVZ"
   },
   {
     "title": "Implement a phosphorus loss reduction strategy",
@@ -4412,7 +4618,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNpYGxwJnP5LAOM"
   },
   {
     "title": "Execute liquid waste disposal management",
@@ -4432,7 +4639,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOU5CEO4EnAdhJG"
   },
   {
     "title": "Perform a storage capacity assessment",
@@ -4452,7 +4660,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recPclEFRxtqismY5"
   },
   {
     "title": "Establish a soil risk assessment and management system",
@@ -4472,7 +4681,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recQRzPI105ZQF7g5"
   },
   {
     "title": "Implement a fertilizer application program",
@@ -4486,7 +4696,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recROwWqOtRCZRxWP"
   },
   {
     "title": "Execute protected crop and nursery management systems",
@@ -4506,7 +4717,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRpWruInlpfQQyv"
   },
   {
     "title": "Create an integrated farm management plan",
@@ -4527,7 +4739,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSBj0jEnS87JoOZ"
   },
   {
     "title": "Develop a comprehensive nutrient management system",
@@ -4548,7 +4761,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recS2384yFau9V4j4"
   },
   {
     "title": "Establish a livestock field management system",
@@ -4568,7 +4782,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recS44fidG1iBBIDO"
   },
   {
     "title": "Develop a farm water resource management program",
@@ -4590,7 +4805,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSaqonOVlistXey"
   },
   {
     "title": "Design livestock manure storage and management protocols",
@@ -4610,7 +4826,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclwOeqQw9gkmWwg"
   },
   {
     "title": "Complete field-based manure management planning",
@@ -4630,7 +4847,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recnjXa2V1cXJJcHF"
   },
   {
     "title": "Develop specialized horticulture environmental management",
@@ -4650,7 +4868,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recq0ulMej7YGadiu"
   },
   {
     "title": "Establish a peat soil conservation program",
@@ -4670,7 +4889,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrh13iz75ehaGSA"
   },
   {
     "title": "Execute nitrogen application timing optimization",
@@ -4690,7 +4910,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxA7n2lcJamuhiU"
   },
   {
     "title": "Implement a farm waste management system",
@@ -4703,7 +4924,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBeZaNsk2V54WzK"
   },
   {
     "title": "Complete a building infrastructure inspection program",
@@ -4724,7 +4946,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFRWhTkuiFmjjhF"
   },
   {
     "title": "Implement a silage storage management system",
@@ -4744,7 +4967,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUKrHVpIgQgpNK0"
   },
   {
     "title": "Establish an organic matter management program",
@@ -4757,7 +4981,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUrUtMfGDSNwxnm"
   },
   {
     "title": "Conduct a field nitrogen risk assessment",
@@ -4777,7 +5002,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWgfbVqxDrzF1uu"
   },
   {
     "title": "Implement integrated crop protection planning",
@@ -4797,7 +5023,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXZgUwgHanL0eJS"
   },
   {
     "title": "Deliver on farm staff training and communication programs",
@@ -4819,7 +5046,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2J0iLvGCSp0LO5"
   },
   {
     "title": "Deploy a fertilizer storage risk management program",
@@ -4839,7 +5067,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5IwXM9XnmaK0fv"
   },
   {
     "title": "Establish a sheep dip facility management system",
@@ -4859,7 +5088,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec7QprwsNBIJXB4E"
   },
   {
     "title": "Conduct a local environment risk assessment",
@@ -4880,7 +5110,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec7iH5feeNC6jQ4t"
   },
   {
     "title": "Follow the most common on farm sustainability practices",
@@ -4894,7 +5125,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec7kWiPBh54hmwnw"
   },
   {
     "title": "Implement a soil pH management system",
@@ -4914,7 +5146,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOOvO0J1iE2Mo9n"
   },
   {
     "title": "Program to reduce medical waste",
@@ -4933,7 +5166,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvyJSkf03sRYHAn"
   },
   {
     "title": "Require suppliers to achieve net zero",
@@ -4944,7 +5178,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recImfFV30iNMgEs8"
   },
   {
     "title": "Program to reduce emissions through digital care delivery",
@@ -4964,7 +5199,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTPscDs5RZLfrCQ"
   },
   {
     "title": "Reduce single-use plastics in clinical settings",
@@ -4984,7 +5220,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recL1QZ8ZxTzr9E15"
   },
   {
     "title": "Implementation of bio-based polymers in medical products",
@@ -5005,7 +5242,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTMDrXaY1q56rG8"
   },
   {
     "title": "Install sub metering for detailed insight into energy use",
@@ -5021,7 +5259,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccPvaKX54GArHDH"
   },
   {
     "title": "Decarbonise the train network",
@@ -5039,7 +5278,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recgXw5imZyVADJq8"
   },
   {
     "title": "Create a program to increase local sourcing of materials and services",
@@ -5047,7 +5287,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLQYOgnQygfVnkm"
   },
   {
     "title": "Initiative to improve operational efficiency of investment properties",
@@ -5060,7 +5301,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recL3tGhrrSCtTSlG"
   },
   {
     "title": "Perform transition risk analysis",
@@ -5072,7 +5314,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recx8lzxVZC04kWDy"
   },
   {
     "title": "Use carbon footprint models for construction and infrastructure projects",
@@ -5094,7 +5337,8 @@
       "cat_2_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recJgOaMiY6Axqvlm"
   },
   {
     "title": "Invest in CCS for hydrogen",
@@ -5110,7 +5354,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recoHnPJDb4yWceel"
   },
   {
     "title": "Commit to deforestation-free supply chain for high risk materials",
@@ -5137,7 +5382,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvvpd6Z55Oh2tPC"
   },
   {
     "title": "Require suppliers to document environmental policies",
@@ -5148,7 +5394,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbLuMwd7gKuRxGR"
   },
   {
     "title": "Implement ISO 50001 energy management standard",
@@ -5159,7 +5406,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRiLUweGNeg246B"
   },
   {
     "title": "Restore biodiversity in areas affected by operations and supply chain",
@@ -5170,7 +5418,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recuFINiWSpEikqcf"
   },
   {
     "title": "Join the UN Global Compact",
@@ -5181,7 +5430,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYJBmElDSpjU8Cb"
   },
   {
     "title": "Sustainable soy sourcing",
@@ -5201,7 +5451,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recKdTbU2PAWDTTQG"
   },
   {
     "title": "Research into lower GHG feedstocks in agriculture",
@@ -5216,7 +5467,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recQS3P4PdCbK1OMW"
   },
   {
     "title": "Reduce emissions in food preparation and catering - ventilation, heating, lighting",
@@ -5229,7 +5481,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recyVMS8gbzEWgmIz"
   },
   {
     "title": "Reduce emissions in food preparation and catering - refrigeration",
@@ -5242,7 +5495,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCcn3C874FGvG95"
   },
   {
     "title": "Hospitality walk around checklists",
@@ -5262,7 +5516,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1qBxKTFhH52OWX"
   },
   {
     "title": "Reduce emissions in food preparation and catering - washing",
@@ -5275,7 +5530,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccuOqYTgVPait2q"
   },
   {
     "title": "Reduce emissions in food preparation and catering - cooking equipment",
@@ -5288,7 +5544,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRm7XC2nw0klq9B"
   },
   {
     "title": "Support smallholder farmers",
@@ -5308,7 +5565,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recl8APkWZLwTUcgL"
   },
   {
     "title": "Develop skincare products from plant-based residues",
@@ -5320,7 +5578,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccKKhPg3q7slehe"
   },
   {
     "title": "Build a circular economy product programme",
@@ -5382,7 +5641,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAJUdNFelYOpbRg"
   },
   {
     "title": "Measure the carbon impact of productions",
@@ -5397,7 +5657,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechHs9i6NvrnHINZ"
   },
   {
     "title": "Implement sustainable materials standards for set construction",
@@ -5409,7 +5670,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recN1KYimDYjrhJwB"
   },
   {
     "title": "Implement energy-saving practices for stage lighting",
@@ -5427,7 +5689,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSxb6Vs2J7lErhD"
   },
   {
     "title": "Source props through sustainable channels",
@@ -5439,7 +5702,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec30VwglmczLmIAi"
   },
   {
     "title": "Initiative to source costumes from reuse and recycling channels",
@@ -5454,7 +5718,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recKbE0dVP0pnPWNp"
   },
   {
     "title": "Replacement or enhancement of single-glazed windows",
@@ -5462,7 +5727,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckbwIQURpwGrKzR"
   },
   {
     "title": "Seal air leaks and draughts throughout buildings",
@@ -5470,7 +5736,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recosdf33XDybC2MZ"
   },
   {
     "title": "Improve building insulation",
@@ -5478,7 +5745,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbWuo5uwWXNLXlL"
   },
   {
     "title": "Involve audiences in sustainability efforts",
@@ -5504,7 +5772,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6mnfxIeyDXQtiz"
   },
   {
     "title": "Follow sustainable cleaning practices",
@@ -5516,7 +5785,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recb8QHZEbGksWpGN"
   },
   {
     "title": "Monitor energy use",
@@ -5528,7 +5798,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recK2tRLSOYsTgH28"
   },
   {
     "title": "Reduce visitor travel emissions",
@@ -5558,7 +5829,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recaSznZKLNXUBpz7"
   },
   {
     "title": "Improve access to sustainable product information online",
@@ -5640,7 +5912,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciUTJGTqa7EmYwz"
   },
   {
     "title": "Establish a climate change support fund",
@@ -5651,7 +5924,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5lpuwwoshF3d5k"
   },
   {
     "title": "Sustainable materials - increase use of recycled wood or wood from sustainable forests",
@@ -5673,7 +5947,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGIKr0tkvBMf9Zf"
   },
   {
     "title": "Make space for nature by improving biodiversity at own sites",
@@ -5681,7 +5956,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbkquDT5Y7oL3p9"
   },
   {
     "title": "Develop biodiversity risk assessment",
@@ -5692,7 +5968,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYrrpD1zWFgyrTw"
   },
   {
     "title": "Implement responsible mining practices",
@@ -5712,7 +5989,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDzapeQygWNitnz"
   },
   {
     "title": "Sustainable materials - increase use of lower carbon chemicals and bio based alternatives",
@@ -5734,7 +6012,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec57OwckdnN6Tzw9"
   },
   {
     "title": "Phase out all coal usage",
@@ -5766,7 +6045,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recevn10yIpMuXSl1"
   },
   {
     "title": "Build product carbon footprints at scale",
@@ -5841,7 +6121,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec4HYsptnpH1LO81"
   },
   {
     "title": "Implement traceability for key raw materials",
@@ -5910,7 +6191,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZ6SKPfiwHA73Si"
   },
   {
     "title": "Implement renewable heat solutions",
@@ -5921,7 +6203,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2qo9QcagAh8Yrj"
   },
   {
     "title": "Become ISO 15001 certified [Legacy Action]",
@@ -5932,7 +6215,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5L5RHGGKQSSJIV"
   },
   {
     "title": "Sustainable materials - increase use of plastic alternatives and lower carbon plastics in products",
@@ -5980,7 +6264,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recH9Ypwm9XqzCgTD"
   },
   {
     "title": "Sustainable materials - increase use of recycled and more sustainably produced metals",
@@ -6015,7 +6300,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMweTyblk32zrQZ"
   },
   {
     "title": "SDG integration and alignment",
@@ -6026,7 +6312,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMVkznRexveHSjT"
   },
   {
     "title": "Heat recovery system enhancement",
@@ -6069,7 +6356,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recroocvW9XDlnLbW"
   },
   {
     "title": "Install voltage optimisation",
@@ -6082,7 +6370,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5mPxICVnF1QXkS"
   },
   {
     "title": "10 fast start actions to decarbonise the supply chain",
@@ -6095,7 +6384,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrwTSfx6i172lnv"
   },
   {
     "title": "Make it easier for customers to make sustainable choices online",
@@ -6126,7 +6416,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCWjvepItCyppvU"
   },
   {
     "title": "Make plant based products an integral part of new product ranges",
@@ -6146,7 +6437,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFtiKb2My4FT3aX"
   },
   {
     "title": "Install Combined Heat and Power (CHP) systems",
@@ -6163,7 +6455,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwpmL7LW21BtKSS"
   },
   {
     "title": "Improve efficiency of compressed air systems",
@@ -6241,7 +6534,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recl01zNlMUg4HFVE"
   },
   {
     "title": "Provide product carbon footprints (PCFs) for clients and customers",
@@ -6316,7 +6610,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXWxYSsE9y8UdKa"
   },
   {
     "title": "Integration of green chemistry principles into product development and formulation",
@@ -6341,7 +6636,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDsA8WMWCEOAdLX"
   },
   {
     "title": "Sustainable store design programme",
@@ -6367,7 +6663,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjbQPqGThclvRnE"
   },
   {
     "title": "Dedicated capital fund for climate action",
@@ -6378,7 +6675,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXMNMDxUOQ1o4GG"
   },
   {
     "title": "Innovate with product formats to use more concentrated formulas and lower emissions materials",
@@ -6400,7 +6698,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGECioZZanew0ZX"
   },
   {
     "title": "Use free online carbon calculators to measure emissions",
@@ -6413,7 +6712,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5xw1cHywm1Tz2L"
   },
   {
     "title": "Provide pro bono climate services to small companies and NGOs working towards climate solutions",
@@ -6431,7 +6731,8 @@
       "interested_in_csr": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recH4tE8KXSZBJ6I9"
   },
   {
     "title": "Measure and reduce advised emissions",
@@ -6451,7 +6752,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclLu2hbg9DQcSUf"
   },
   {
     "title": "Report carbon emissions to CDP (Enterprise)",
@@ -6462,7 +6764,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5qmK19kvLt4hAR"
   },
   {
     "title": "Join key initiatives in the legal sector",
@@ -6473,7 +6776,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczeIGJcQ2zwz1LC"
   },
   {
     "title": "Follow low carbon farming practices",
@@ -6485,7 +6789,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGGQ8FmgMwzpbis"
   },
   {
     "title": "Implement refrigerant maintenance and leak management",
@@ -6538,7 +6843,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recKQThe4VtDMJhes"
   },
   {
     "title": "Use the office rental checklist for new leases",
@@ -6557,7 +6863,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recn1D1em7Pe8W1QQ"
   },
   {
     "title": "Source and sell food and drink products with eco labels",
@@ -6570,7 +6877,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec4BQnBL3ko8OVgQ"
   },
   {
     "title": "Source and sell consumer products with eco labels",
@@ -6589,7 +6897,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9ZpERqgULVmOW7"
   },
   {
     "title": "Sell only sustainable peat",
@@ -6600,7 +6909,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1ihRp9YnrK7mAB"
   },
   {
     "title": "Source fish sustainably",
@@ -6616,7 +6926,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1CY2w01oJHaqeG"
   },
   {
     "title": "Provide lower carbon meat products",
@@ -6631,7 +6942,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUJjwZvZfMVvhUL"
   },
   {
     "title": "Remove harmful chemicals from products",
@@ -6647,7 +6959,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recHGYomlANz0IOa1"
   },
   {
     "title": "Support sustainable farming",
@@ -6667,7 +6980,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsNYcpBrUbMZlst"
   },
   {
     "title": "Install biomethane plants on farm",
@@ -6683,7 +6997,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recJWRIOTvCcUXV00"
   },
   {
     "title": "Create circular economy services",
@@ -6701,7 +7016,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recnsCAiP2bzjEH4C"
   },
   {
     "title": "Run a community volunteering program",
@@ -6716,7 +7032,8 @@
       "interested_in_csr": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2fXgyxrgWEL4oy"
   },
   {
     "title": "Stock more sustainable products in stores",
@@ -6740,7 +7057,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recPKOc9EI3je4TAb"
   },
   {
     "title": "Encourage the switch to renewables for home working",
@@ -6748,7 +7066,8 @@
       "cat_7_wfh_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxnSzNu4LqwkfCK"
   },
   {
     "title": "Support tree planting, forest protection and restoration projects",
@@ -6756,7 +7075,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdIJM3zlVlzbH0L"
   },
   {
     "title": "Build a carbon offsetting strategy",
@@ -6769,7 +7089,8 @@
       "interested_in_carbon_removals": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTGx4YSf0IHNMFf"
   },
   {
     "title": "Provide repair services for apparel and footwear",
@@ -6784,7 +7105,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUK7T3ahzOztXjO"
   },
   {
     "title": "Launch clothing buy-back and resale program",
@@ -6804,7 +7126,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recC84K1jUktLknF4"
   },
   {
     "title": "Implementation of eco design for modular homes",
@@ -6824,7 +7147,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWKCncvo2AsWH6M"
   },
   {
     "title": "Initiative to expand sustainable and climate-aligned investment products",
@@ -6853,7 +7177,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDdCdASkUSzung6"
   },
   {
     "title": "Create and implement a deforestation investment policy",
@@ -6878,7 +7203,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recHtHGbHwlYPXGSF"
   },
   {
     "title": "Build new homes to net zero standards",
@@ -6904,7 +7230,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recVyrWSqPX2jNXv6"
   },
   {
     "title": "Real Estate net zero commitment",
@@ -6923,7 +7250,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recv1yAX8MPA7DzsI"
   },
   {
     "title": "Provide employees with thermal imaging equipment to identify heat loss",
@@ -6935,7 +7263,8 @@
       "cat_7_wfh_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec8TDoNX9tWaH5TJ"
   },
   {
     "title": "Portfolio engagement program for high emitting companies and sectors",
@@ -6962,7 +7291,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recf7PkjWy7dTVWWu"
   },
   {
     "title": "Reduce the carbon emissions from portfolio holdings",
@@ -6975,7 +7305,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUXdManGlXv1bTl"
   },
   {
     "title": "Create and implement a Fossil Fuel Divestment Policy",
@@ -7000,7 +7331,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczlC8hNNznA7dey"
   },
   {
     "title": "Upgrade boiler facilities to use low carbon fuels",
@@ -7039,7 +7371,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsrmj14YmCq0E1p"
   },
   {
     "title": "Review the sustainability of financial services providers",
@@ -7051,7 +7384,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjvXWRKhgzlqOOJ"
   },
   {
     "title": "Review the sustainability of office supplies",
@@ -7097,7 +7431,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec299o41By3ggxRc"
   },
   {
     "title": "Help employees reduce their digital carbon footprints",
@@ -7112,7 +7447,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recW7rzPIGURvDAaQ"
   },
   {
     "title": "Assess the sustainability of co-working spaces and serviced offices",
@@ -7121,7 +7457,8 @@
       "remote_only": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recoIQsHH95L9JZPj"
   },
   {
     "title": "Review the sustainability of key professional service providers",
@@ -7129,7 +7466,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recb7eNIEmEwhZVcB"
   },
   {
     "title": "Initiate a client environmental review process",
@@ -7163,7 +7501,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recW7HpQZPqlRhg7z"
   },
   {
     "title": "Support more sustainable behaviours in advertising",
@@ -7180,7 +7519,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsDMJHjLTGUuIMs"
   },
   {
     "title": "Build and run a supplier engagement programme",
@@ -7195,7 +7535,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGQRBUC6FCbKGUZ"
   },
   {
     "title": "Integrate sustainability into supplier assessments",
@@ -7212,7 +7553,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1bhpLAnfNuQ8xa"
   },
   {
     "title": "Conduct an assessment of the supply chain",
@@ -7224,7 +7566,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGOVyW4HMNy9twd"
   },
   {
     "title": "Create a Green Marketing policy",
@@ -7236,7 +7579,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvpJ8XVAb6CfCYv"
   },
   {
     "title": "Ensure all teams have at least one climate KPI in their objectives",
@@ -7250,7 +7594,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLEgddeYOTcIKgz"
   },
   {
     "title": "Select hotels and accommodation with clear sustainability criteria",
@@ -7261,7 +7606,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recz5fXckn12DVMGb"
   },
   {
     "title": "Raise awareness about sustainable tourism",
@@ -7274,7 +7620,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpKkpmpHabllTHW"
   },
   {
     "title": "Support local community and nature projects at travel destinations",
@@ -7294,7 +7641,8 @@
       "interested_in_csr": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckgUetNzsnBuUhT"
   },
   {
     "title": "Find sustainable local operators for guest trips",
@@ -7307,7 +7655,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccp8ehIXTe5HQG2"
   },
   {
     "title": "Promote short haul travel",
@@ -7328,7 +7677,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCfticy8rQ5bqdU"
   },
   {
     "title": "Eliminate branded merchandise or make it sustainable",
@@ -7373,7 +7723,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recVr2BiEwBtmB64c"
   },
   {
     "title": "Create dedicated sustainable trip options",
@@ -7389,7 +7740,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec83Xa4d58bxgOu5"
   },
   {
     "title": "Build the roadmap for a Net Zero Trip",
@@ -7410,7 +7762,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec56cpaqUpUvH1p3"
   },
   {
     "title": "Write and publish a Climate Transition Plan",
@@ -7418,7 +7771,8 @@
       "interested_in_disclosure": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLLUr2adfafrv8s"
   },
   {
     "title": "Measure emissions in the travel industry using industry specific tools and standards",
@@ -7434,7 +7788,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbWKYuIGFuaOT9n"
   },
   {
     "title": "Implement a comprehensive sustainability strategy in the Travel Industry",
@@ -7451,7 +7806,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwK3nwCQOhO9LEb"
   },
   {
     "title": "Reduce compute in the cloud",
@@ -7463,7 +7819,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recV52H6IgZcNfqPt"
   },
   {
     "title": "Review software providers to ensure alignment with sustainability goals",
@@ -7476,7 +7833,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccltx1UAXragH4V"
   },
   {
     "title": "Review cloud service providers for renewable usage",
@@ -7508,7 +7866,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGoF3Ic5P2cCavQ"
   },
   {
     "title": "Create a list of external factors that transitioning planning depends on",
@@ -7520,7 +7879,8 @@
       "interested_in_disclosure": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbLoU7jJNZTdRG9"
   },
   {
     "title": "Provide more sustainable options for food in the workplace",
@@ -7534,7 +7894,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrtvPK5dIvcMb1f"
   },
   {
     "title": "Create a strategy to reduce business travel emissions",
@@ -7549,7 +7910,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec7sVYfWjRPuV0Ii"
   },
   {
     "title": "Advocate for policies that support net zero",
@@ -7564,7 +7926,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZ5DDXBK7UOc2YE"
   },
   {
     "title": "Build and run a sustainable supply chain programme (Enterprise)",
@@ -7576,7 +7939,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRha1phaESRQh6E"
   },
   {
     "title": "Design products for sustainability",
@@ -7624,7 +7988,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTZwNG2AdhZGsvn"
   },
   {
     "title": "Implement full energy efficiency program",
@@ -7636,7 +8001,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recw4iRD1V9vxl9ZW"
   },
   {
     "title": "Switch to renewables for all purchased electricity (Enterprise)",
@@ -7652,7 +8018,8 @@
       "has_renewable_electricity": false
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfEy4R6xDpZgWL1"
   },
   {
     "title": "Set a medium and long term target to reduce emissions from all company activities (Scope 1,2&3)",
@@ -7660,7 +8027,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recw9gdV8dvzbLrAG"
   },
   {
     "title": "Set a medium and long term target to reduce emissions from own operations (Scope 1 & 2)",
@@ -7668,7 +8036,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recEcs84tRn36KCv1"
   },
   {
     "title": "Train employees on emissions measurement and reporting",
@@ -7681,7 +8050,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec7h2E97hwOZCez8"
   },
   {
     "title": "Create a first product carbon footprint (PCF)",
@@ -7696,7 +8066,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec8wfUlUUxoggHRs"
   },
   {
     "title": "Develop a waste reduction strategy for own operations",
@@ -7708,7 +8079,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recn9syDE03IvwV2w"
   },
   {
     "title": "Make all packaging recyclable",
@@ -7760,7 +8132,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZ7wYeyedZiMQ7v"
   },
   {
     "title": "Use free online resources to build sustainability knowledge",
@@ -7768,7 +8141,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6SJt940Yoxt8lg"
   },
   {
     "title": "Introduce reuse and refill systems in store",
@@ -7783,7 +8157,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvPAFALdwLUIlTD"
   },
   {
     "title": "Large-scale smart water meter installation program",
@@ -7798,7 +8173,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recmGWCX9PQpR867K"
   },
   {
     "title": "Improve monitoring of methane and nitrous oxide",
@@ -7812,7 +8188,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recY3An5OBTnfRh3k"
   },
   {
     "title": "Reducing fugitive emissions - biomethane capture and use",
@@ -7827,7 +8204,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recszrmXGmtQaArrT"
   },
   {
     "title": "Waste management - use bioresources in agriculture",
@@ -7842,7 +8220,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxz7DG8LG3Y4Wqt"
   },
   {
     "title": "Engaging communities in water saving efforts",
@@ -7857,7 +8236,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recc7hYGV2kdsXuMv"
   },
   {
     "title": "Natural landscape-scale solutions to improve water quality and supply",
@@ -7871,7 +8251,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6lplwuhZ8CdkNF"
   },
   {
     "title": "Peatland restoration",
@@ -7884,7 +8265,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbDLjvq1eJGpm28"
   },
   {
     "title": "Reducing water leakage from distribution systems",
@@ -7899,7 +8281,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recgw26yB7e0lAbRc"
   },
   {
     "title": "Plant trees on own lands and estate",
@@ -7918,7 +8301,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrGeeS3nzkjFA3C"
   },
   {
     "title": "Reduce guest travel emissions",
@@ -7935,7 +8319,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recmuCTDVjUeIhmy6"
   },
   {
     "title": "Report publicly on sustainability performance and progress (Enterprise)",
@@ -7946,7 +8331,8 @@
       "interested_in_disclosure": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recM9r2Nu5UmH0POA"
   },
   {
     "title": "Report publicly on sustainability performance and progress",
@@ -7959,7 +8345,8 @@
       "interested_in_disclosure": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMzegtR4U0myD9d"
   },
   {
     "title": "Report publicly on sustainability performance and progress",
@@ -7971,7 +8358,8 @@
       "interested_in_disclosure": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMzegtR4U0myD9d"
   },
   {
     "title": "Set targets for upstream and downstream distribution reductions",
@@ -8009,7 +8397,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recJ7HTdB2IdMprSX"
   },
   {
     "title": "Transition to alternative fuels for fleet that cannot be electrified",
@@ -8021,7 +8410,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recb7DekFbtGtUjwV"
   },
   {
     "title": "Improve vehicle maintenance plans",
@@ -8038,7 +8428,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdxcxugeb9WL1cu"
   },
   {
     "title": "Create a policy for grey fleet vehicles",
@@ -8051,7 +8442,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recU59ZjRJI8st8sJ"
   },
   {
     "title": "Optimise loading and packaging",
@@ -8099,7 +8491,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclinwuTdIpBcyAT"
   },
   {
     "title": "Provide green delivery options to customers",
@@ -8136,7 +8529,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec23KgqgTlerE41R"
   },
   {
     "title": "Reduce emissions in last mile delivery",
@@ -8172,7 +8566,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjmXhP9iJRnTAd1"
   },
   {
     "title": "Provide eco-driving training for all drivers",
@@ -8189,7 +8584,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recj2N5245FRyt6cb"
   },
   {
     "title": "Create a Sustainable Commuting and Home Working policy",
@@ -8203,7 +8599,8 @@
       "cat_7_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckNJIekiJ4jatM9"
   },
   {
     "title": "Measure carbon emissions",
@@ -8215,7 +8612,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recgFuz42Is8Akdqh"
   },
   {
     "title": "Collect supplier emissions data",
@@ -8227,7 +8625,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckZ4sGMpYl51tw6"
   },
   {
     "title": "Build senior leadership support",
@@ -8240,7 +8639,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclyAjAyQW00e6aS"
   },
   {
     "title": "Measure carbon emissions (Micro)",
@@ -8252,7 +8652,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXQCrkG0aQmBBmt"
   },
   {
     "title": "Join the SME Climate Hub",
@@ -8266,7 +8667,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0nQa7FpaEfA7mZ"
   },
   {
     "title": "Encouraging suppliers to report food waste data",
@@ -8287,7 +8689,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNbWQ480lbnUXrl"
   },
   {
     "title": "Support suppliers with training on net zero and decarbonization",
@@ -8298,7 +8701,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAuiDFxtrBv2pW8"
   },
   {
     "title": "Encourage SME suppliers to measure emissions and commit to net zero through SME Climate Hub",
@@ -8311,7 +8715,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1SvMjZf2qJitAd"
   },
   {
     "title": "Set a target to increase supplier participation in standardised supply chain questionnaires such as CDP and Ecovadis",
@@ -8322,7 +8727,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMEHlQ30AyC5ID3"
   },
   {
     "title": "Encourage and support suppliers to switch to renewables",
@@ -8334,7 +8740,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfww7rqyYukZQpj"
   },
   {
     "title": "Implementing sustainability standards for new construction",
@@ -8356,7 +8763,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recd1OsYpPC450Ukd"
   },
   {
     "title": "Improve datacenter efficiency",
@@ -8391,7 +8799,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recaNT1Nhc38pUxOm"
   },
   {
     "title": "Developing AI solutions for environmental challenges",
@@ -8421,7 +8830,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9O5dsN51q0OSqF"
   },
   {
     "title": "Build employee understanding of net zero commitments and transition plans",
@@ -8435,7 +8845,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechgeDjJK2gYLfmI"
   },
   {
     "title": "Select delivery providers who use electric vehicles for parcels and packages",
@@ -8446,7 +8857,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDekhCpTsvH3XsN"
   },
   {
     "title": "Join a local business sustainability initiative to collaborate and share best practices",
@@ -8460,7 +8872,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNZN7dIqXyunkKr"
   },
   {
     "title": "Create a small green space or garden on business premises to support local biodiversity",
@@ -8475,7 +8888,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOjuzirLrhyskWk"
   },
   {
     "title": "Create carbon footprint calculators for customers",
@@ -8548,7 +8962,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recly4q4A9Pmi9NEF"
   },
   {
     "title": "Introduce reuse and refill systems for own products",
@@ -8573,7 +8988,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAUVwasdqASA0qY"
   },
   {
     "title": "Increasing use of recycled content in vehicles",
@@ -8590,7 +9006,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccvgQkNdmKBgdbs"
   },
   {
     "title": "Reconditioning used parts for reuse",
@@ -8617,7 +9034,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recaUKp6sG0ZCyCnn"
   },
   {
     "title": "Recycle EV batteries",
@@ -8634,7 +9052,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpe2a396uwZeODL"
   },
   {
     "title": "Reducing emissions from sales and service locations",
@@ -8648,7 +9067,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpOQVFUN8tKXdow"
   },
   {
     "title": "Get sustainability stories into TV, film, PR and advertising",
@@ -8664,7 +9084,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recV7ZriJhr3oAynd"
   },
   {
     "title": "Join key initiatives in the media and advertising sector",
@@ -8681,7 +9102,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recm3RCEOHtC1950S"
   },
   {
     "title": "Reduce guest emissions at hotels",
@@ -8703,7 +9125,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdURnh7fldrOBcy"
   },
   {
     "title": "Use the Green Hospitality checklist",
@@ -8715,7 +9138,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciFemeRYyP3nw60"
   },
   {
     "title": "Develop sustainable building products",
@@ -8733,7 +9157,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwBq5AtM3ORSFvn"
   },
   {
     "title": "Recycle construction demolition materials",
@@ -8750,7 +9175,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGodZbLouIdMe45"
   },
   {
     "title": "Producing and promoting low-carbon cement",
@@ -8765,7 +9191,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectEX5dGu5AmuSez"
   },
   {
     "title": "Producing and promoting low-carbon concrete",
@@ -8780,7 +9207,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvrwT9N1GIw9lOv"
   },
   {
     "title": "Capturing excess heat from cement kilns",
@@ -8794,7 +9222,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjBX2UprghgdAO5"
   },
   {
     "title": "Increasing use of alternative fuels in cement production",
@@ -8808,7 +9237,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZAwORgj0Hy2GKI"
   },
   {
     "title": "Reducing clinker factor in cement",
@@ -8822,7 +9252,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2Yqmt16xiLYZbM"
   },
   {
     "title": "Setting ambitious SAF usage goal",
@@ -8842,7 +9273,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSViOOootkGfb0i"
   },
   {
     "title": "Securing long-term SAF supply",
@@ -8859,7 +9291,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczTBeWPJQ6LIDUz"
   },
   {
     "title": "Increasing use of sustainable aviation fuel",
@@ -8874,7 +9307,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5AajWwBgDQaH3r"
   },
   {
     "title": "Implementing in-flight fuel saving initiatives",
@@ -8890,7 +9324,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBO8RgxClrN39Dk"
   },
   {
     "title": "Introduce new fuel-efficient aircraft",
@@ -8906,7 +9341,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recaUIHrZXeweSZ65"
   },
   {
     "title": "Implementing eco-responsible practices in production of films, TV programmes and adverts",
@@ -8926,7 +9362,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechpSgJS5NuFwVMx"
   },
   {
     "title": "Initiatives to reduce carbon impact of video streaming and programmatic advertising",
@@ -8947,7 +9384,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recekfbj0DMpaq5Yx"
   },
   {
     "title": "Create recover and refurbish programme for IT hardware (as manufacturer)",
@@ -8964,7 +9402,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1Yc9xAmnRmutFO"
   },
   {
     "title": "Recovering precious metals from used catalytic converters",
@@ -8980,7 +9419,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxlOiaS7qyTRC0y"
   },
   {
     "title": "Include instructions on products to help customers reduce use phase emissions",
@@ -9008,7 +9448,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpirgIXD0CXLX9b"
   },
   {
     "title": "Create parcel collection points and improve returns management",
@@ -9032,7 +9473,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDekF7uq65tw3qK"
   },
   {
     "title": "Reduce mixed fiber materials in textile production",
@@ -9053,7 +9495,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsSI7dOVeO81mT1"
   },
   {
     "title": "Implement more environmentally friendly dyeing processes",
@@ -9069,7 +9512,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rececWDPg9RW6fLUN"
   },
   {
     "title": "Offer free energy audits to suppliers to identify potential efficiency measures",
@@ -9080,7 +9524,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDPpEo4Go30Eoze"
   },
   {
     "title": "Improve recycling rates for clothing and textiles",
@@ -9096,7 +9541,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1OcDFfpad8AAtb"
   },
   {
     "title": "Sourcing materials produced using regenerative agricultural practices",
@@ -9117,7 +9563,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczXXXqoS0hURRH2"
   },
   {
     "title": "Increase investments in green social and sustainability bonds",
@@ -9148,7 +9595,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBBWeGhXkhggw1u"
   },
   {
     "title": "Improving energy efficiency of real estate portfolio",
@@ -9172,7 +9620,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGPTTMI2s3KuDVO"
   },
   {
     "title": "Setting targets for net-zero aligned underwriting portfolios",
@@ -9190,7 +9639,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9eRHVlqImYdggA"
   },
   {
     "title": "Build environmental data hub for centralized sustainability data management",
@@ -9201,7 +9651,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6vLumwPDDO1NEi"
   },
   {
     "title": "Conduct climate scenario analysis and stress tests",
@@ -9212,7 +9663,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recanpua3me6FylLt"
   },
   {
     "title": "Commit to manage assets in line with net zero emissions by 2050",
@@ -9231,7 +9683,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechCaryyEXNqhHsu"
   },
   {
     "title": "Develop supply chain finance programs with sustainability criteria",
@@ -9242,7 +9695,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0auDM9IsL4Va5e"
   },
   {
     "title": "Provide loans for improving home energy efficiency",
@@ -9261,7 +9715,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec3UyEtSPSPGioio"
   },
   {
     "title": "Invest in fast-growing climate technology companies",
@@ -9281,7 +9736,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbjSFbOD47fr6Ec"
   },
   {
     "title": "Offer sustainable trade finance products",
@@ -9299,7 +9755,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNPPrcZBr4p12IS"
   },
   {
     "title": "Provide project financing for renewable energy projects",
@@ -9317,7 +9774,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recPaXdIlrrrAP0lb"
   },
   {
     "title": "Offer financial incentives for SME investments in transition initiatives",
@@ -9342,7 +9800,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccUGFG2h6OMFyzi"
   },
   {
     "title": "Provide green loans and sustainability-linked loans",
@@ -9362,7 +9821,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZVFkZLabXXGjd5"
   },
   {
     "title": "Phase out financing of thermal coal-fired power and thermal coal mining",
@@ -9391,7 +9851,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjL0IXvfEmuwNgA"
   },
   {
     "title": "Integrate nature into offices, facilities and campuses",
@@ -9404,7 +9865,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recgVI7Diq6fsMfq1"
   },
   {
     "title": "Improve accuracy of Scope 3 emissions reporting",
@@ -9416,7 +9878,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOkak3JOYVWg0g8"
   },
   {
     "title": "Implementing comprehensive water policies and governance structures",
@@ -9441,7 +9904,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recqnvPnuUxXo9GUS"
   },
   {
     "title": "Support community-based water projects",
@@ -9480,7 +9944,8 @@
       "interested_in_csr": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjK2ZqzkjZgQmSk"
   },
   {
     "title": "Manage the quality of discharged water",
@@ -9532,7 +9997,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsEKTxwKcBGFV7Q"
   },
   {
     "title": "Implement water-efficient agricultural practices",
@@ -9557,7 +10023,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSWvVNZ1dduU9Om"
   },
   {
     "title": "Protect and restore watersheds",
@@ -9602,7 +10069,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCLgVysOMq73ycZ"
   },
   {
     "title": "Promoting water recycling and reuse in operations",
@@ -9696,7 +10164,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6DoPIL7EuyUbaN"
   },
   {
     "title": "Conduct regular water risk assessments",
@@ -9756,7 +10225,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGNiaZ1OPDZcKJ2"
   },
   {
     "title": "Promoting water use efficiency in agricultural supply chain",
@@ -9776,7 +10246,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYMoa0aR9R43DnM"
   },
   {
     "title": "Implement projects to regenerate local water cycles",
@@ -9799,7 +10270,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUBFWcLUqiyIsDV"
   },
   {
     "title": "Certifying sites to AWS standard (Alliance for Water Stewardship)",
@@ -9858,7 +10330,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjNyMZnBXFxfUlU"
   },
   {
     "title": "Reduce food loss and waste throughout the value chain",
@@ -9886,7 +10359,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recIkfUKJBwLq7Zcc"
   },
   {
     "title": "Implement measures to reduce emissions in dairy supply chain",
@@ -9902,7 +10376,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recF3lZNXiw1yMyQG"
   },
   {
     "title": "Sourcing ingredients from farmers adopting regenerative practices",
@@ -9928,7 +10403,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recKlXaCsjaGUHxbq"
   },
   {
     "title": "Increasing provision of low-GHG emissions gases and heat in the gas utilities & distributors industry",
@@ -9942,7 +10418,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLnOTotcPqQQ1rV"
   },
   {
     "title": "Engagement with clients and customers in insurance industry",
@@ -9962,7 +10439,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLsWTx0zHWNpU9Z"
   },
   {
     "title": "Drive long-term uptake of sustainable aviation fuels (SAFs)",
@@ -9982,7 +10460,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRQ6tkdMnGm5U2U"
   },
   {
     "title": "Engagement with value chain to reduce emissions in Technology sector",
@@ -10006,7 +10485,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjZOYFph0JwXpA4"
   },
   {
     "title": "Create insurance policies that support climate action",
@@ -10025,7 +10505,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recnPefK6dahLuLNT"
   },
   {
     "title": "Invest in carbon capture utilisation and storage (CCUS) technologies",
@@ -10050,7 +10531,8 @@
       "interested_in_carbon_removals": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recsUbPJyFRnErlvb"
   },
   {
     "title": "Introduce insurance products and services that support the transition",
@@ -10068,7 +10550,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recuikgid29pxJ53p"
   },
   {
     "title": "Shift consumer choice in airline sector",
@@ -10082,7 +10565,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczsqm8CFci3WboH"
   },
   {
     "title": "Scale the use of zero and low-GHG vehicles (auto manufacturers)",
@@ -10103,7 +10587,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recClAk9zmcIXbPYz"
   },
   {
     "title": "Implementing circular health care and sustainable health care waste management",
@@ -10127,7 +10612,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recD3A3mbLxbw5kvb"
   },
   {
     "title": "Implement circular practices in household durables and electronics",
@@ -10150,7 +10636,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recHBFYJ38yNzhjw8"
   },
   {
     "title": "Advocate for sustainable cities",
@@ -10169,7 +10656,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYhyr1QINVQfgRc"
   },
   {
     "title": "Improve the sustainability of claims management",
@@ -10188,7 +10676,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1hFs9hqwH8CWjn"
   },
   {
     "title": "Advance methane management in gas utilities and distributors",
@@ -10203,7 +10692,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recgrSmIKY5JW45cl"
   },
   {
     "title": "Encourage customers to cut back on gas and electricity usage with demand side programmes",
@@ -10219,7 +10709,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recguQsuXXgkBrvKe"
   },
   {
     "title": "Work with suppliers to reduce emissions and build circularity in automobile and automobile component sectors",
@@ -10236,7 +10727,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciRpKDvY4K71z5A"
   },
   {
     "title": "Reduce waste and excess in marketing materials",
@@ -10247,7 +10739,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recP5jXEpjJgDdMMX"
   },
   {
     "title": "Reduce digital marketing footprint",
@@ -10258,7 +10751,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rech8GaRrKyh2I871"
   },
   {
     "title": "Run an Energy Treasure Hunt",
@@ -10273,7 +10767,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recJNrR2MpGQjBk1r"
   },
   {
     "title": "Educate consumers about water usage",
@@ -10297,7 +10792,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5KmK3Oh3X5XxJ1"
   },
   {
     "title": "Provide EV charging at stores and car parks",
@@ -10340,7 +10836,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZzIrGLTHtCODgG"
   },
   {
     "title": "Install EV charging at workplaces",
@@ -10353,7 +10850,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6v41tMd1w7zPga"
   },
   {
     "title": "Phase out working with fossil fuel extraction companies",
@@ -10388,7 +10886,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2GciUBy4e24Xx5"
   },
   {
     "title": "Implement water conservation measures",
@@ -10396,7 +10895,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recaqsTl3PHj9cAc5"
   },
   {
     "title": "Build climate opportunities into business plans",
@@ -10411,7 +10911,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNKUr8EfENBBc1Z"
   },
   {
     "title": "Run an energy saving awareness campaign",
@@ -10425,7 +10926,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recctAC6GPOZsI9o6"
   },
   {
     "title": "Create a Green Wall to collect employee ideas for company sustainability",
@@ -10440,7 +10942,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDEigpH0ZhjmXXb"
   },
   {
     "title": "Provide a company shuttle service",
@@ -10453,7 +10956,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec24k2SchLESyXcj"
   },
   {
     "title": "Raise sustainability awareness with lunch and learn sessions",
@@ -10468,7 +10972,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXTTTfvaeClTEuS"
   },
   {
     "title": "Create a climate action management committee",
@@ -10479,7 +10984,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recQJUlM8UcqBVosK"
   },
   {
     "title": "Hold a supplier event to share best practice",
@@ -10491,7 +10997,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRBPme61ATDJGhz"
   },
   {
     "title": "Join the EV 100",
@@ -10505,7 +11012,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCyaldnNWmhVS9B"
   },
   {
     "title": "Raise consumer awareness about low carbon and energy efficient devices",
@@ -10527,7 +11035,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recEgB2jGuwrRdJ8i"
   },
   {
     "title": "Help consumers make lower-carbon buying choices",
@@ -10551,7 +11060,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec35hiGNqv1UaeQb"
   },
   {
     "title": "Help consumers keep devices for longer",
@@ -10576,7 +11086,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recyhRrmjhlQumCzc"
   },
   {
     "title": "Replace diesel and petrol stationary generators used for off grid power",
@@ -10603,7 +11114,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUBB90dfjPx4Qos"
   },
   {
     "title": "Improve energy efficiency and optimise energy across network",
@@ -10620,7 +11132,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recu6XWEuYKZrCw1y"
   },
   {
     "title": "Invest in energy efficient office equipment",
@@ -10628,7 +11141,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recuxzOUUWL8oPVlF"
   },
   {
     "title": "Implement a waste reduction and recycling program",
@@ -10640,7 +11154,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec18En5ikiwVxP61"
   },
   {
     "title": "Raise awareness about how to save energy when working from home",
@@ -10648,7 +11163,8 @@
       "cat_7_wfh_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMfJkmypl6xmss4"
   },
   {
     "title": "Provide information and support for employees to make big sustainable switches at home",
@@ -10660,7 +11176,8 @@
       "cat_7_wfh_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNl4VuHGxzkbKdb"
   },
   {
     "title": "Ensure all wood and wood fibre products come from certified sources",
@@ -10683,7 +11200,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5fxSW43zRcoXpL"
   },
   {
     "title": "Only use certified palm oil in food, personal care and household care products",
@@ -10704,7 +11222,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjXHoUUt5yjkCQx"
   },
   {
     "title": "Consolidate deliveries to reduce journeys",
@@ -10715,7 +11234,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recW5jEyFQUNqglVD"
   },
   {
     "title": "Reduce product life cycle impacts in clothing and footwear",
@@ -10733,7 +11253,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec3sFw3sKmI68eny"
   },
   {
     "title": "Collaborate with downstream partners to foster innovations in chemical recycling of long-chain polymers",
@@ -10751,7 +11272,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAFu0RKb2pKzKuF"
   },
   {
     "title": "Support local and national recycling initiatives and collection points",
@@ -10777,7 +11299,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGlPlp6h1MSLRBu"
   },
   {
     "title": "Reduce packaging weight",
@@ -10820,7 +11343,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUGMfv3whjC72qs"
   },
   {
     "title": "Implement new models to improve clothing utilisation",
@@ -10838,7 +11362,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recs64dvJ5Ux877mQ"
   },
   {
     "title": "Run a sustainability challenge to engage a wide audience",
@@ -10852,7 +11377,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZZ7GMGtLeeRSKV"
   },
   {
     "title": "Review industry association climate positions",
@@ -10865,7 +11391,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recQImSjk1aaaDIwg"
   },
   {
     "title": "Advocate for renewable energy and green technology",
@@ -10878,7 +11405,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWdla0A8t4OD7zU"
   },
   {
     "title": "Advocate for policies which remove subsidies which are negatively affecting the net zero transition",
@@ -10889,7 +11417,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1a0Zb1kuNUq4w5"
   },
   {
     "title": "Advocate for policies to support adaptation",
@@ -10900,7 +11429,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWuPLUALHLFxgkQ"
   },
   {
     "title": "Advocate for policies that support climate related consumer protection and awareness",
@@ -10944,7 +11474,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recSzcGqiCv9YWlQY"
   },
   {
     "title": "Advocate for a carbon price",
@@ -10957,7 +11488,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6ObWjdDm5flYgr"
   },
   {
     "title": "Advocate for consistent carbon reporting standards and compulsory reporting",
@@ -10968,7 +11500,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recKd84p1yGXvHBpk"
   },
   {
     "title": "Consider incentives for supply chain to measure and report carbon emissions",
@@ -10979,7 +11512,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbUmvyfgwEfEztX"
   },
   {
     "title": "Ask key suppliers to set science-based targets",
@@ -10993,7 +11527,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTBv8bKQw8MC4MF"
   },
   {
     "title": "Reduce embodied carbon in construction",
@@ -11014,7 +11549,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwNKAGV5Xqp0bGO"
   },
   {
     "title": "Implement energy-efficient and renewable solutions at construction sites",
@@ -11033,7 +11569,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccUCipVvrdepSFd"
   },
   {
     "title": "Support nature based carbon removal solutions",
@@ -11045,7 +11582,8 @@
       "interested_in_carbon_removals": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recmtBCQM5V7BXwkK"
   },
   {
     "title": "Target high emitting medicines in healthcare",
@@ -11067,7 +11605,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recQCjIyqgyV0cNPO"
   },
   {
     "title": "Start a Green Team",
@@ -11082,7 +11621,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCfr2BLRIQgaBVG"
   },
   {
     "title": "Reduce emissions from refrigerated transport and storage",
@@ -11113,7 +11653,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTBpy8n6r1CwBaP"
   },
   {
     "title": "Convert to refrigerants with lower GWP",
@@ -11166,7 +11707,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYkJFTh7ilJo0Fn"
   },
   {
     "title": "Advocate for the widespread adoption of electric vehicles",
@@ -11177,7 +11719,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec4dscEoPwOvSy8J"
   },
   {
     "title": "Prioritise the use of materials with lower carbon footprints for household goods",
@@ -11199,7 +11742,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recNf4AdkFQkWfsEh"
   },
   {
     "title": "Add carbon footprint or eco-labels to consumer facing products",
@@ -11235,7 +11779,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrWYjnc8NgX4HVi"
   },
   {
     "title": "Create products with lower energy consumption in the use phase",
@@ -11277,7 +11822,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczp1P5uhMu2pnYN"
   },
   {
     "title": "Minimise manufacturing waste in clothing and textiles",
@@ -11297,7 +11843,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recyeKMIJCt3PK1Ct"
   },
   {
     "title": "Invest in innovative low-GHG emissions materials for clothing",
@@ -11314,7 +11861,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwlXPzYSenDRHUB"
   },
   {
     "title": "Switch to sustainably sourced materials and fibers",
@@ -11330,7 +11878,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrl58OPsXDro51Z"
   },
   {
     "title": "Identify key climate risks",
@@ -11343,7 +11892,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvwaNI4ezfe1cp2"
   },
   {
     "title": "Follow sustainable technology guidelines for digital products",
@@ -11359,7 +11909,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recV12tyqX9Symn52"
   },
   {
     "title": "Follow a simple 5 step plan to promote sustainability at work",
@@ -11371,7 +11922,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2jily7m670icDY"
   },
   {
     "title": "Introduce contractual clauses with suppliers regarding net zero targets and performance",
@@ -11387,7 +11939,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMXVg9p0PHjv70n"
   },
   {
     "title": "Report on nature following the TFND framework",
@@ -11398,7 +11951,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDVh8TVOVALM98v"
   },
   {
     "title": "Include sustainability training in employee learning and development",
@@ -11413,7 +11967,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwAo4bvIxGt3gcP"
   },
   {
     "title": "Embed sustainability into all communications",
@@ -11427,7 +11982,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfMr8R6OAvACaxV"
   },
   {
     "title": "Set financial targets which reflect the implementation of net zero initiatives",
@@ -11438,7 +11994,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGHDtWEI4PEwVvu"
   },
   {
     "title": "Ensure rewards and performance reviews are aligned with net zero goals",
@@ -11450,7 +12007,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec98p590sD11WFE3"
   },
   {
     "title": "Ensure a board member is accountable for sustainability performance",
@@ -11465,7 +12023,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9Y5V4kABmZPH2w"
   },
   {
     "title": "Install air source heat pumps for low carbon heating",
@@ -11473,7 +12032,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recl0hq6IUNnwwhdN"
   },
   {
     "title": "Audit estate for net zero readiness",
@@ -11484,7 +12044,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrS08b4xjRrmh2j"
   },
   {
     "title": "Install electric grills",
@@ -11498,7 +12059,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recwXYYrH7yG766RH"
   },
   {
     "title": "Commit to BREEAM or LEED for future new tenancies or developments",
@@ -11509,7 +12071,8 @@
       "cat_8_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recPUWLBTrIAIjkrG"
   },
   {
     "title": "Include sustainability on meeting agendas",
@@ -11524,7 +12087,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recapTntKs86hV4YC"
   },
   {
     "title": "Include sustainability in procurement team KPIs",
@@ -11535,7 +12099,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recIzuM3Gf6DNm4dd"
   },
   {
     "title": "Focus on B2B sales of more sustainable goods",
@@ -11583,7 +12148,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec39O2x7G5uYgKwL"
   },
   {
     "title": "Ensure promotional video production is sustainable",
@@ -11594,7 +12160,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recYwHxCvIan4zkTB"
   },
   {
     "title": "Set sourcing and certification targets for food served on premise for customers",
@@ -11630,7 +12197,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec3OKHUOfZdf8HbP"
   },
   {
     "title": "Develop a water conservation plan and policies",
@@ -11643,7 +12211,8 @@
       "interested_in_water": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTIW4oklUWqgCWn"
   },
   {
     "title": "Implement innovative solutions to reduce enteric fermentation emissions",
@@ -11658,7 +12227,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rect0Dy9lRk9ofFoH"
   },
   {
     "title": "Ask key suppliers to provide product carbon footprint (PCF) data",
@@ -11671,7 +12241,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recjsvF9qPxM9C25U"
   },
   {
     "title": "Adapt food recipes to have a lower impact",
@@ -11692,7 +12263,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6uA1qzrf0XHKoM"
   },
   {
     "title": "Provide loans for low carbon mobility solutions",
@@ -11710,7 +12282,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGHJMKvep0N8P8R"
   },
   {
     "title": "Provide green mortgages and loans",
@@ -11737,7 +12310,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBatKAbNbepLCm1"
   },
   {
     "title": "Support green and sustainability-linked loans and bonds",
@@ -11762,7 +12336,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recyJ4yWcqfJ0poPl"
   },
   {
     "title": "Research customer and portfolio company transition plans to understand how you can support their journey",
@@ -11787,7 +12362,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfc53xwDBPQt6Ap"
   },
   {
     "title": "Switch to sustainable feedstocks for chemicals",
@@ -11810,7 +12386,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectbgVRAbk2E8Gf8"
   },
   {
     "title": "Switch to clean energy for chemicals production",
@@ -11833,7 +12410,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recPwrNHfCpeE638O"
   },
   {
     "title": "Join the EP100 to drive energy efficiency",
@@ -11845,7 +12423,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXJtCXuYrLPjHBp"
   },
   {
     "title": "Use cement alternatives in construction",
@@ -11868,7 +12447,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recw2J1qf9657DLnP"
   },
   {
     "title": "Use clinker substitutes in cement production",
@@ -11882,7 +12462,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectr93i9kgFLSybB"
   },
   {
     "title": "Clean energy for heat production in cement",
@@ -11896,7 +12477,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbhSriK1bDxHPnV"
   },
   {
     "title": "Invest in CCS for cement",
@@ -11910,7 +12492,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recP1z8KeAFTv5Moq"
   },
   {
     "title": "Improve operational efficiency for aviation",
@@ -11924,7 +12507,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDMB4edSRWf0uRP"
   },
   {
     "title": "Increase the use of Sustainable Aviation Fuel",
@@ -11939,7 +12523,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recaVyTGq7yeMHB2Q"
   },
   {
     "title": "Engage customers on their transitions plans",
@@ -11970,7 +12555,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recf8CiUCi5nyjHTV"
   },
   {
     "title": "Eliminating flaring and venting",
@@ -11995,7 +12581,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reczHvalGD0KB0VrT"
   },
   {
     "title": "Align philanthropic spending to support the net zero agenda",
@@ -12008,7 +12595,8 @@
       "interested_in_csr": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpKcQ35lZLV9Xk0"
   },
   {
     "title": "Upgrade to more energy efficient freezer cabinets",
@@ -12022,7 +12610,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recM6DJ3dhJJDvG99"
   },
   {
     "title": "Reformulate personal care and household products to use lower GHG ingredients",
@@ -12041,7 +12630,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAj9WNrRZLtqBG8"
   },
   {
     "title": "Support the scale up of lower carbon dairy including regenerative agriculture",
@@ -12057,7 +12647,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reca5u9v8UeOyVif2"
   },
   {
     "title": "Provide the Board with sustainability training",
@@ -12071,7 +12662,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recaNZJgsaNLDQn4E"
   },
   {
     "title": "Align executive remuneration to climate goals",
@@ -12084,7 +12676,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recTUQXtxiaahd06x"
   },
   {
     "title": "Transition car and van fleet to electric",
@@ -12095,7 +12688,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0yn0Dc9mX4wOiz"
   },
   {
     "title": "Join key industry sustainability initiatives",
@@ -12109,7 +12703,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec8SvXuUdpieqE6v"
   },
   {
     "title": "Create a business travel decision tree to help employees",
@@ -12124,7 +12719,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recC1FSrRVUIjueyE"
   },
   {
     "title": "Implement climate risk and opportunity assessment in line with TCFD",
@@ -12136,7 +12732,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLP4PfhYCGnb5Bv"
   },
   {
     "title": "Offer a take back programme to consumers (B2C)",
@@ -12165,7 +12762,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reccIWOfnAKnInm5N"
   },
   {
     "title": "Agree a green lease with landlord",
@@ -12183,7 +12781,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAaIhmF4cS0aKpJ"
   },
   {
     "title": "Ask supply chain companies to submit assessment questionnaires such as CDP or Ecovadis",
@@ -12195,7 +12794,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrCK8jj9FQHnIfM"
   },
   {
     "title": "Develop and enforce a supplier code of conduct including environmental criteria",
@@ -12211,7 +12811,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9ArLt4965v3S0d"
   },
   {
     "title": "Engage online community on green topics and the environment",
@@ -12252,7 +12853,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfKv0ciOktdnAKF"
   },
   {
     "title": "Add sustainability to job descriptions and goals",
@@ -12267,7 +12869,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbmnuUz8nAZLB0G"
   },
   {
     "title": "Prioritise energy efficient products in procurement",
@@ -12283,7 +12886,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBT1p4JG290WFqc"
   },
   {
     "title": "Implement power management policies for computers",
@@ -12296,7 +12900,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOySSDqVwylr1nS"
   },
   {
     "title": "Maintain and optimise heating and air con",
@@ -12307,7 +12912,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckUaEWHUL3I9b4G"
   },
   {
     "title": "Upgrade lighting systems for energy efficiency",
@@ -12320,7 +12926,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recCiPpJd1AyvpShT"
   },
   {
     "title": "Implement a Green IT policy",
@@ -12347,7 +12954,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvFo8P3LDySAH5M"
   },
   {
     "title": "Recycle or donate old office equipment and furniture",
@@ -12394,7 +13002,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRbvEiKcyaFVGH4"
   },
   {
     "title": "Develop a sustainable procurement policy",
@@ -12408,7 +13017,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec8u9ZBdskfslUd0"
   },
   {
     "title": "Install water dispensers and provide reusable water bottles, cups or glasses",
@@ -12422,7 +13032,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rects7EHmqB3EKLSr"
   },
   {
     "title": "Provide adequate and clearly labelled bins for recycling, composting, and landfill",
@@ -12437,7 +13048,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5HLLCrJCCTbZw2"
   },
   {
     "title": "Conduct a waste audit",
@@ -12445,7 +13057,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recV98kkqk1cTvtcQ"
   },
   {
     "title": "Promote active travel",
@@ -12460,7 +13073,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFWFXzco5MzgxqC"
   },
   {
     "title": "Provide on site facilities that make active travel easier",
@@ -12473,7 +13087,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recyB35KR3fm6ly7B"
   },
   {
     "title": "Ask landlord to switch to renewable electricity",
@@ -12481,7 +13096,8 @@
       "landlord_controlled_only": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciyVkzAbjcYJPWT"
   },
   {
     "title": "Eliminate single use plastic",
@@ -12489,7 +13105,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUoKSYvliPEJiIB"
   },
   {
     "title": "Collaborate with key suppliers",
@@ -12500,7 +13117,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec44Qfr46xJQIHY8"
   },
   {
     "title": "Provide support for employees to switch to EV cars",
@@ -12517,7 +13135,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9jS4SuyUDc1CNj"
   },
   {
     "title": "Sort paper - use less, recycle more, buy sustainably",
@@ -12565,7 +13184,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recvRDyI46bV5Nhnn"
   },
   {
     "title": "Offer sustainable hotel options on work trips",
@@ -12580,7 +13200,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec80MAkoqAdBFzFR"
   },
   {
     "title": "Provide online tools for employees to see different carbon footprints for the same journey",
@@ -12593,7 +13214,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclZUzXrk20TU9RO"
   },
   {
     "title": "Raise capital through green bonds",
@@ -12604,7 +13226,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0sii1gYtuSLgtX"
   },
   {
     "title": "Optimize fleet logistics and transportation",
@@ -12711,7 +13334,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZGkYvxKUay6Cg7"
   },
   {
     "title": "Assess portfolio emissions and set SBTi reduction targets",
@@ -12742,7 +13366,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recQlCdWsC2jMF8an"
   },
   {
     "title": "Conduct an employee commuting and home working survey",
@@ -12757,7 +13382,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5zoiuHHMhQsmHw"
   },
   {
     "title": "Reduce emissions from freight and goods - use sustainable fuels",
@@ -12771,7 +13397,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXHXa76dRQZ7peW"
   },
   {
     "title": "Choose freight providers committed to cutting emissions",
@@ -12861,7 +13488,8 @@
       "cat_4_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recThJxi8qMeqQtYR"
   },
   {
     "title": "Use a commuting emissions checklist to find ideas to cut emissions",
@@ -12874,7 +13502,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rechb3vm3eLJm8TaJ"
   },
   {
     "title": "Create an office waste checklist",
@@ -12887,7 +13516,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMXNEb3U6oYWW8j"
   },
   {
     "title": "Reduce emissions in the office with the quick energy saver checklist",
@@ -12901,7 +13531,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1BBRJkV3yX1AJ2"
   },
   {
     "title": "Engage and educate employees on sustainable business travel",
@@ -12915,7 +13546,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBOGJZ19SB5yDtX"
   },
   {
     "title": "Create a Sustainable Business Travel policy",
@@ -12930,7 +13562,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec4vJTh8U6R47dhN"
   },
   {
     "title": "Run an E-waste collection campaign",
@@ -12944,7 +13577,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recny3IYT2F9qmj43"
   },
   {
     "title": "Incorporate sustainability into consumer research",
@@ -12988,7 +13622,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLaQ56RYhZnZYi5"
   },
   {
     "title": "Make events more sustainable",
@@ -12999,7 +13634,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXTwccSHtsJN3CG"
   },
   {
     "title": "Build awareness of green financial products which are part of benefits schemes",
@@ -13011,7 +13647,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5lxeuDCCUamAfy"
   },
   {
     "title": "Build sustainable procurement skills in the procurement team",
@@ -13024,7 +13661,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbRuhgNMNAdq88M"
   },
   {
     "title": "Ensure all marketing adheres to Green Claims guidelines",
@@ -13040,7 +13678,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recW89Cvl61xaMenj"
   },
   {
     "title": "Understand where sustainability capability gaps exist in the workforce",
@@ -13055,7 +13694,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recnptnkOgheKvO9W"
   },
   {
     "title": "Create a Sustainability Awards",
@@ -13067,7 +13707,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recqp76ByKIpCUbWe"
   },
   {
     "title": "Support nature in local communities",
@@ -13078,7 +13719,8 @@
       "interested_in_csr": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recR601Qc3wORihkV"
   },
   {
     "title": "Design consumer products for recycling",
@@ -13103,7 +13745,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recZLf3MNLWdrfNX7"
   },
   {
     "title": "Design consumer products for repair",
@@ -13124,7 +13767,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGXdfbAbDJjBIRN"
   },
   {
     "title": "Become a zero waste company",
@@ -13137,7 +13781,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reci2zQkeAFvksP6L"
   },
   {
     "title": "Work with transportation logistics partners to cut back on air freight",
@@ -13220,7 +13865,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckOKyVMa21kiQ6F"
   },
   {
     "title": "Cut back on plastic packaging",
@@ -13272,7 +13918,8 @@
       "cat_12_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfDAfuju4vJ5Wji"
   },
   {
     "title": "Commit to deforestation free supply chain for high risk food ingredients",
@@ -13292,7 +13939,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectIJSYMR0ZpZhZk"
   },
   {
     "title": "Use facilities to restore nature",
@@ -13304,7 +13952,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recuH33vdubZnwMNu"
   },
   {
     "title": "Ensure pension funds include sustainable options",
@@ -13317,7 +13966,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reckOxFgrLyhrRylc"
   },
   {
     "title": "Increase product lifespans",
@@ -13362,7 +14012,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1HFrffnWLcyKke"
   },
   {
     "title": "Make climate friendly pension plans the default",
@@ -13377,7 +14028,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recT8QsZTyqHEEeXQ"
   },
   {
     "title": "Sign up to a global net zero initiative",
@@ -13390,7 +14042,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUCbApoOV8VGdWg"
   },
   {
     "title": "Calculate company emissions (Enterprise)",
@@ -13401,7 +14054,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxz37vhhvqajrFB"
   },
   {
     "title": "Perform a physical risk analysis",
@@ -13413,7 +14067,8 @@
       "interested_in_risk_management": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRX7Hy2Lh7FAUTE"
   },
   {
     "title": "Purchase high quality carbon offsets for emissions that cannot be reduced yet",
@@ -13421,7 +14076,8 @@
       "interested_in_carbon_removals": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMPxXJjEF3y7tN6"
   },
   {
     "title": "Celebrate sustainable employees and share their stories",
@@ -13436,7 +14092,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFN4kIBQorBMbVL"
   },
   {
     "title": "Help employees adopt sustainable lifestyles with pledges and personal carbon footprints",
@@ -13451,7 +14108,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recrTDW6qNMergAjO"
   },
   {
     "title": "Restrict short flights where other options available",
@@ -13460,7 +14118,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recc3OyoXOnori5IC"
   },
   {
     "title": "Commit to 100% Sustainable Aviation Fuel (SAF)",
@@ -13472,7 +14131,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recFwmkpjUoXwW5Gb"
   },
   {
     "title": "Provide incentives to travel greener for work",
@@ -13485,7 +14145,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec8BBGyj88UtEOTW"
   },
   {
     "title": "Set internal carbon budgets or carbon prices on business travel",
@@ -13498,7 +14159,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recQBKcBHGomsKwJd"
   },
   {
     "title": "Make company car policy electric",
@@ -13514,7 +14176,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recL06uzquXIpeoYo"
   },
   {
     "title": "Make sustainability commitments a requirement for new products",
@@ -13575,7 +14238,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recGRZTeph30HMKVk"
   },
   {
     "title": "Invest in green retrofits",
@@ -13583,7 +14247,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recgFQXYEjgDKehNB"
   },
   {
     "title": "Leverage the power of the Green Team",
@@ -13598,7 +14263,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recV9YiUir1W5Ddd7"
   },
   {
     "title": "Educate customers to use products more efficiently",
@@ -13626,7 +14292,8 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectHVEeZfp5mZ8Wd"
   },
   {
     "title": "Purchase Sustainable Aviation Fuel (SAF)",
@@ -13641,7 +14308,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "receXrz8rOxzOujQT"
   },
   {
     "title": "Increase use of recycled content in products",
@@ -13678,7 +14346,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1XD7R8MuAoiNfq"
   },
   {
     "title": "Source responsibly to avoid deforestation",
@@ -13697,7 +14366,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recRG9atPZKxaOHGC"
   },
   {
     "title": "Reduce food waste in work canteens, cafes and kitchens",
@@ -13711,7 +14381,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recJky79Fhg214HVB"
   },
   {
     "title": "Commit to zero emissions for owned and operated heavy duty road transport",
@@ -13730,7 +14401,8 @@
       "scope_1_mobile_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec6WzOTNNyJ0RWi9"
   },
   {
     "title": "Support more sustainable meal options",
@@ -13755,7 +14427,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciAteihwVaJJbAn"
   },
   {
     "title": "Join the RE100",
@@ -13766,7 +14439,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdSPksYVIrITecM"
   },
   {
     "title": "Investment - provide tools for clients to analyse portfolios for environmental impact",
@@ -13793,7 +14467,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recHlQb6ledTwY0ln"
   },
   {
     "title": "Investments - tilt towards cleaner companies",
@@ -13824,7 +14499,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recLBlj7IsapKEUvK"
   },
   {
     "title": "Divest from companies who are not able or willing to reach net zero",
@@ -13837,7 +14513,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWiE56zsXyU1k3y"
   },
   {
     "title": "Use investors influence to encourage portfolio companies to change",
@@ -13869,7 +14546,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectbexHijGGR9MSL"
   },
   {
     "title": "Provide climate change training to employees",
@@ -13883,7 +14561,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUy8c5pL0DxRRlh"
   },
   {
     "title": "Introduce more plant based options",
@@ -13897,7 +14576,8 @@
       "interested_in_sustainability_culture": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recBselJFzhIeVH7u"
   },
   {
     "title": "Install on-site solar",
@@ -13905,7 +14585,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recEmVFqdE0qupV9w"
   },
   {
     "title": "Move data to the cloud",
@@ -13917,7 +14598,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recMD5vXdCHpafij3"
   },
   {
     "title": "Install a building management system",
@@ -13930,7 +14612,8 @@
       "owns_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reciXnWs1STiJuPce"
   },
   {
     "title": "Install high efficiency motors",
@@ -13946,7 +14629,8 @@
       "uses_buildings": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recbIaXlu3cfx5fZ2"
   },
   {
     "title": "Recycle E-waste",
@@ -13960,7 +14644,8 @@
       "cat_5_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recngRuzswgXY3NwY"
   },
   {
     "title": "Promote the use of digital collaboration tools to reduce travel",
@@ -13968,7 +14653,8 @@
       "cat_6_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recUWH2xOziOfK7Qq"
   },
   {
     "title": "Install smart meters",
@@ -13980,7 +14666,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclJ5TGlriNXY0qB"
   },
   {
     "title": "Commit to 100% renewables and set a target date",
@@ -13993,7 +14680,8 @@
       "has_renewable_electricity": false
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recySMI5X5AXi1lZy"
   },
   {
     "title": "Perform an energy audit",
@@ -14011,7 +14699,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recfhGTe56N8msL7h"
   },
   {
     "title": "Organise carpooling for employees",
@@ -14025,7 +14714,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recezUHtViTj7G3Uy"
   },
   {
     "title": "Support public transport use",
@@ -14043,7 +14733,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recl4HBwwUDkv9CTH"
   },
   {
     "title": "Support working from home and flexible working arrangements where appropriate",
@@ -14051,7 +14742,8 @@
       "cat_7_wfh_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recXxtgz2ptqZDiQU"
   },
   {
     "title": "Publicly share sustainability plans",
@@ -14059,7 +14751,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec3t3GtRtwF6rTGF"
   },
   {
     "title": "Educate employees about recycling to improve recycling rates",
@@ -14073,7 +14766,8 @@
       "interested_in_employee_learning": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recpToKtFFhDWpqrS"
   },
   {
     "title": "Adopt an environmental management system",
@@ -14085,7 +14779,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recOkMepf2RysCvQF"
   },
   {
     "title": "Set up a Cycle to work scheme",
@@ -14099,7 +14794,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec5PcxAeeIRSkXwB"
   },
   {
     "title": "Use low carbon concrete",
@@ -14125,7 +14821,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1E8bxkft9lrfFX"
   },
   {
     "title": "Implement fleet travel management software",
@@ -14139,7 +14836,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec1K50D9DhiX7Zzx"
   },
   {
     "title": "Focus on flying and target reductions in flight emissions",
@@ -14153,7 +14851,8 @@
       "travel_includes_flying": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reca4rHXwGS9nNKZW"
   },
   {
     "title": "Communicate sustainability requirements to suppliers",
@@ -14168,7 +14867,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec9bg6XDgTp8KGbi"
   },
   {
     "title": "Commit to phase out fossil fuels in own operations",
@@ -14181,7 +14881,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "reclo84RhA93wsVA9"
   },
   {
     "title": "Assess company impact on nature",
@@ -14194,7 +14895,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recxYYK6KR087iC4G"
   },
   {
     "title": "Assign management responsibilities for taking climate action",
@@ -14208,7 +14910,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recX1XC1nSmanTYud"
   },
   {
     "title": "Report on climate KPIs internally",
@@ -14222,7 +14925,8 @@
       "interested_in_leadership_actions": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recb64gwCaZTPxY67"
   },
   {
     "title": "Go beyond and commit to net zero by 2040",
@@ -14233,7 +14937,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recss8bqqEnm6u5sz"
   },
   {
     "title": "Create a strategy to cut commuting and home working emissions",
@@ -14245,7 +14950,8 @@
       "cat_7_commute_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rectbZIGcqhYGVszt"
   },
   {
     "title": "Encourage customers and clients to set targets and join initiatives",
@@ -14258,7 +14964,8 @@
       "interested_in_customer_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recDiLopN0Rs91Es8"
   },
   {
     "title": "Invest in projects to support suppliers on their journey to net zero",
@@ -14272,7 +14979,8 @@
       ]
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recdQOWqqS1DrVBQF"
   },
   {
     "title": "Invest in carbon removal to support innovation and commercialisation",
@@ -14283,7 +14991,8 @@
       "interested_in_carbon_removals": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recf3g3QkJco6W36y"
   },
   {
     "title": "Support regenerative agriculture",
@@ -14301,7 +15010,8 @@
       "cat_1_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recifzxnE9PfkL2P1"
   },
   {
     "title": "Share knowledge with industry",
@@ -14314,7 +15024,8 @@
       "interested_in_stakeholder_engagement": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recAsbsgZeqNCHJD3"
   },
   {
     "title": "Invest in climate solutions",
@@ -14325,7 +15036,8 @@
       "cat_15_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recECEFvWU7buBvm0"
   },
   {
     "title": "Invest to protect land, forests and oceans",
@@ -14337,7 +15049,8 @@
       "interested_in_nature": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recWRciVpTshf8jN2"
   },
   {
     "title": "Fund emissions reductions beyond own value chain",
@@ -14348,7 +15061,8 @@
       "interested_in_carbon_removals": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec0JOsEZFt94rSTh"
   },
   {
     "title": "Use an internal carbon price on emissions",
@@ -14361,7 +15075,8 @@
       "interested_in_measurement_targets": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "rec2XPtVqKQ7S1mN7"
   },
   {
     "title": "Encourage sustainable decisions by clients for advised emissions (B2B)",
@@ -14376,6 +15091,7 @@
       "cat_11_relevant": true
     },
     "exclude_when": {
-    }
+    },
+    "airtable_id": "recECy4wPe0zXruuz"
   }
 ]

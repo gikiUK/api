@@ -106,15 +106,15 @@ unless FactsDataset.where(status: "live").exists?
     r.merge("source" => "general", "enabled" => true, "when" => convert_condition_values.call(r["when"]))
   end
 
-  # --- Action Conditions ---
+  # --- Actions + Action Conditions ---
   raw_actions = JSON.parse(File.read(seed_dir.join("actions.json")))
   action_conditions = {}
-  raw_actions.each_with_index do |action, idx|
-    key = "action_#{idx + 1}"
-    action_conditions[key] = {
+  raw_actions.each do |raw_action|
+    action = Action.create!(title: raw_action["title"], airtable_id: raw_action["airtable_id"])
+    action_conditions[action.id.to_s] = {
       "enabled" => true,
-      "include_when" => convert_condition_values.call(action["include_when"] || {}),
-      "exclude_when" => convert_condition_values.call(action["exclude_when"] || {})
+      "include_when" => convert_condition_values.call(raw_action["include_when"] || {}),
+      "exclude_when" => convert_condition_values.call(raw_action["exclude_when"] || {})
     }
   end
 
@@ -129,4 +129,5 @@ unless FactsDataset.where(status: "live").exists?
 
   FactsDataset.create!(status: "live", data: data, test_cases: [])
   puts "Created live facts dataset (#{facts.size} facts, #{questions.size} questions, #{rules.size} rules, #{action_conditions.size} action conditions)"
+  puts "Created #{Action.count} actions"
 end

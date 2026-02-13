@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_02_13_155410) do
+ActiveRecord::Schema[8.1].define(version: 2026_02_13_164511) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "actions", force: :cascade do |t|
+    t.string "airtable_id"
+    t.datetime "created_at", null: false
+    t.boolean "enabled", default: true, null: false
+    t.string "title", null: false
+    t.datetime "updated_at", null: false
+    t.index ["airtable_id"], name: "index_actions_on_airtable_id", unique: true
+  end
 
   create_table "companies", force: :cascade do |t|
     t.datetime "created_at", null: false

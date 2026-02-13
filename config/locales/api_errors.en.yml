@@ -11,3 +11,4 @@ en:
     session_expired: "Session expired. Please log in again."
     invalid_otp: "Invalid verification code"
     facts_dataset_not_found: "Facts dataset not found"
+    action_not_found: "Action not found"

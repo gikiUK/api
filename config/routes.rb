@@ -35,6 +35,8 @@ Rails.application.routes.draw do
     patch "facts_datasets/draft", to: "facts_datasets#update_draft"
     delete "facts_datasets/draft", to: "facts_datasets#delete_draft"
     post "facts_datasets/draft/publish", to: "facts_datasets#publish_draft"
+
+    resources :actions, only: [ :index, :show, :create, :update ]
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -334,12 +334,12 @@ Leaning toward recompute. But storing makes "which companies have X" queries eas
 - [ ] Admin endpoints for test + diff
 
 ### Actions
-- [ ] Add Action model and migration
-- [ ] Add factory
-- [ ] Add seed task (import from `../facts/data/actions.json`)
-- [ ] Add admin controller for action metadata CRUD
-- [ ] Add admin serializer
-- [ ] Add controller tests
+- [x] Add Action model and migration
+- [x] Add factory
+- [x] Add seed task (import from `../facts/data/actions.json`)
+- [x] Add admin controller for action metadata CRUD
+- [x] Add admin serializer
+- [x] Add controller tests
 
 ### CompanyFact (TBD)
 - [ ] Design approach (JSONB blob per company? Store derived facts or recompute?)
@@ -371,4 +371,4 @@ The initial live dataset must be built from the JSON files in `../facts/data/`. 
 - `hotspots.json` — 17KB (per-industry GHG ratings, used to generate hotspot_rules)
 
 ### Action key generation
-Actions in the current CSV/JSON don't have stable keys. The seed task will need to generate them (e.g. slugified title, or sequential `action_1`, `action_2`). These keys link action conditions in the blob to action metadata in the actions table. Once assigned, keys must be stable.
+Action conditions in the blob are keyed by the Action record's database `id` (stringified). The seed task creates Action records first, then uses their IDs as blob keys. These keys link action conditions in the blob to action metadata in the actions table.
