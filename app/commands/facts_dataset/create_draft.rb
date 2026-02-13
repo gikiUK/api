@@ -7,6 +7,8 @@ class FactsDataset::CreateDraft
       data: live_dataset.data,
       test_cases: live_dataset.test_cases
     )
+  rescue ActiveRecord::RecordNotUnique
+    FactsDataset.draft.first!
   end
 
   private

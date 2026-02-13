@@ -30,6 +30,8 @@ Rails.application.routes.draw do
   # Admin endpoints
   namespace :admin do
     get "facts_datasets/live", to: "facts_datasets#live"
+    get "facts_datasets/draft", to: "facts_datasets#draft"
+    post "facts_datasets/draft", to: "facts_datasets#create_draft"
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -18,12 +18,12 @@ class FactsDataset::CreateDraftTest < ActiveSupport::TestCase
     end
   end
 
-  test "raises when draft already exists" do
+  test "returns existing draft when one already exists" do
     create(:facts_dataset, :live)
-    create(:facts_dataset, :draft)
+    existing_draft = create(:facts_dataset, :draft)
 
-    assert_raises(ActiveRecord::RecordNotUnique) do
-      FactsDataset::CreateDraft.()
-    end
+    result = FactsDataset::CreateDraft.()
+
+    assert_equal existing_draft, result
   end
 end
