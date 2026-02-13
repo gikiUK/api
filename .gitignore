@@ -34,6 +34,9 @@
 # Ignore Claude Code local settings.
 /.claude/settings.local.json
 
+# Git worktrees
+/worktrees/
+
 # Node.js
 /node_modules/
 
