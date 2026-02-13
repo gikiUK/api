@@ -5,7 +5,7 @@ class FactsDataset::UpdateDraft
 
   def call
     FactsDataset.transaction do
-      draft = FactsDataset.lock.draft.first!
+      draft = FactsDataset.lock.find_by!(status: "draft")
       FactsDataset::Validate.(draft)
       draft.update!(data:, test_cases:)
       draft

@@ -8,11 +8,11 @@ class FactsDataset::CreateDraft
       test_cases: live_dataset.test_cases
     )
   rescue ActiveRecord::RecordNotUnique
-    FactsDataset.draft.first!
+    FactsDataset.draft
   end
 
   private
 
   memoize
-  def live_dataset = FactsDataset.live.first!
+  def live_dataset = FactsDataset.live
 end

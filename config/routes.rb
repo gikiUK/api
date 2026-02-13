@@ -32,6 +32,9 @@ Rails.application.routes.draw do
     get "facts_datasets/live", to: "facts_datasets#live"
     get "facts_datasets/draft", to: "facts_datasets#draft"
     post "facts_datasets/draft", to: "facts_datasets#create_draft"
+    patch "facts_datasets/draft", to: "facts_datasets#update_draft"
+    delete "facts_datasets/draft", to: "facts_datasets#delete_draft"
+    post "facts_datasets/draft/publish", to: "facts_datasets#publish_draft"
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

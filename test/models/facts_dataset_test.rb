@@ -53,31 +53,28 @@ class FactsDatasetTest < ActiveSupport::TestCase
     assert_equal "Small advertising agency", dataset.test_cases.first["name"]
   end
 
-  test "live scope returns only live datasets" do
-    create(:facts_dataset, :live)
+  test "live class method returns the live dataset" do
+    live = create(:facts_dataset, :live)
     create(:facts_dataset, :draft)
     create(:facts_dataset, :archived)
 
-    assert_equal 1, FactsDataset.live.count
-    assert FactsDataset.live.all? { |d| d.status == "live" }
+    assert_equal live, FactsDataset.live
   end
 
-  test "draft scope returns only draft datasets" do
-    create(:facts_dataset, :live)
-    create(:facts_dataset, :draft)
-    create(:facts_dataset, :archived)
-
-    assert_equal 1, FactsDataset.draft.count
-    assert FactsDataset.draft.all? { |d| d.status == "draft" }
+  test "live class method raises when no live dataset exists" do
+    assert_raises(ActiveRecord::RecordNotFound) { FactsDataset.live }
   end
 
-  test "archived scope returns only archived datasets" do
+  test "draft class method returns the draft dataset" do
     create(:facts_dataset, :live)
-    create(:facts_dataset, :draft)
+    draft = create(:facts_dataset, :draft)
     create(:facts_dataset, :archived)
 
-    assert_equal 1, FactsDataset.archived.count
-    assert FactsDataset.archived.all? { |d| d.status == "archived" }
+    assert_equal draft, FactsDataset.draft
+  end
+
+  test "draft class method raises when no draft exists" do
+    assert_raises(ActiveRecord::RecordNotFound) { FactsDataset.draft }
   end
 
   test "live? returns true only for live dataset" do

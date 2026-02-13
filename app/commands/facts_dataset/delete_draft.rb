@@ -2,6 +2,6 @@ class FactsDataset::DeleteDraft
   include Mandate
 
   def call
-    FactsDataset.draft.first!.destroy!
+    FactsDataset.draft.destroy!
   end
 end

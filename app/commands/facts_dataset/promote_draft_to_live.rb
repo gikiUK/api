@@ -2,11 +2,11 @@ class FactsDataset::PromoteDraftToLive
   include Mandate
 
   def call
-    draft = FactsDataset.draft.first!
+    draft = FactsDataset.draft
     FactsDataset::Validate.(draft)
 
     FactsDataset.transaction do
-      FactsDataset.live.first!.update!(status: "archived")
+      FactsDataset.live.update!(status: "archived")
       draft.update!(status: "live")
     end
   end

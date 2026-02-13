@@ -3,9 +3,8 @@ class FactsDataset < ApplicationRecord
 
   validates :status, presence: true, inclusion: { in: STATUSES }
 
-  scope :live, -> { where(status: "live") }
-  scope :draft, -> { where(status: "draft") }
-  scope :archived, -> { where(status: "archived") }
+  def self.live = where(status: "live").first!
+  def self.draft = where(status: "draft").first!
 
   def live? = status == "live"
   def draft? = status == "draft"

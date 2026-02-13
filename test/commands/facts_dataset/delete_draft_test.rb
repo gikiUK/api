@@ -7,7 +7,7 @@ class FactsDataset::DeleteDraftTest < ActiveSupport::TestCase
 
     FactsDataset::DeleteDraft.()
 
-    assert_equal 0, FactsDataset.draft.count
+    assert_raises(ActiveRecord::RecordNotFound) { FactsDataset.draft }
   end
 
   test "does not affect live dataset" do
