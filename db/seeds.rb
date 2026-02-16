@@ -111,7 +111,9 @@ unless FactsDataset.where(status: "live").exists?
   raw_actions = JSON.parse(File.read(seed_dir.join("actions.json")))
   action_conditions = {}
   raw_actions.each do |raw_action|
-    action = Action.create!(title: raw_action["title"], airtable_id: raw_action["airtable_id"])
+    action = Action.find_or_create_by!(airtable_id: raw_action["airtable_id"]) do |a|
+      a.title = raw_action["title"]
+    end
     action_conditions[action.id.to_s] = {
       "enabled" => true,
       "include_when" => convert_condition_values.call(raw_action["include_when"] || {}),
