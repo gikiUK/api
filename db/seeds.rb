@@ -12,10 +12,10 @@ puts "Created user: #{ihid_user.email}"
 
 # Create the admin user
 aron_user = User.find_or_create_by!(email: "aron@giki.io") do |u|
-  u.admin = true
   u.password = "password"
   u.password_confirmation = "password"
 end
+aron_user.update!(admin: true)
 aron_user.confirm
 puts "Created admin user: #{aron_user.email}"
 
